@@ -25,15 +25,16 @@ module.exports = {
     app: './src/main.js'
   },
   output: {
-    path: config.build.assetsRoot,
-    filename: '[name].js',
+    path: config.build.assetsRoot, // 编译输出的静态资源根路径
+    filename: '[name].js',  // 编译输出的文件名
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
-      : config.dev.assetsPublicPath
+      : config.dev.assetsPublicPath // 正式发布环境下编译输出的上线路径的根路径
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json'], // 自动补全的扩展名
     alias: {
+      // 默认路径代理，例如 import Vue from 'vue'，会自动到 'vue/dist/vue.common.js'中寻找
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
     }
