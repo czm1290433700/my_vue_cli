@@ -4,10 +4,6 @@
     font-size: 15px;
 }
 
-.cityArea{
-    position: relative;
-}
-
 .cityArea i{
     content: "";
     width: 0;
@@ -16,7 +12,7 @@
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 6px solid #333;
-    margin-left: 48px;
+    margin-left: 44px;
     margin-top: 8px;
 } 
 
@@ -24,7 +20,7 @@
     width: 312px;
     height: 479px;
     position: absolute;
-    top: 25px;
+    top: 68px;
     z-index: 10;
     overflow: hidden;
     display: none;
@@ -97,4 +93,33 @@
 
 .areacode{
     color: #9B9B9B;
+}
+
+@media screen and (max-width: 1366px){
+    .cityBody{
+        width: 298px;
+        height: 474px;
+        position: absolute;
+        top: 68px;
+        z-index: 10;
+        overflow: hidden;
+        display: none;
+    }
+
+    .country{
+        width: 311px;
+        padding: 6px 38px 6px 8px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-left: 1px solid #f3f3f3;
+        border-right: 1px solid #f3f3f3;
+        border-bottom: 1px solid #f3f3f3;
+        overflow: hidden;
+    }
+
+    .countryTags{
+        position: absolute;
+        top: 42px;
+        left: 280px;
+    }
 }
