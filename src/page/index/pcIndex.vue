@@ -1,10 +1,10 @@
 <template>
-    <div>index页面</div>
+    <div>pcIndex页面</div>
 </template>
 
 <script>
 export default {
-  name: 'Index',
+  name: 'pcIndex',
   data() {
     return {
       
@@ -14,5 +14,5 @@ export default {
 </script>
 
 <style scoped>
-  @import "../../style/index/index.css";
+  @import "../../style/index/pcIndex.css";
 </style>
