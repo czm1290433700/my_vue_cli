@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.cityButton{
+    position: absolute;
+    font-size: 15px;
+}
+
+.cityArea{
+    position: relative;
+}
+
+.cityArea i{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    margin-left: 48px;
+    margin-top: 8px;
+} 
+
+.cityBody{
+    width: 312px;
+    height: 479px;
+    position: absolute;
+    top: 25px;
+    z-index: 10;
+    overflow: hidden;
+    display: none;
+}
+
+.cityContent{
+    width: 328px;
+    height: 483px;
+    background-color: white;
+    z-index: 10;
+    overflow-y: scroll;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+.cityContent .title{
+    font-size: 16px;
+    width: 295px;
+    background-color: #CCCCCC;
+    padding: 8px;
+    text-align: center;
+    position: absolute;
+}
+
+.countryBox{
+    margin-top: 36px;
+}
+
+.countryTag{
+    width: 311px;
+    padding: 6px 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    color: #CCCCCC;
+    border: 1px solid #f3f3f3;
+}
+
+.country{
+    width: 311px;
+    padding: 6px 32px 6px 8px;
+    box-sizing: border-box;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    overflow: hidden;
+}
+
+.country:hover{
+    background-color: #CCCCCC;
+}
+
+.countryName{
+    float: left;
+}
+
+.countryCode{
+    float: right;
+}
+
+.countryTags{
+    position: absolute;
+    top: 42px;
+    left: 289px;
+}
+
+.tag a{
+    color: #666666;
+}
+
+.areacode{
+    color: #9B9B9B;
+}

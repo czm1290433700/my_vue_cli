@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/page/index/index'
+import MobileCityArea from '@/components/mobileCityArea'
+import EnMobileCityArea from '@/components/enMobileCityArea'
+import CityArea from '@/components/cityArea'
 
 Vue.use(Router)
 
@@ -15,6 +18,21 @@ export default new Router({
       path: '/index',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '/components/mobileCityArea',
+      name: 'mobileCityArea',
+      component: MobileCityArea
+    },
+    {
+      path: '/components/enMobileCityArea',
+      name: 'enMobileCityArea',
+      component: EnMobileCityArea
+    },
+    {
+      path: '/components/cityArea',
+      name: 'cityArea',
+      component: CityArea
     }
   ]
 })
