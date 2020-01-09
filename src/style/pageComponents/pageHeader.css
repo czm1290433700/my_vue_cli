@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.header{
+    position: relative;
+    width: 10rem;
+    height: 1.5rem;
+    font-size: .42rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.header .arrow{
+    float: left;
+    margin: 0.5rem 0.3rem;
+}
+
+.header .arrow:before{
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    border: 0.27rem solid transparent;
+    border-right: 0.27rem solid #969799;
+}
+
+.header .arrow:after{
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    border: 0.27rem solid transparent;
+    border-right: 0.27rem solid #fff;
+    left: 0.39rem;
+}

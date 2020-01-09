@@ -4,6 +4,10 @@
     font-size: 0.4rem;
 }
 
+.cityArea{
+    position: relative;
+}
+
 .cityArea i{
     content: "";
     width: 0;

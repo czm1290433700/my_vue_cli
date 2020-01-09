@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.myVue{
+    padding: 1rem 0.7rem;
+}
+
+.myVue h1{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.components .title{
+    font-size: 0.4rem;
+    color: #8F9CA2;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    padding-left: .5rem;
+}
+
+.components li{
+    width: 8.5rem;
+    height: 1rem;
+    background-color: #F7F8FA;
+    border-radius: 2.2rem;
+    line-height: 1rem;
+    font-size: 0.35rem;
+    margin-bottom: 0.3rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.components .arrow{
+    float: right;
+    color: #B6C3D2;
+    font-weight: 600;
+    position: relative;
+}
+
+.components .arrow::after{
+    width: 0;
+    height: 0;
+    content: "";
+    border: 0.2rem solid transparent;
+    border-left: 0.2rem solid #F7F8FA;
+    position: absolute;
+    top: 0.3rem;
+    left: -0.1rem;
+}
+
+.components .arrow::before{
+    width: 0;
+    height: 0;
+    content: "";
+    border: 0.2rem solid transparent;
+    border-left: 0.2rem solid #B6C3D2;
+    position: absolute;
+    top: 0.3rem;
+}

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.body{
+    width: 10rem;
+    height: 16.3rem;
+    background-color: #F7F8FA;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+}
