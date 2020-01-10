@@ -4,6 +4,9 @@ import PCIndex from '@/page/index/pcIndex'
 import MobileIndex from '@/page/index/mobileIndex'
 import mobileCityAreaPage from '@/page/mobilePage/mobileCityArea'
 import enMobileCityAreaPage from '@/page/mobilePage/enMobileCityArea'
+import cityArea from '@/components/cityArea'
+import slideShow1 from '@/components/slideShow1'
+import slideShow2 from '@/components/slideShow2'
 
 Vue.use(Router)
 
@@ -34,6 +37,21 @@ export default new Router({
       path: '/mobilePage/enMobileCityArea',
       name: 'enMobileCityAreaPage',
       component: enMobileCityAreaPage
+    },
+    {
+      path: '/components/cityArea',
+      name: 'cityArea',
+      component: cityArea
+    },
+    {
+      path: '/components/slideShow1',
+      name: 'slideShow1',
+      component: slideShow1
+    },
+    {
+      path: '/components/slideShow2',
+      name: 'slideShow2',
+      component: slideShow2
     }
   ]
 })
