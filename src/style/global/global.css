@@ -12,9 +12,13 @@ a{
     text-decoration: none;
 }
 
+.pageArea{
+    padding: 40px 50px;
+}
+
 fieldset{
     padding: 30px 20px;
-    width: 500px;
+    width: 100%;
     border: 2px solid #E6E6E6;
     margin-bottom: 25px;
 }

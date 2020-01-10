@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pageArea">
         <fieldset>
             <legend>无移图按钮的动画自动轮播图</legend>
             <slideShow1></slideShow1>

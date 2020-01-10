@@ -12,7 +12,7 @@
           <li>
             <span class="title" @click="clickElement($event)">{{item.name}}<i></i></span>
             <dl>
-              <dd v-for="item in item.construction" :key="item.id">{{item.name}}</dd>
+              <dd v-for="item in item.construction" :key="item.id" @click="cutBodyContent(item.url)">{{item.name}}</dd>
             </dl>
           </li>
         </ul>
@@ -22,7 +22,7 @@
           <li class="active">预览</li>
         </ul>
         <div class="body-content">
-          <iframe src="/pcPage/cityArea"></iframe>
+          <iframe src="/pcPage/cityArea" ref="bodyContent"></iframe>
         </div>
       </div>
     </div>
@@ -47,6 +47,10 @@ export default {
       }]
     }
   },
+  mounted () {
+    /**禁掉body的自带滚动栏，避免与iframe的重复影响页面样式 */
+    document.body.style.overflowY = "hidden";
+  },
   methods: {
     /**
      * 跳转github
@@ -64,6 +68,12 @@ export default {
       }else{
         dlElement.style.display = "none"
       }
+    },
+    /**
+     * 切换bodyContent
+     */
+    cutBodyContent: function(url){
+      this.$refs.bodyContent.src = url;
     }
   }
 }

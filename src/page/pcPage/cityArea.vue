@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pageArea">
         <fieldset style="height: 523px">
             <legend>城市地区号选择</legend>
             <cityArea></cityArea>

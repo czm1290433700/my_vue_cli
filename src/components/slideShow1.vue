@@ -36,7 +36,7 @@ export default {
             arr2 = this.imageList.slice(0, this.amounts);
         this.imageList = arr1.concat(this.imageList).concat(arr2);
         //自动轮播
-        this.autoplay();
+        // this.autoplay();
     },
     methods: {
         /**

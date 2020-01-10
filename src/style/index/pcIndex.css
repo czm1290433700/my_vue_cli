@@ -106,13 +106,9 @@
     border-bottom: 3px solid #5FB878;
 }
 
-#pcIndex .body .body-content{
-    padding: 50px;
-}
-
 #pcIndex .body iframe{
     width: 100%;
-    min-height: calc(100vh - 218px);
+    min-height: calc(100vh - 117px);
     border: none;
     overflow-y: auto;
 }

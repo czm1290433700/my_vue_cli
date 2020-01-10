@@ -119,3 +119,6 @@
 #slide .options .active{
     background-color: #FF4000;
 }
+
+@media screen and (max-width: 1366px){
+}
