@@ -11,3 +11,17 @@ li{
 a{
     text-decoration: none;
 }
+
+fieldset{
+    padding: 30px 20px;
+    width: 500px;
+    border: 2px solid #E6E6E6;
+    margin-bottom: 25px;
+}
+
+fieldset legend{
+    font-size: 20px;
+    margin-left: 20px;
+    color: #464646;
+    font-weight: 300;
+}
