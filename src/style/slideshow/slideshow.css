@@ -1,18 +1,18 @@
 @charset "UTF-8";
-#slide{
+#slideShow{
     width: 1352px;
     height: 126px;
     display: flex;
     overflow: hidden;
 }
 
-#slide ul{
+#slideShow ul{
     width: 3952px;
     height: 126px;
     position: absolute;
 }
 
-#slide .slide-body{
+#slideShow .slide-body{
     width: 1248px;
     overflow: hidden;
     float: left;
@@ -21,7 +21,7 @@
     position: relative;
 }
 
-#slide .image{
+#slideShow .image{
     width: 180px;
     height: 110px;
     padding: 6px;
@@ -31,17 +31,17 @@
     float: left;
 }
 
-#slide .image img{
+#slideShow .image img{
     width: 180px;
     height: 110px;
 }
 
-#slide .arrow-left, .arrow-right{
+#slideShow .arrow-left, .arrow-right{
     float: left;
     position: relative;
 }
 
-#slide .arrow-left::before{
+#slideShow .arrow-left::before{
     width: 0;
     height: 0;
     content: "";
@@ -51,7 +51,7 @@
     top: 39px;
 }
 
-#slide .arrow-left::after{
+#slideShow .arrow-left::after{
     width: 0;
     height: 0;
     content: "";
@@ -62,7 +62,7 @@
     left: 11px;
 }
 
-#slide .arrow-right::before{
+#slideShow .arrow-right::before{
     width: 0;
     height: 0;
     content: "";
@@ -72,7 +72,7 @@
     top: 39px;
 }
 
-#slide .arrow-right::after{
+#slideShow .arrow-right::after{
     width: 0;
     height: 0;
     content: "";

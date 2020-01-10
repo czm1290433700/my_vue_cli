@@ -7,6 +7,7 @@ import enMobileCityAreaPage from '@/page/mobilePage/enMobileCityArea'
 import cityArea from '@/components/cityArea'
 import slideShow1 from '@/components/slideShow1'
 import slideShow2 from '@/components/slideShow2'
+import slideShow3 from '@/components/slideShow3'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/components/slideShow2',
       name: 'slideShow2',
       component: slideShow2
+    },
+    {
+      path: '/components/slideShow3',
+      name: 'slideShow3',
+      component: slideShow3
     }
   ]
 })

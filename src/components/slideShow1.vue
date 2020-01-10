@@ -1,5 +1,5 @@
 <template>
-    <div id="slide">
+    <div id="slideShow">
         <div class="slide-body">
             <ul ref="slidePics">
                 <li class="image" v-for="item in imageList" :key="item.key" @mouseover="pauseAutoplay()" @mouseleave="autoplay()">
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: 'slideshow',
+    name: 'slideShow1',
     data() {
         return {
             imageList: [

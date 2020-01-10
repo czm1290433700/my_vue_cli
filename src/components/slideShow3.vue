@@ -1,5 +1,5 @@
 <template>
-    <div id="slideShow">
+    <div id="slide">
         <div class="arrow-left" @click="moveLeft()"></div>
         <div class="slide-body">
             <ul ref="slidePics">
@@ -9,12 +9,18 @@
             </ul>
         </div>
         <div class="arrow-right" @click="moveRight()"></div>
+        <div class="options">
+            <ul ref="options">
+                <li v-for="item in imageList" :key="item.key"></li>
+            </ul>
+        </div>
     </div>
 </template>
 
 <script>
+import tools from '@/utils/tool.js'
 export default {
-    name: 'slideShow2',
+    name: 'slideShow3',
     data() {
         return {
             imageList: [
@@ -26,17 +32,12 @@ export default {
                 require("@/assets/images/pic6.jpg"),
                 require("@/assets/images/pic7.jpg")
             ],
-            amounts: 6, 
-            timer: new Function(), 
-            movePic: 0
+            movePic: 0,
+            timer: new Function()
         }
     },
     mounted: function(){
-        //初始化轮播图列表，实现无缝轮播
-        var arr1 = this.imageList.slice(this.imageList.length - this.amounts),
-            arr2 = this.imageList.slice(0, this.amounts);
-        this.imageList = arr1.concat(this.imageList).concat(arr2);
-        //自动轮播
+        tools.addClass(this.$refs.options.childNodes[0], "active");
         this.autoplay();
     },
     methods: {
@@ -44,43 +45,32 @@ export default {
          * 自动轮播
          */
         autoplay: function(){
-            let _this = this;
-            this.timer = setInterval(function(){
-                _this.move("left");
-            }, 1500)
+            this.timer = setInterval(() => {
+                tools.removeClass(this.$refs.options.childNodes[this.movePic], "active");
+                if(this.movePic == 6){
+                    this.movePic = 0;
+                }else{
+                    this.movePic++;
+                }
+                tools.addClass(this.$refs.options.childNodes[this.movePic], "active");
+                this.$refs.slidePics.style.left = this.movePic * -412 + "px";
+            }, 2000);
         },
         /**
          * 暂停自动轮播
          */
         pauseAutoplay: function(){
             clearInterval(this.timer);
-            clearTimeout(this.timer2);
-        },
-        /**
-         * 移动
-         */
-        move: function(direction){
-            if(direction == "left"){
-                if(this.movePic >= 13){
-                    this.movePic = 0;
-                }else{
-                    this.movePic++;
-                }
-            }else{
-                if(this.movePic <= 0){
-                    this.movePic = 13;
-                }else{
-                    this.movePic--;
-                }
-            }
-            this.$refs.slidePics.style.left = this.movePic*-208 + "px";
         },
         /**
          * 向左移动
          */
         moveLeft: function(){
             this.pauseAutoplay();
-            this.move("left");
+            tools.removeClass(this.$refs.options.childNodes[this.movePic], "active");
+            this.movePic = this.movePic == 0 ? 6 : --this.movePic;
+            tools.addClass(this.$refs.options.childNodes[this.movePic], "active");
+            this.$refs.slidePics.style.left = this.movePic * -412 + "px";
             this.autoplay();
         },
         /**
@@ -88,7 +78,10 @@ export default {
          */
         moveRight: function(){
             this.pauseAutoplay();
-            this.move("right");
+            tools.removeClass(this.$refs.options.childNodes[this.movePic], "active");
+            this.movePic = this.movePic == 6 ? 0 : ++this.movePic;
+            tools.addClass(this.$refs.options.childNodes[this.movePic], "active");
+            this.$refs.slidePics.style.left = this.movePic * -412 + "px";
             this.autoplay();
         }
     }
@@ -96,5 +89,5 @@ export default {
 </script>
 
 <style scoped>
-    @import "../style/slideshow/slideshow.css";
+    @import "../style/slideshow/slide.css";
 </style>
