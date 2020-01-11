@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 1366px){
     #slideShow{
-        width: 1352px;
+        width: 1000px;
         height: 89px;
         display: -webkit-box;
         display: -ms-flexbox;

@@ -3,7 +3,7 @@
         <div class="arrow-left" @click="moveLeft()"></div>
         <div class="slide-body">
             <ul ref="slidePics">
-                <li class="image" v-for="item in imageList" :key="item.key" @mouseover="pauseAutoplay()" @mouseleave="autoplay()">
+                <li class="image" v-for="item in imageList" :key="item.key" @mouseover="pauseAutoplay()" @mouseleave="autoplay()" ref="element">
                     <img :src="item">
                 </li>
             </ul>
@@ -28,7 +28,8 @@ export default {
             ],
             amounts: 6, 
             timer: new Function(), 
-            movePic: 0
+            movePic: 0,
+            width: 0
         }
     },
     mounted: function(){
@@ -36,8 +37,10 @@ export default {
         var arr1 = this.imageList.slice(this.imageList.length - this.amounts),
             arr2 = this.imageList.slice(0, this.amounts);
         this.imageList = arr1.concat(this.imageList).concat(arr2);
+        /** 因为这里对应的li还没有渲染完成，获取不到margin，暂时用6*2写死 */
+        this.width = this.$refs.element[0].offsetWidth + 6 * 2;
         //自动轮播
-        // this.autoplay();
+        this.autoplay();
     },
     methods: {
         /**
@@ -73,7 +76,7 @@ export default {
                     this.movePic--;
                 }
             }
-            this.$refs.slidePics.style.left = this.movePic*-208 + "px";
+            this.$refs.slidePics.style.left = this.movePic * -1 * this.width + "px";
         },
         /**
          * 向左移动

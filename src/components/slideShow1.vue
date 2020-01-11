@@ -2,7 +2,7 @@
     <div id="slideShow">
         <div class="slide-body">
             <ul ref="slidePics">
-                <li class="image" v-for="item in imageList" :key="item.key" @mouseover="pauseAutoplay()" @mouseleave="autoplay()">
+                <li class="image" v-for="item in imageList" :key="item.key" @mouseover="pauseAutoplay()" @mouseleave="autoplay()" ref="element">
                     <img :src="item">
                 </li>
             </ul>
@@ -36,7 +36,7 @@ export default {
             arr2 = this.imageList.slice(0, this.amounts);
         this.imageList = arr1.concat(this.imageList).concat(arr2);
         //自动轮播
-        // this.autoplay();
+        this.autoplay();
     },
     methods: {
         /**
@@ -44,10 +44,13 @@ export default {
          */
         autoplay: function(){
             let _this = this;
+            /** 因为这里对应的li还没有渲染完成，获取不到margin，暂时用6*2写死 */
+            let width = this.$refs.element[0].offsetWidth + 6 * 2;
+            let value = width * (this.imageList.length - this.amounts); // 因为需要显示amounts个，所以要减掉
             // 定时1秒后再轮播,为的是让鼠标移出重新轮播不要显得太仓促
             _this.timer2 = setTimeout(function(){
                 _this.timer = setInterval(function(){
-                    if(_this.moveDistance > -2704){
+                    if(_this.moveDistance > -1 * value){
                         _this.moveDistance--;
                     }else{
                         _this.moveDistance = 0;
