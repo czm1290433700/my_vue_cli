@@ -24,7 +24,7 @@
           <li class="active">预览</li>
         </ul>
         <div class="body-content">
-          <iframe src="/pcPage/cityArea" ref="bodyContent"></iframe>
+          <iframe src="/pcPage/slideShow" ref="bodyContent"></iframe>
         </div>
       </div>
     </div>
@@ -40,12 +40,12 @@ export default {
         name: '组件',
         construction:[
         {
-          name: 'CityArea 城市选择',
-          url: '/pcPage/cityArea'
-        },
-        {
           name: 'slideShow 轮播图',
           url: '/pcPage/slideShow'
+        },
+        {
+          name: 'CityArea 城市选择',
+          url: '/pcPage/cityArea'
         }]
       }]
     }
