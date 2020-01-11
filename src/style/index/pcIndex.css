@@ -48,11 +48,6 @@
     flex-direction: column;
 }
 
-#pcIndex .nav li .active{
-    background-color:#4E5465;
-    border-left: 6px solid #009688;
-}
-
 #pcIndex .nav dl{
     display: none;
     cursor: pointer;

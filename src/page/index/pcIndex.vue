@@ -96,13 +96,15 @@ export default {
      * 鼠标移入title类元素事件
      */
     mouseOverTitle: function(item){
-      tools.addClass(item.currentTarget, "active");
+      item.currentTarget.style.backgroundColor = "#4E5465";
+      item.currentTarget.style.borderLeft = "6px solid #009688";
     },
     /**
      * 鼠标移出title类元素事件
      */
     mouseLeaveTitle: function(item){
-      tools.removeClass(item.currentTarget, "active");
+      item.currentTarget.style.backgroundColor = "#393D49";
+      item.currentTarget.style.borderLeft = "none";
     },
     /**
      * 鼠标移入dd元素事件
