@@ -29,17 +29,39 @@
     padding: 10px 15px;
     display: inline-block;
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 37px;
+}
+
+#pcIndex .nav .title span{
+    position: absolute;
+    right: 150px;
 }
 
 #pcIndex .nav li{
     color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#pcIndex .nav li .active{
+    background-color:#4E5465;
+    border-left: 6px solid #009688;
 }
 
 #pcIndex .nav dl{
     display: none;
     cursor: pointer;
+}
+
+#pcIndex .nav dl .active{
+    background-color:#009688;
+    color:#fff;
+    border: none;
 }
 
 #pcIndex .nav dd{
@@ -51,18 +73,14 @@
 
 #pcIndex .nav .title i{
     float: right;
-    position: relative;
-}
-
-#pcIndex .nav .title i::after{
+    position: absolute;
     width: 0;
     height: 0;
     content: "";
     border: 6px solid transparent;
     border-top: 6px solid #C4C5C9;
-    position: absolute;
-    top: 9px;
-    left: -6px;
+    right: 13px;
+    top: 18px;
 }
 
 #pcIndex .header ul{

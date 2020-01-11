@@ -10,9 +10,11 @@
       <div class="nav">
         <ul v-for="item in content" :key="item.id">
           <li>
-            <span class="title" @click="clickElement($event)">{{item.name}}<i></i></span>
+            <div class="title" @click="clickElement($event)" @mouseover="mouseOverTitle($event)" @mouseleave="mouseLeaveTitle($event)">
+              <span>{{item.name}}</span><i></i>
+            </div>
             <dl>
-              <dd v-for="item in item.construction" :key="item.id" @click="cutBodyContent(item.url)">{{item.name}}</dd>
+              <dd v-for="item in item.construction" :key="item.id" @click="cutBodyContent($event, item.url)" @mouseover="mouseOverDDElement($event)" @mouseleave="mouseLeaveDDElement($event)" ref="ddElement">{{item.name}}</dd>
             </dl>
           </li>
         </ul>
@@ -29,6 +31,7 @@
 </template>
 
 <script>
+import tools from '@/utils/tool.js'
 export default {
   name: 'pcIndex',
   data() {
@@ -50,6 +53,7 @@ export default {
   mounted () {
     /**禁掉body的自带滚动栏，避免与iframe的重复影响页面样式 */
     document.body.style.overflowY = "hidden";
+    tools.addClass(this.$refs.ddElement[0], "active");
   },
   methods: {
     /**
@@ -62,18 +66,59 @@ export default {
      * 点击导航元素
      */
     clickElement: function(item){
-      let dlElement = item.currentTarget.nextElementSibling;
+      let dlElement = item.currentTarget.nextElementSibling,
+          iElement = item.currentTarget.childNodes[1];
       if(dlElement.style.display == "none" || dlElement.style.display == ""){
         dlElement.style.display = "block";
+        iElement.style.borderTop = "6px solid transparent";
+        iElement.style.borderBottom = "6px solid #C4C5C9";
+        iElement.style.top = "11px";
       }else{
-        dlElement.style.display = "none"
+        dlElement.style.display = "none";
+        iElement.style.borderBottom = "6px solid transparent";
+        iElement.style.borderTop = "6px solid #C4C5C9";
+        iElement.style.top = "18px";
       }
     },
     /**
      * 切换bodyContent
      */
-    cutBodyContent: function(url){
+    cutBodyContent: function(item, url){
       this.$refs.bodyContent.src = url;
+      for(let i = 0; i < this.$refs.ddElement.length; i++){
+        if(tools.hasClass(this.$refs.ddElement[i], "active")){
+          tools.removeClass(this.$refs.ddElement[i], "active");
+        }
+      }
+      tools.addClass(item.currentTarget, "active");
+    },
+    /**
+     * 鼠标移入title类元素事件
+     */
+    mouseOverTitle: function(item){
+      tools.addClass(item.currentTarget, "active");
+    },
+    /**
+     * 鼠标移出title类元素事件
+     */
+    mouseLeaveTitle: function(item){
+      tools.removeClass(item.currentTarget, "active");
+    },
+    /**
+     * 鼠标移入dd元素事件
+     */
+    mouseOverDDElement: function(item){
+      item.currentTarget.style.color = "#fff";
+      item.currentTarget.parentNode.parentNode.childNodes[0].style.borderLeft = "6px solid #009688";
+    },
+    /**
+     * 鼠标移出dd元素事件
+     */
+    mouseLeaveDDElement: function(item){
+      if(!tools.hasClass(item.currentTarget, "active")){
+        item.currentTarget.style.color = "#BFC0C2";
+      }
+      item.currentTarget.parentNode.parentNode.childNodes[0].style.borderLeft = "none";
     }
   }
 }
