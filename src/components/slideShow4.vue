@@ -11,7 +11,13 @@
         <div class="arrow-right" @click="moveRight()"></div>
         <div class="options">
             <ul ref="options">
-                <li v-for="item in imageList" :key="item.key"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
         </div>
     </div>
@@ -61,34 +67,46 @@ export default {
          * 向左移动
          */
         moveLeft: function(){
-            this.index++;
-            if(this.index == this.imageList.length - 1){
-                index = 1;
-                //因为动画作了300毫秒，为了看不出来这里也定时300ms再执行
+            let _this = this;
+            setTimeout(function(){
+                tools.removeClass(_this.$refs.options.children[_this.index-- - 1], "active");
+            }, 300)
+            if(this.index == 0){
+                this.index = this.imageList.length - 2;
                 setTimeout(function(){
-                    this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
+                    _this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
                 }, 300)
                 this.$refs.slidePics.style.transitionDuration = "0s";
             }else{
                 this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
                 this.$refs.slidePics.style.transitionDuration = "0.3s";
             }
+            setTimeout(function(){
+                tools.addClass(_this.$refs.options.children[_this.index - 1], "active");
+            }, 300)
         },
         /**
          * 向右移动
          */
         moveRight: function(){
-            this.index--;
-            if(this.index == 0){
-                index = this.imageList.length - 2;
+            let _this = this;
+            setTimeout(function(){
+                tools.removeClass(_this.$refs.options.children[_this.index++ - 1], "active");
+            }, 300)
+            if(this.index == this.imageList.length - 1){
+                this.index = 1;
+                //因为动画作了300毫秒，为了看不出来这里也定时300ms再执行
                 setTimeout(function(){
-                    this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
+                    _this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
                 }, 300)
                 this.$refs.slidePics.style.transitionDuration = "0s";
             }else{
                 this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
                 this.$refs.slidePics.style.transitionDuration = "0.3s";
             }
+            setTimeout(function(){
+                tools.addClass(_this.$refs.options.children[_this.index - 1], "active");
+            }, 300)
         }
     }
 }
