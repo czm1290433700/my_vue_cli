@@ -38,8 +38,9 @@ export default {
                 require("@/assets/images/pic6.jpg"),
                 require("@/assets/images/pic7.jpg")
             ],
-            index: 1,
-            moveWidth: 0
+            index: 1, // 当前显示图片序号
+            moveWidth: 0, // 移动距离
+            timer: new Function() 
         }
     },
     mounted: function(){
@@ -55,26 +56,30 @@ export default {
          * 自动轮播
          */
         autoplay: function(){
-            
+            let _this = this;
+            _this.timer = setInterval(function(){
+                _this.moveRight();
+            }, 1500)
         },
         /**
          * 暂停自动轮播
          */
         pauseAutoplay: function(){
-            
+            clearInterval(this.timer);
         },
         /**
          * 向左移动
          */
         moveLeft: function(){
             let _this = this;
+            _this.index--;
             setTimeout(function(){
-                tools.removeClass(_this.$refs.options.children[_this.index-- - 1], "active");
+                tools.removeClass(_this.$refs.options.children[(_this.index + 1) - 1], "active");
             }, 300)
-            if(this.index == 0){
+            if(this.index == -1){
                 this.index = this.imageList.length - 2;
                 setTimeout(function(){
-                    _this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
+                    _this.$refs.slidePics.style.transform = "translate3d(" + -412 * _this.index + "px, 0, 0)";
                 }, 300)
                 this.$refs.slidePics.style.transitionDuration = "0s";
             }else{
@@ -82,7 +87,11 @@ export default {
                 this.$refs.slidePics.style.transitionDuration = "0.3s";
             }
             setTimeout(function(){
-                tools.addClass(_this.$refs.options.children[_this.index - 1], "active");
+                if(_this.index != 0){
+                    tools.addClass(_this.$refs.options.children[_this.index - 1], "active");
+                }else{
+                    tools.addClass(_this.$refs.options.children[6], "active");
+                }
             }, 300)
         },
         /**
@@ -90,14 +99,19 @@ export default {
          */
         moveRight: function(){
             let _this = this;
+            _this.index++;
             setTimeout(function(){
-                tools.removeClass(_this.$refs.options.children[_this.index++ - 1], "active");
+                if(_this.index != 1){
+                    tools.removeClass(_this.$refs.options.children[(_this.index - 1) - 1], "active");
+                }else{
+                    tools.removeClass(_this.$refs.options.children[6], "active");
+                }
             }, 300)
             if(this.index == this.imageList.length - 1){
                 this.index = 1;
                 //因为动画作了300毫秒，为了看不出来这里也定时300ms再执行
                 setTimeout(function(){
-                    _this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
+                    _this.$refs.slidePics.style.transform = "translate3d(" + -412 * _this.index + "px, 0, 0)";
                 }, 300)
                 this.$refs.slidePics.style.transitionDuration = "0s";
             }else{
