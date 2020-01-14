@@ -2522,5 +2522,5 @@ export default {
 </script>
 
 <style scoped>
-    @import "../style/cityArea/mobileCityArea.css";
+    @import "../style/mobileComponents/mobileCityArea.css";
 </style>

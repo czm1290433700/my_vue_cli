@@ -143,5 +143,5 @@ export default {
 </script>
 
 <style scoped>
-    @import "../style/slideshow/slide4.css";
+    @import "../style/pcComponents/slide4.css";
 </style>

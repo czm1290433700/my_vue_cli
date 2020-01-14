@@ -99,5 +99,5 @@ export default {
 </script>
 
 <style scoped>
-    @import "../style/slideshow/slideshow.css";
+    @import "../style/pcComponents/slideshow.css";
 </style>

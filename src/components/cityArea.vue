@@ -2519,5 +2519,5 @@ export default {
 </script>
 
 <style scoped>
-    @import "../style/cityArea/cityArea.css";
+    @import "../style/pcComponents/cityArea.css";
 </style>

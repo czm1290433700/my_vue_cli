@@ -37,16 +37,33 @@ export default {
   data() {
     return {
       content: [{
-        name: '组件',
+        name: '插件组件',
         construction:[
-        {
-          name: 'slideShow 轮播图',
-          url: '/pcPage/slideShow'
-        },
-        {
-          name: 'CityArea 城市选择',
-          url: '/pcPage/cityArea'
-        }]
+          {
+            name: 'slideShow 轮播图',
+            url: '/pcPage/slideShow'
+          },
+          {
+            name: 'CityArea 城市选择',
+            url: '/pcPage/cityArea'
+          }
+        ]
+      },{
+        name: '展示组件', 
+        construction:[
+          {
+            name: 'lazyLoading 图片懒加载',
+            url: ''
+          }
+        ]
+      },{
+        name: '表单组件',
+        construction:[
+          {
+            name: 'input 输入框',
+            url: ''
+          }
+        ]
       }]
     }
   },
