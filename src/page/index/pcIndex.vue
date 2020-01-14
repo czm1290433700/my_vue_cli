@@ -53,7 +53,7 @@ export default {
         construction:[
           {
             name: 'lazyLoading 图片懒加载',
-            url: ''
+            url: '/pcPage/lazyLoading'
           }
         ]
       },{
@@ -61,7 +61,7 @@ export default {
         construction:[
           {
             name: 'input 输入框',
-            url: ''
+            url: '/pcPage/input'
           }
         ]
       }]

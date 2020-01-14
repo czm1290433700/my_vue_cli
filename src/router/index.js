@@ -6,6 +6,8 @@ import mobileCityAreaPage from '@/page/mobilePage/mobileCityArea'
 import enMobileCityAreaPage from '@/page/mobilePage/enMobileCityArea'
 import cityArea from '@/page/pcPage/cityArea'
 import slideShow from '@/page/pcPage/slideShow'
+import lazyLoading from '@/page/pcPage/lazyLoading'
+import input from '@/page/pcPage/input'
 
 Vue.use(Router)
 
@@ -46,6 +48,16 @@ export default new Router({
       path: '/pcPage/slideShow',
       name: 'slideShow',
       component: slideShow
+    },
+    {
+      path: '/pcPage/lazyLoading',
+      name: 'lazyLoading',
+      component: lazyLoading
+    },
+    {
+      path: '/pcPage/input',
+      name: 'input',
+      component: input
     }
   ]
 })
