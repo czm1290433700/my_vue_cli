@@ -49,14 +49,6 @@ export default {
           }
         ]
       },{
-        name: '展示组件', 
-        construction:[
-          {
-            name: 'lazyLoading 图片懒加载',
-            url: '/pcPage/lazyLoading'
-          }
-        ]
-      },{
         name: '表单组件',
         construction:[
           {
@@ -145,4 +137,5 @@ export default {
 
 <style scoped>
   @import "../../style/index/pcIndex.css";
+  @import "../../style/pcPage/global.css";
 </style>

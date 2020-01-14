@@ -1,13 +1,15 @@
 @charset "UTF-8";
 .header{
-    position: relative;
+    position: fixed;
     width: 10rem;
     height: 1.5rem;
     font-size: .42rem;
     text-align: center;
     line-height: 1.5rem;
     font-weight: 500;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: #fff;
 }
 
 .header .arrow{

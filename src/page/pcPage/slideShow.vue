@@ -36,5 +36,5 @@ export default {
 </script>
 
 <style scoped>
-    @import "../../style/global/global.css";
+    @import "../../style/pcPage/global.css";
 </style>

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+#lazy ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lazy li{
+    width: 5rem;
+    height: 3.1rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    border: 2px solid #7C7C7C;
+    margin-bottom: 0.3rem;
+}
+
+#lazy .lazy-image{
+    width: 5rem;
+    height: 3.1rem;
+    background: url(../../assets/images/loading.gif) no-repeat center;
+    background-size: 1rem 1rem;
+}

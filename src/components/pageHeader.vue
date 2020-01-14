@@ -20,5 +20,5 @@ export default {
 </script>
 
 <style scoped>
-    @import "../style/pageComponents/pageHeader.css";
+    @import "../style/mobileComponents/pageHeader.css";
 </style>

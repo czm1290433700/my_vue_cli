@@ -35,7 +35,16 @@ export default {
 </script>
 
 <style>
-@import "./style/global/global.css";
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
 #app {
   background-color: #fff;
 }

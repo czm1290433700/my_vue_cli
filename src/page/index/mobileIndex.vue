@@ -24,6 +24,9 @@ export default {
       },{
         name: 'enMobileCityArea 英文城市选择',
         url: '/mobilePage/enMobileCityArea'
+      },{
+        name: 'lazyLoading 图片懒加载',
+        url: '/mobilePage/LazyLoading'
       }]
     }
   },

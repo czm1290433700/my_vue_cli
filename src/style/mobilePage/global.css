@@ -1,8 +1,9 @@
 @charset "UTF-8";
 .body{
     width: 10rem;
-    height: 16.3rem;
+    min-height: 17.8rem;
     background-color: #F7F8FA;
-    padding: 1rem 1rem;
+    padding: 2.5rem 1rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
