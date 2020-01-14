@@ -1,6 +1,6 @@
 <template>
     <div id="slide">
-        <div class="arrow-left" @click="moveLeft()"></div>
+        <div class="arrow-left" @click="clickLeftBtn()"></div>
         <div class="slide-body">
             <ul ref="slidePics">
                 <li class="image" v-for="item in imageList" :key="item.key" @mouseover="pauseAutoplay()" @mouseleave="autoplay()" ref="img">
@@ -8,7 +8,7 @@
                 </li>
             </ul>
         </div>
-        <div class="arrow-right" @click="moveRight()"></div>
+        <div class="arrow-right" @click="clickRightBtn()"></div>
         <div class="options">
             <ul ref="options">
                 <li></li>
@@ -74,7 +74,16 @@ export default {
             let _this = this;
             _this.index--;
             setTimeout(function(){
-                tools.removeClass(_this.$refs.options.children[(_this.index + 1) - 1], "active");
+                for(let i = 0; i < _this.$refs.options.children.length; i++){
+                    if(tools.hasClass(_this.$refs.options.children[i], "active")){
+                        tools.removeClass(_this.$refs.options.children[i], "active");
+                    }
+                }
+                if(_this.index != 0){
+                    tools.addClass(_this.$refs.options.children[_this.index - 1], "active");
+                }else{
+                    tools.addClass(_this.$refs.options.children[6], "active");
+                }
             }, 300)
             if(this.index == -1){
                 this.index = this.imageList.length - 2;
@@ -86,13 +95,6 @@ export default {
                 this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
                 this.$refs.slidePics.style.transitionDuration = "0.3s";
             }
-            setTimeout(function(){
-                if(_this.index != 0){
-                    tools.addClass(_this.$refs.options.children[_this.index - 1], "active");
-                }else{
-                    tools.addClass(_this.$refs.options.children[6], "active");
-                }
-            }, 300)
         },
         /**
          * 向右移动
@@ -101,11 +103,12 @@ export default {
             let _this = this;
             _this.index++;
             setTimeout(function(){
-                if(_this.index != 1){
-                    tools.removeClass(_this.$refs.options.children[(_this.index - 1) - 1], "active");
-                }else{
-                    tools.removeClass(_this.$refs.options.children[6], "active");
+                for(let i = 0; i < _this.$refs.options.children.length; i++){
+                    if(tools.hasClass(_this.$refs.options.children[i], "active")){
+                        tools.removeClass(_this.$refs.options.children[i], "active");
+                    }
                 }
+                tools.addClass(_this.$refs.options.children[_this.index - 1], "active");
             }, 300)
             if(this.index == this.imageList.length - 1){
                 this.index = 1;
@@ -118,9 +121,22 @@ export default {
                 this.$refs.slidePics.style.transform = "translate3d(" + -412 * this.index + "px, 0, 0)";
                 this.$refs.slidePics.style.transitionDuration = "0.3s";
             }
-            setTimeout(function(){
-                tools.addClass(_this.$refs.options.children[_this.index - 1], "active");
-            }, 300)
+        },
+        /**
+         * 左移按钮事件
+         */
+        clickLeftBtn: function(){
+            this.pauseAutoplay();
+            this.moveLeft();
+            this.autoplay();
+        },
+        /**
+         * 右移按钮事件
+         */
+        clickRightBtn: function(){
+            this.pauseAutoplay();
+            this.moveRight();
+            this.autoplay();
         }
     }
 }
