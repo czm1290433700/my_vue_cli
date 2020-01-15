@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.input{
+    width: 222px;
+    border-bottom: 1px solid #ddd;
+    padding: 7px 0;
+    display: flex;
+    position: relative;
+}
+
+.input input{
+    border: none;
+    font-size: 16px;
+    padding-left: 7px;
+    /* 去除input默认聚焦带的蓝色边框 */
+    outline: none; 
+}
+
+.input .clear{
+    width: 16px;
+    height: 16px;
+}
+
+.input .eye{
+    width: 17px;
+    height: 9px;
+    margin-top: 7px;
+}
+
+.active{
+    border-bottom: 1px solid #DB0B53;
+}
+
+.queryArea{
+    position: absolute;
+    width: 220px;
+    top: 33px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    overflow-Y: scroll;
+    display: none;
+}
+
+.queryArea li{
+    padding: 8px 6px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.queryArea li:hover{
+    background-color: #ddd;
+}

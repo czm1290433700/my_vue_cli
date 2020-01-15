@@ -52,7 +52,7 @@ export default {
         name: '表单组件',
         construction:[
           {
-            name: 'input 输入框',
+            name: 'input 文本框',
             url: '/pcPage/input'
           }
         ]
