@@ -2,7 +2,7 @@
     <div id="lazy">
         <ul>
             <li v-for="item in imageList" :key="item.id">
-                <img :data-src="item" class="lazy-image">
+                <img :data-src="item" class="lazy-image" ref="lazyImages">
             </li>
         </ul>
     </div>
@@ -20,32 +20,40 @@ export default {
                 require("@/assets/images/pic4.jpg"),
                 require("@/assets/images/pic5.jpg"),
                 require("@/assets/images/pic6.jpg"),
-                require("@/assets/images/pic7.jpg")
+                require("@/assets/images/pic7.jpg"),
+                require("@/assets/images/pic8.jpg"),
+                require("@/assets/images/pic9.jpg"),
+                require("@/assets/images/pic10.jpg"),
+                require("@/assets/images/pic11.jpg"),
+                require("@/assets/images/pic12.jpg")
             ]
         }
+    },
+    mounted: function(){
+        this.initImage();
     },
     methods: {
         /**
          * 初始化图片,
          */
         initImage: function(){
-            if ("IntersectionObserver" in window) {        
-                let lazyImageObserver = new IntersectionObserver((entries, observer) => { 
-                    entries.forEach((entry, index) => {            
-                        // 如果元素可见            
-                        if (entry.isIntersecting) {              
-                            let lazyImage = entry.target              
-                            lazyImage.src = lazyImage.dataset.src              
-                            lazyImage.classList.remove("lazy-image")              
-                            lazyImageObserver.unobserve(lazyImage)              
-                            // this.lazyImages.splice(index, 1)            
-                        }          
-                    })        
+            let lazyImageObserver = new IntersectionObserver((entries, observer) => { 
+                entries.forEach((entry, index) => {            
+                    // 如果元素可见            
+                    if (entry.isIntersecting) { 
+                        //做一个加载的特效
+                        setTimeout(function(){
+                            let lazyImage = entry.target;              
+                            lazyImage.src = lazyImage.dataset.src;              
+                            lazyImage.classList.remove("lazy-image");             
+                            lazyImageObserver.unobserve(lazyImage);    
+                        },300)                                 
+                    }          
                 })        
-                this.lazyImages.forEach(function(lazyImage) {          
-                    lazyImageObserver.observe(lazyImage);        
-                })      
-            }
+            })        
+            this.$refs.lazyImages.forEach(function(lazyImage) {          
+                lazyImageObserver.observe(lazyImage);        
+            })      
         }
     }
 }
