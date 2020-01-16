@@ -7,3 +7,11 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+fieldset{
+    padding: 0.6rem 0.65rem;
+    border: 0.05rem solid #ddd;
+    font-size: 0.4rem;
+    color: #7C7C7C;
+    font-weight: 500;
+}

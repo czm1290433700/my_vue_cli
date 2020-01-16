@@ -2,7 +2,10 @@
     <div>
         <pageHeader v-bind:title="title"></pageHeader>
         <div class="body">
-            <Loading1></Loading1>
+            <fieldset>
+                <legend>loading1</legend>
+                <Loading1></Loading1>
+            </fieldset>
         </div>
     </div>
 </template>
