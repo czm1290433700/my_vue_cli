@@ -1,0 +1,93 @@
+@charset "UTF-8";
+#loading1{
+    color: #9B9B9B;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    animation: rotate 0.8s steps(12) infinite;
+}
+
+#loading1 i{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}    
+
+#loading1 i::before{
+    display: block;
+    width: 0.05rem;
+    height: 30%;
+    margin: 0 auto;
+    background-color: currentColor;
+    border-radius: 40%;
+    content: ' ';
+}
+
+#loading1 i:nth-of-type(1){
+    transform: rotate(30deg);
+    opacity: 1;
+}
+
+#loading1 i:nth-of-type(2){
+    transform: rotate(60deg);
+    opacity: 0.916;
+}
+
+#loading1 i:nth-of-type(3){
+    transform: rotate(90deg);
+    opacity: 0.833;
+}
+
+#loading1 i:nth-of-type(4){
+    transform: rotate(120deg);
+    opacity: 0.75;
+}
+
+#loading1 i:nth-of-type(5){
+    transform: rotate(150deg);
+    opacity: 0.667;
+}
+
+#loading1 i:nth-of-type(6){
+    transform: rotate(180deg);
+    opacity: 0.583;
+}
+
+#loading1 i:nth-of-type(7){
+    transform: rotate(210deg);
+    opacity: 0.5;
+}
+
+#loading1 i:nth-of-type(8){
+    transform: rotate(240deg);
+    opacity: 0.417;
+}
+
+#loading1 i:nth-of-type(9){
+    transform: rotate(270deg);
+    opacity: 0.333;
+}
+
+#loading1 i:nth-of-type(10){
+    transform: rotate(300deg);
+    opacity: 0.25;
+}
+
+#loading1 i:nth-of-type(11){
+    transform: rotate(330deg);
+    opacity: 0.167;
+}
+
+#loading1 i:nth-of-type(12){
+    transform: rotate(360deg);
+    opacity: 0.083;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

@@ -27,6 +27,9 @@ export default {
       },{
         name: 'lazyLoading 图片懒加载',
         url: '/mobilePage/LazyLoading'
+      },{
+        name: 'loading 加载',
+        url: 'mobilePage/loading'
       }]
     }
   },
