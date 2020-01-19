@@ -1,30 +1,47 @@
-# my_vue_cli
+# my VueCli
 
-> A Vue.js project
+### 项目介绍
 
-## Build Setup
+这是一个基于vue-cli2的一个脚手架项目，里面总结了我平时实习学习自己写的一些组件<br>
 
-``` bash
-# install dependencies
-npm install
+pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） ，移动端ui样式参考vant移动端页面样式（https://youzan.github.io/vant/mobile.html#/zh-CN/） ，页面布局和js交互动画皆为用css和js独立完成
 
-# serve with hot reload at localhost:8080
-npm run dev
+做了pc端和移动端的初始化判断，可以根据启动项目的设备类型显示不同类型的页面
 
-# build for production with minification
-npm run build
+### 包含内容
 
-# build for production and view the bundle analyzer report
-npm run build --report
+目前pc端组件有以下部分：
 
-# run unit tests
-npm run unit
+- 插件组件
+    1.  slideShow 轮播图：做了几套轮播图，前三种主要基于绝对布局来实现，最后一种基于css3的translate3d属性来实现
+    2.  CityArea 城市选择： ui样式参考华住会pc端wifi登录页面城市选择
+- 表单组件
+    1.  input 文本框：包括样式优化的输入框，密码框，和提供模糊查询的输入框
+- 页面组件
+    1.  graph 统计图：包括折线统计图和条形统计图
 
-# run e2e tests
-npm run e2e
+移动端有以下部分：
 
-# run all tests
-npm test
+- mobileCityArea 城市选择: ui样式参考华住会移动端wifi登录页面城市选择
+
+- enMobileCityArea 英文城市选择
+
+- lazyLoading 图片懒加载：基于IntersectionObserver Api实现
+
+- loading 加载: 纯css3动画实现
+
+### 样式展示
+
+- pc端首页页面<br>
+![pc端图片](/src/assets/pc.png)
+- 移动端首页页面<br>
+![移动端图片](/src/assets/mobile.png)
+
+### 运行项目
+
+``` 
+npm i  // 安装相关依赖
+npm start // 启动项目
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+github链接：https://github.com/czm1290433700/my_vue_cli
