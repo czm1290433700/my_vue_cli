@@ -19,7 +19,7 @@ export default {
                 xData: [0, 1, 2, 3, 4, 5],
                 yData: [1, 2, 3, 4, 5], 
                 padding: 50, 
-                data: [2, 3, 4, 3.5, 4.5]
+                data: [5, 3, 4, 3.5, 4.5]
             }
         }
     },
