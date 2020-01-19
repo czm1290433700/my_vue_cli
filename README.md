@@ -13,22 +13,22 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 目前pc端组件有以下部分：
 
 - 插件组件
-    1.  slideShow 轮播图：做了几套轮播图，前三种主要基于绝对布局来实现，最后一种基于css3的translate3d属性来实现
-    2.  CityArea 城市选择： ui样式参考华住会pc端wifi登录页面城市选择
+    1.  **slideShow 轮播图**：做了几套轮播图，前三种主要基于绝对布局来实现，最后一种基于**css3**的**translate3d**属性来实现
+    2.  **CityArea 城市选择**： ui样式参考华住会pc端wifi登录页面城市选择
 - 表单组件
-    1.  input 文本框：包括样式优化的输入框，密码框，和提供模糊查询的输入框
+    1.  **input 文本框**：包括样式优化的输入框，密码框，和提供模糊查询的输入框
 - 页面组件
-    1.  graph 统计图：包括折线统计图和条形统计图
+    1.  **graph 统计图**：包括折线统计图和条形统计图
 
 移动端有以下部分：
 
-- mobileCityArea 城市选择: ui样式参考华住会移动端wifi登录页面城市选择
+- **mobileCityArea 城市选择**: ui样式参考华住会移动端wifi登录页面城市选择
 
-- enMobileCityArea 英文城市选择
+- **enMobileCityArea** 英文城市选择
 
-- lazyLoading 图片懒加载：基于IntersectionObserver Api实现
+- **lazyLoading** 图片懒加载：基于**IntersectionObserver Api**实现
 
-- loading 加载: 纯css3动画实现
+- **loading** 加载: 纯css3动画实现
 
 ### 样式展示
 
