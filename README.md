@@ -33,9 +33,9 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 ### 样式展示
 
 - pc端首页页面<br>
-![pc端图片](https://github.com/czm1290433700/my_vue_cli/raw/master/src/assets/pc.png)
+![pc端图片](imgs/pc.png?raw=true)
 - 移动端首页页面<br>
-![移动端图片](https://github.com/czm1290433700/my_vue_cli/raw/master/src/assets/mobile.png)
+![移动端图片](imgs/mobile.png?raw=true)
 
 ### 运行项目
 
