@@ -36,27 +36,39 @@ export default {
   name: 'pcIndex',
   data() {
     return {
-      content: [{
-        name: '插件组件',
-        construction:[
-          {
-            name: 'slideShow 轮播图',
-            url: '/pcPage/slideShow'
-          },
-          {
-            name: 'CityArea 城市选择',
-            url: '/pcPage/cityArea'
-          }
-        ]
-      },{
-        name: '表单组件',
-        construction:[
-          {
-            name: 'input 文本框',
-            url: '/pcPage/input'
-          }
-        ]
-      }]
+      content: [
+        {
+          name: '插件组件',
+          construction:[
+            {
+              name: 'slideShow 轮播图',
+              url: '/pcPage/slideShow'
+            },
+            {
+              name: 'CityArea 城市选择',
+              url: '/pcPage/cityArea'
+            }
+          ]
+        },
+        {
+          name: '表单组件',
+          construction:[
+            {
+              name: 'input 文本框',
+              url: '/pcPage/input'
+            }
+          ]
+        },
+        {
+          name: '页面组件',
+          construction:[
+            {
+              name: 'graph 统计图',
+              url: '/pcPage/graph'
+            }
+          ]
+        }
+      ]
     }
   },
   mounted () {

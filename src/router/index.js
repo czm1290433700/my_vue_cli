@@ -9,6 +9,7 @@ import slideShow from '@/page/pcPage/slideShow'
 import lazyLoading from '@/page/mobilePage/lazyLoading'
 import input from '@/page/pcPage/input'
 import loading from '@/page/mobilePage/loading'
+import graph from '@/page/pcPage/graph'
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/mobilePage/loading',
       name: 'loading',
       component: loading
+    },
+    {
+      path: '/pcPage/graph',
+      name: 'graph',
+      component: graph
     }
   ]
 })
