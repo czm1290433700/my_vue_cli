@@ -6,6 +6,10 @@
                 <legend>loading1</legend>
                 <Loading1></Loading1>
             </fieldset>
+            <fieldset>
+                <legend>Loading2</legend>
+                <Loading2></Loading2>
+            </fieldset>
         </div>
     </div>
 </template>
@@ -13,6 +17,7 @@
 <script>
 import pageHeader from '@/components/pageHeader'
 import Loading1 from '@/components/loading1'
+import Loading2 from '@/components/loading2'
 export default {
     name: 'loading',
     data() {
@@ -22,7 +27,8 @@ export default {
     },
     components: {
         pageHeader,
-        Loading1
+        Loading1,
+        Loading2
     }
 }
 </script>
