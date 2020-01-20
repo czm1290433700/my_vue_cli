@@ -26,11 +26,11 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **mobileCityArea 城市选择**: ui样式参考华住会移动端wifi登录页面城市选择
 
-- **enMobileCityArea** 英文城市选择
+- **enMobileCityArea 英文城市选择**
 
-- **lazyLoading** 图片懒加载：基于**IntersectionObserver Api**实现
+- **lazyLoading 图片懒加载**：基于**IntersectionObserver Api**实现
 
-- **loading** 加载: 纯css3动画实现, 目前实现了3种loading效果，一种最常见的遮罩层loading,还有企鹅FM上专题活动的loading以及app中的常用loading
+- **loading 加载**: 纯css3动画实现, 目前实现了3种loading效果，一种最常见的遮罩层loading,还有企鹅FM上专题活动的loading以及app中的常用loading
 
 ### 样式展示
 
