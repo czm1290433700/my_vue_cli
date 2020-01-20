@@ -91,7 +91,7 @@
     width: 0.12rem;
     height: 1.3rem;
     background-color: #3198FC;
-    animation: adjustDelay-data-v-6fa3e786 1.2s infinite ease-in-out;
+    animation: adjustDelay 1.2s infinite ease-in-out;
     margin-right: 0.1rem;
 }
 
@@ -111,6 +111,27 @@
     animation-delay: -0.8s;
 }
 
+#loading3{
+    display: flex;
+}
+
+#loading3 > div{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #3198FC;
+    border-radius: 0.8rem;
+    margin-right: 0.15rem;
+    animation: largerDelay 1.4s infinite ease-in-out both;
+}
+
+#loading3 .round1{
+    animation-delay: -0.32s;
+}
+
+#loading3 .round2{
+    animation-delay: -0.16s;
+}
+
 @keyframes rotate{
     0%{
         transform: rotateZ(0deg);
@@ -126,5 +147,14 @@
     }
     20%{
         transform: scaleY(1.0);
+    }
+}
+
+@keyframes largerDelay{
+    0%, 80%, 100%{
+        transform: scale(0);
+    }
+    40%{
+        transform: scale(1.0);
     }
 }
