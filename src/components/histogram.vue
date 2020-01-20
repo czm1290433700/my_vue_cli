@@ -94,19 +94,18 @@ export default {
          * 画箭头
          */
         paintArrow: function(){
-            /** y轴的箭头 */
-            this.ctx.fillStyle = "#000";
-            this.ctx.beginPath();
-            this.ctx.moveTo(this.padding - 2.5, this.padding);
-            this.ctx.lineTo(this.padding + 2.5, this.padding);
-            this.ctx.lineTo(this.padding, this.padding - 7);
-            this.ctx.closePath();
-            this.ctx.stroke();
             /** x轴的箭头 */
             this.ctx.beginPath();
             this.ctx.moveTo(this.canvasWidth - this.padding, this.canvasHeight - this.padding - 2.5);
             this.ctx.lineTo(this.canvasWidth - this.padding, this.canvasHeight - this.padding + 2.5);
             this.ctx.lineTo(this.canvasWidth - this.padding + 7, this.canvasHeight - this.padding);
+            this.ctx.closePath();
+            this.ctx.stroke();
+            /** y轴的箭头 */
+            this.ctx.beginPath();
+            this.ctx.moveTo(this.padding - 2.5, this.padding);
+            this.ctx.lineTo(this.padding + 2.5, this.padding);
+            this.ctx.lineTo(this.padding, this.padding - 7);
             this.ctx.closePath();
             this.ctx.stroke();
         },
@@ -121,22 +120,20 @@ export default {
                 var ev = ev || window.event;
                 var flag = false;
                 for (let i = 0; i < _this.data.length; i++){
-                    for (let i = 0; i < _this.data.length; i++){
-                        if(ev.offsetX > _this.left[i] && ev.offsetX < _this.right[i] && ev.offsetY > _this.top[i] && ev.offsetY < _this.bottom[i]){
-                            flag = true;
-                            /** 避免鼠标在快速从一个矩形移动到另一个，导致有之前原先的矩形没有被恢复为原来的颜色 */
-                            if(_this.mousemoveIndex){
-                                _this.ctx.clearRect(_this.left[_this.mousemoveIndex - 1], _this.top[_this.mousemoveIndex - 1] - 15, xLength / 2, yLength * _this.data[_this.mousemoveIndex - 1] + 15);
-                                _this.ctx.fillStyle = '#5FB878';
-                                _this.ctx.fillRect(xLength * (_this.mousemoveIndex - 0.25) + _this.padding, _this.canvasHeight - _this.padding - yLength * _this.data[_this.mousemoveIndex - 1], xLength / 2, yLength * _this.data[_this.mousemoveIndex - 1]);
-                                _this.mousemoveIndex = -1;
-                            }
-                            _this.mousemoveIndex = i + 1;
-                            _this.ctx.clearRect(_this.left[i], _this.top[i], xLength / 2, yLength * _this.data[i]);
-                            _this.ctx.fillStyle = '#009688';
-                            _this.ctx.fillRect(xLength * (i + 1 - 0.25) + _this.padding, _this.canvasHeight - _this.padding - yLength * _this.data[i], xLength / 2, yLength * _this.data[i]);
-                            _this.ctx.fillText(_this.data[i], (_this.left[i] + _this.right[i]) / 2, _this.top[i] - 5);
+                    if(ev.offsetX > _this.left[i] && ev.offsetX < _this.right[i] && ev.offsetY > _this.top[i] && ev.offsetY < _this.bottom[i]){
+                        flag = true;
+                        /** 避免鼠标在快速从一个矩形移动到另一个，导致有之前原先的矩形没有被恢复为原来的颜色 */
+                        if(_this.mousemoveIndex){
+                            _this.ctx.clearRect(_this.left[_this.mousemoveIndex - 1], _this.top[_this.mousemoveIndex - 1] - 15, xLength / 2, yLength * _this.data[_this.mousemoveIndex - 1] + 15);
+                            _this.ctx.fillStyle = '#5FB878';
+                            _this.ctx.fillRect(xLength * (_this.mousemoveIndex - 0.25) + _this.padding, _this.canvasHeight - _this.padding - yLength * _this.data[_this.mousemoveIndex - 1], xLength / 2, yLength * _this.data[_this.mousemoveIndex - 1]);
+                            _this.mousemoveIndex = -1;
                         }
+                        _this.mousemoveIndex = i + 1;
+                        _this.ctx.clearRect(_this.left[i], _this.top[i], xLength / 2, yLength * _this.data[i]);
+                        _this.ctx.fillStyle = '#009688';
+                        _this.ctx.fillRect(xLength * (i + 1 - 0.25) + _this.padding, _this.canvasHeight - _this.padding - yLength * _this.data[i], xLength / 2, yLength * _this.data[i]);
+                        _this.ctx.fillText(_this.data[i], (_this.left[i] + _this.right[i]) / 2, _this.top[i] - 5);
                     }
                 }
                 if(!flag && _this.mousemoveIndex){
