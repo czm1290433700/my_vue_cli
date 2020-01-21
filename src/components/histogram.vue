@@ -149,5 +149,5 @@ export default {
 </script>
 
 <style scoped>
-    @import "../style/pcComponents/histogram.css";
+   
 </style>
