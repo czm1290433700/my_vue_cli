@@ -47,6 +47,10 @@ export default {
             {
               name: 'CityArea 城市选择',
               url: '/pcPage/cityArea'
+            },
+            {
+              name: 'calendar 日历控件',
+              url: '/pcPage/calendarWidgets'
             }
           ]
         },

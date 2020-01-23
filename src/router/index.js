@@ -10,6 +10,7 @@ import lazyLoading from '@/page/mobilePage/lazyLoading'
 import input from '@/page/pcPage/input'
 import loading from '@/page/mobilePage/loading'
 import graph from '@/page/pcPage/graph'
+import calendarWidgets from '@/page/pcPage/calendarWidgets'
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
       path: '/pcPage/graph',
       name: 'graph',
       component: graph
+    },
+    {
+      path: '/pcPage/calendarWidgets',
+      name: 'calendarWidgets',
+      component: calendarWidgets
     }
   ]
 })
