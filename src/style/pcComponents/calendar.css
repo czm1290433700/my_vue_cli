@@ -64,9 +64,11 @@
 #calendar .calendarWidget{
     width: 264px;
     border: 1px solid #D9E1E9;
+    -webkit-box-shadow: 2px 2px 3px #D9E1E9;
     box-shadow: 2px 2px 3px #D9E1E9;
     color: #5C6570;
     font-size: 14px;
+    margin-top: 5px;
 }
 
 #calendar .calendarWidget .title{
@@ -79,28 +81,60 @@
 }
 
 #calendar .calendarWidget .date{
+    width: 100px;
     padding-left: 10px;
 }
 
 #calendar .week ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    padding: 0 20px;
+    padding: 0 10px;
     font-weight: 600;
     color: #A3ADBC;
     margin: 5px 0;
 }
 
 #calendar .week li{
-    margin-right: 20px;
+    width: 50px;
+    text-align: center;
 }
 
 #calendar .calendarBody ul{
     display: flex;
-    padding: 0 20px;
+    padding: 0 10px;
     color: #7F8A97;
 }
 
 #calendar .calendarBody li{
-    margin-right: 26.5px;
+    width: 50px;
+    text-align: center;
     padding: 6px 0;
+}
+
+#calendar .calendarBody li:hover{
+    background-color: #EAEAEA;
+    cursor: pointer;
+}
+
+#calendar .calendarBody .notThisMonth{
+    color: #D7D7D7;
+}
+
+#calendar .calendarBody .notThisMonth:hover{
+    color: #7F8A97;
+    background-color: #EAEAEA;
+    cursor: pointer;
+}
+
+#calendar .calendarBody .today{
+    color: #fff;
+    background-color: #009688;
+    cursor: pointer;
+}
+
+#calendar .calendarBody .today:hover{
+    color: #fff;
+    background-color: #009688;
+    cursor: pointer;
 }
