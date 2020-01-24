@@ -2,9 +2,16 @@
     <div class="myVue">
       <h1>My VueCli</h1>
       <div class="components">
-        <span class="title">components</span>
+        <span class="title">插件组件</span>
         <ul>
-          <li v-for="item in components" :key="item.index" @click="clickConnect(item.url)">
+          <li v-for="item in pluginComponents" :key="item.index" @click="clickConnect(item.url)">
+            <span class="name">{{item.name}}</span>
+            <span class="arrow"></span>
+          </li>
+        </ul>
+        <span class="title">页面组件</span>
+        <ul>
+          <li v-for="item in pageComponents" :key="item.index" @click="clickConnect(item.url)">
             <span class="name">{{item.name}}</span>
             <span class="arrow"></span>
           </li>
@@ -18,19 +25,42 @@ export default {
   name: 'mobileIndex',
   data() {
     return {
-      components:[{
-        name: 'mobileCityArea 城市选择',
-        url: '/mobilePage/mobileCityArea'
-      },{
-        name: 'enMobileCityArea 英文城市选择',
-        url: '/mobilePage/enMobileCityArea'
-      },{
-        name: 'lazyLoading 图片懒加载',
-        url: '/mobilePage/LazyLoading'
-      },{
-        name: 'loading 加载',
-        url: 'mobilePage/loading'
-      }]
+      pluginComponents:[
+        {
+          name: 'mobileCityArea 城市选择',
+          url: '/mobilePage/mobileCityArea'
+        },
+        {
+          name: 'enMobileCityArea 英文城市选择',
+          url: '/mobilePage/enMobileCityArea'
+        },
+        {
+          name: 'calendar 日历',
+          url: 'mobilePage/calendar'
+        }
+      ],
+      pageComponents:[
+        {
+          name: 'loading 加载',
+          url: 'mobilePage/loading'
+        },
+        {
+          name: 'lazyLoading 图片懒加载',
+          url: '/mobilePage/LazyLoading'
+        },
+        {
+          name: 'DateTimePicker 时间选择',
+          url: '/mobilePage/dataTimePicker'
+        },
+        {
+          name: 'NumberKeyBorder 数字键盘',
+          url: '/mobilePage/NumberKeyBorder'
+        },
+        {
+          name: 'PasswordInput 密码输入框',
+          url: '/mobilePage/passwordInput'
+        }
+      ]
     }
   },
   methods: {

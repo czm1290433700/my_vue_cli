@@ -51,6 +51,10 @@ export default {
             {
               name: 'calendar 日历控件',
               url: '/pcPage/calendarWidgets'
+            },
+            {
+              name: 'shuttleBox 穿梭框',
+              url: '/pcPage/shuttleBox'
             }
           ]
         },
@@ -60,6 +64,22 @@ export default {
             {
               name: 'input 文本框',
               url: '/pcPage/input'
+            },
+            {
+              name: 'table 表格',
+              url: '/pcPage/table'
+            },
+            {
+              name: 'page 分页',
+              url: '/pcPage/page'
+            },
+            {
+              name: 'fileUpload 文件上传',
+              url: '/pcPage/fileUpload'
+            },
+            {
+              name: 'treeBox 树型框',
+              url: '/pcPage/treeBox'
             }
           ]
         },
@@ -69,6 +89,10 @@ export default {
             {
               name: 'graph 统计图',
               url: '/pcPage/graph'
+            },
+            {
+              name: 'codeBox 代码框',
+              url: '/pcPage/codeBox'
             }
           ]
         }
