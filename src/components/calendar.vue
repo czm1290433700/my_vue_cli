@@ -1,6 +1,6 @@
 <template>
     <div id="calendar">
-        <input type="text" class="timeInput" placeholder="请选择时间" @focus="calendarShow = true"/>
+        <input type="text" class="timeInput" placeholder="请选择时间" @focus="calendarShow = true" ref="timeInput">
         <div class="calendarWidget" v-show="calendarShow">
             <div class="title">
                 <div class="left" @click="yearBack()">
@@ -32,22 +32,22 @@
             </div>
             <div class="calendarBody">
                 <ul ref="week1">
-                    <li v-for="item in week1" :key="item.id" @click="chooseDate($event)">{{item}}</li>
+                    <li v-for="item in week1" :key="item.id" @click="chooseDate($event, 1)">{{item}}</li>
                 </ul>
                 <ul ref="week2">
-                    <li v-for="item in week2" :key="item.id" @click="chooseDate($event)">{{item}}</li>
+                    <li v-for="item in week2" :key="item.id" @click="chooseDate($event, 2)">{{item}}</li>
                 </ul>
                 <ul ref="week3">
-                    <li v-for="item in week3" :key="item.id" @click="chooseDate($event)">{{item}}</li>
+                    <li v-for="item in week3" :key="item.id" @click="chooseDate($event, 3)">{{item}}</li>
                 </ul>
                 <ul ref="week4">
-                    <li v-for="item in week4" :key="item.id" @click="chooseDate($event)">{{item}}</li>
+                    <li v-for="item in week4" :key="item.id" @click="chooseDate($event, 4)">{{item}}</li>
                 </ul>
                 <ul ref="week5">
-                    <li v-for="item in week5" :key="item.id" @click="chooseDate($event)">{{item}}</li>
+                    <li v-for="item in week5" :key="item.id" @click="chooseDate($event, 5)">{{item}}</li>
                 </ul>
                 <ul ref="week6">
-                    <li v-for="item in week6" :key="item.id" @click="chooseDate($event)">{{item}}</li>
+                    <li v-for="item in week6" :key="item.id" @click="chooseDate($event, 6)">{{item}}</li>
                 </ul>
             </div>
         </div>
@@ -271,6 +271,34 @@ export default {
                 default:
                     break;
             }
+        },
+        /** 
+         * 选择时间
+         */
+        chooseDate: function(item, weekIndex){
+            var month = this.month,
+                year = this.year;
+            if(weekIndex == 1){
+                if(item.currentTarget.classList.contains('notThisMonth')){
+                    if(month == 1){
+                        month = 12;
+                        year--;
+                    }else{
+                        month--;
+                    }
+                }
+            }else if(weekIndex == 5 || weekIndex == 6){
+                 if(item.currentTarget.classList.contains('notThisMonth')){
+                    if(month == 12){
+                        month = 1;
+                        year++;
+                    }else{
+                        month++;
+                    }
+                }   
+            }
+            this.$refs.timeInput.value = year + '-' + month + '-' + item.currentTarget.childNodes[0].textContent;
+            this.calendarShow = false;
         }
     }
 }
