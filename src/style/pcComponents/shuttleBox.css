@@ -15,13 +15,21 @@
 }
 
 #shuttleBox li{
-    padding: 6px 6px;
+    padding: 10px 10px;
 }
 
 #shuttleBox .move{
     margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #shuttleBox .move-left, .move-right{
     border: 1px solid #ddd;
+    padding: 5px 13px;
+}
+
+#shuttleBox .move-right{
+    margin-bottom: 12px;
 }

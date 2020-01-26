@@ -7,8 +7,12 @@
             </ul>
         </div>
         <div class="move">
-            <div class="move-left"><i></i></div>
-            <div class="move-right"><i></i></div>
+            <div class="move-right">
+                <rightDoubleArrow></rightDoubleArrow>
+            </div>
+            <div class="move-left">
+                <leftDoubleArrow></leftDoubleArrow>
+            </div>
         </div>
         <div class="list">
             <ul>
@@ -20,9 +24,14 @@
 </template>
 
 <script>
+import rightDoubleArrow from '@/components/rightDoubleArrow'
+import leftDoubleArrow from '@/components/leftDoubleArrow'
 export default {
     name: 'shuttleBox',
-    props: ['shuttleBox']
+    props: ['shuttleBox'],
+    components: {
+        rightDoubleArrow, leftDoubleArrow
+    }
 }
 </script>
 
