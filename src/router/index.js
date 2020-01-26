@@ -11,6 +11,8 @@ import input from '@/page/pcPage/input'
 import loading from '@/page/mobilePage/loading'
 import graph from '@/page/pcPage/graph'
 import calendarWidgets from '@/page/pcPage/calendarWidgets'
+import shuttleBox from '@/page/pcPage/shuttleBox'
+import icon from '@/page/pcPage/icon'
 
 Vue.use(Router)
 
@@ -76,6 +78,16 @@ export default new Router({
       path: '/pcPage/calendarWidgets',
       name: 'calendarWidgets',
       component: calendarWidgets
+    },
+    {
+      path: '/pcPage/shuttleBox',
+      name: 'shuttleBox',
+      component: shuttleBox
+    },
+    {
+      path: '/pcPage/icon',
+      name: 'icon',
+      component: icon
     }
   ]
 })

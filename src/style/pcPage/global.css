@@ -17,3 +17,7 @@ fieldset legend{
     color: #464646;
     font-weight: 300;
 }
+
+fieldset .componentsArea{
+    display: flex;
+}

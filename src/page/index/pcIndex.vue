@@ -93,6 +93,10 @@ export default {
             {
               name: 'codeBox 代码框',
               url: '/pcPage/codeBox'
+            },
+            {
+              name: 'icon 图标',
+              url: '/pcPage/icon'
             }
           ]
         }

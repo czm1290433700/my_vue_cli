@@ -1,0 +1,27 @@
+@charset "UTF-8";
+#shuttleBox{
+    display: flex;
+}
+
+#shuttleBox .list{
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color:#666;
+    width: 200px;
+}
+
+#shuttleBox .title{
+    border-bottom: 1px solid #ddd;
+}
+
+#shuttleBox li{
+    padding: 6px 6px;
+}
+
+#shuttleBox .move{
+    margin: 0 10px;
+}
+
+#shuttleBox .move-left, .move-right{
+    border: 1px solid #ddd;
+}

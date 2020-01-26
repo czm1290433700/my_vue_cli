@@ -1,0 +1,137 @@
+@charset "UTF-8";
+#leftArrow, #rightArrow, #leftDoubleArrow, #rightDoubleArrow{
+    position: relative;
+}
+
+#leftArrow i::before{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #A4ADBF;
+    position: absolute;
+    top: 0;
+}
+
+#leftArrow i::after{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+#rightArrow i::before{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #A4ADBF;
+    position: absolute;
+    top: 0;
+}
+
+#rightArrow i::after{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: -2px;
+}
+
+#leftDoubleArrow i:first-of-type::before{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #A4ADBF;
+    position: absolute;
+    top: 0;
+}
+
+#leftDoubleArrow i:first-of-type::after{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+#leftDoubleArrow i:last-of-type::before{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #A4ADBF;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+#leftDoubleArrow i:last-of-type::after{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
+#rightDoubleArrow i:first-of-type{
+    z-index: 10;
+}
+
+#rightDoubleArrow i:first-of-type::before{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #A4ADBF;
+    position: absolute;
+    top: 0;
+    left: 9px;
+}
+
+#rightDoubleArrow i:first-of-type::after{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
+#rightDoubleArrow i:last-of-type::before{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #A4ADBF;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+#rightDoubleArrow i:last-of-type::after{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
