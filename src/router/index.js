@@ -13,6 +13,7 @@ import graph from '@/page/pcPage/graph'
 import calendarWidgets from '@/page/pcPage/calendarWidgets'
 import shuttleBox from '@/page/pcPage/shuttleBox'
 import icon from '@/page/pcPage/icon'
+import select from '@/page/pcPage/select'
 
 Vue.use(Router)
 
@@ -88,6 +89,11 @@ export default new Router({
       path: '/pcPage/icon',
       name: 'icon',
       component: icon
+    },
+    {
+      path: '/pcPage/select',
+      name: 'select',
+      component: select
     }
   ]
 })

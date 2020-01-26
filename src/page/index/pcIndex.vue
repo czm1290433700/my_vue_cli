@@ -80,6 +80,10 @@ export default {
             {
               name: 'treeBox 树型框',
               url: '/pcPage/treeBox'
+            },
+            {
+              name: 'select 选择框',
+              url: '/pcPage/select'
             }
           ]
         },
