@@ -2,7 +2,7 @@
     <div class="pageArea">
         <fieldset>
             <legend>选择框</legend>
-            <selectBox></selectBox>
+            <selectBox v-bind:color="color"></selectBox>
         </fieldset>
     </div>
 </template>
@@ -11,6 +11,14 @@
 import selectBox from '@/components/selectBox'
 export default {
     name: 'selectPage',
+    data() {
+        return {
+            color: {
+                hookColor: '#fff',
+                backgroundColor: '#5FB878'
+            }
+        }
+    },
     components: {
         selectBox
     }
