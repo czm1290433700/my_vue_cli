@@ -8,10 +8,10 @@
         </div>
         <div class="move">
             <div class="move-right">
-                <rightDoubleArrow></rightDoubleArrow>
+                <rightDoubleArrow v-bind:color="color"></rightDoubleArrow>
             </div>
             <div class="move-left">
-                <leftDoubleArrow></leftDoubleArrow>
+                <leftDoubleArrow v-bind:color="color"></leftDoubleArrow>
             </div>
         </div>
         <div class="list">
@@ -29,6 +29,14 @@ import leftDoubleArrow from '@/components/leftDoubleArrow'
 export default {
     name: 'shuttleBox',
     props: ['shuttleBox'],
+    data() {
+        return {
+            color: {
+                arrowColor: '#C9CACE',
+                backgroundColor: '#fff'
+            }
+        }
+    },
     components: {
         rightDoubleArrow, leftDoubleArrow
     }

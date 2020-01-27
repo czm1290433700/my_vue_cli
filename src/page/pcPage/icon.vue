@@ -3,15 +3,15 @@
         <fieldset>
             <legend>单箭头</legend>
             <div class="componentsArea">
-                <leftArrow style="margin-right: 50px"></leftArrow>
-                <rightArrow></rightArrow>
+                <leftArrow style="margin-right: 50px" v-bind:color="color"></leftArrow>
+                <rightArrow v-bind:color="color"></rightArrow>
             </div>
         </fieldset>
         <fieldset>
             <legend>双箭头</legend>
             <div class="componentsArea">
-                <leftDoubleArrow style="margin-right: 50px"></leftDoubleArrow>
-                <rightDoubleArrow></rightDoubleArrow>
+                <leftDoubleArrow style="margin-right: 50px" v-bind:color="color"></leftDoubleArrow>
+                <rightDoubleArrow v-bind:color="color"></rightDoubleArrow>
             </div>
         </fieldset>
     </div>
@@ -24,6 +24,14 @@ import leftDoubleArrow from '@/components/leftDoubleArrow'
 import rightDoubleArrow from '@/components/rightDoubleArrow'
 export default {
     name: 'icon',
+    data() {
+        return {
+            color: {
+                arrowColor: '#A4ADBF',
+                backgroundColor: '#fff'
+            }
+        }
+    },
     components: {
         leftArrow, rightArrow, leftDoubleArrow, rightDoubleArrow
     }

@@ -1,12 +1,18 @@
 <template>
     <div id="leftArrow">
-        <i></i>
+        <div ref="arrow1"></div>
+        <div ref="arrow2"></div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'leftArrow'
+    name: 'leftArrow',
+    props: ['color'],
+    mounted: function(){
+        this.$refs.arrow1.style.borderRight = '8px solid ' + this.$props.color.arrowColor;
+        this.$refs.arrow2.style.borderRight = '8px solid ' + this.$props.color.backgroundColor;
+    }
 }
 </script>
 

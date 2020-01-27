@@ -8,7 +8,7 @@
     height: 20px;
 }
 
-#leftArrow i::before{
+#leftArrow div:first-of-type{
     width: 0;
     height: 0;
     content: '';
@@ -18,7 +18,7 @@
     top: 0;
 }
 
-#leftArrow i::after{
+#leftArrow div:last-of-type{
     width: 0;
     height: 0;
     content: '';
@@ -29,7 +29,7 @@
     left: 2px;
 }
 
-#rightArrow i::before{
+#rightArrow div:first-of-type{
     width: 0;
     height: 0;
     content: '';
@@ -39,7 +39,7 @@
     top: 0;
 }
 
-#rightArrow i::after{
+#rightArrow div:last-of-type{
     width: 0;
     height: 0;
     content: '';
@@ -50,7 +50,7 @@
     left: -2px;
 }
 
-#leftDoubleArrow i:first-of-type::before{
+#leftDoubleArrow div:nth-of-type(1){
     width: 0;
     height: 0;
     content: '';
@@ -61,7 +61,7 @@
     left: -5px;
 }
 
-#leftDoubleArrow i:first-of-type::after{
+#leftDoubleArrow div:nth-of-type(2){
     width: 0;
     height: 0;
     content: '';
@@ -72,7 +72,7 @@
     left: -3px;
 }
 
-#leftDoubleArrow i:last-of-type::before{
+#leftDoubleArrow div:nth-of-type(3){
     width: 0;
     height: 0;
     content: '';
@@ -82,7 +82,7 @@
     top: 0;
 }
 
-#leftDoubleArrow i:last-of-type::after{
+#leftDoubleArrow div:nth-of-type(4){
     width: 0;
     height: 0;
     content: '';
@@ -93,11 +93,7 @@
     left: 2px;
 }
 
-#rightDoubleArrow i:first-of-type{
-    z-index: 10;
-}
-
-#rightDoubleArrow i:first-of-type::before{
+#rightDoubleArrow div:nth-of-type(1){
     width: 0;
     height: 0;
     content: '';
@@ -108,7 +104,7 @@
     left: 9px;
 }
 
-#rightDoubleArrow i:first-of-type::after{
+#rightDoubleArrow div:nth-of-type(2){
     width: 0;
     height: 0;
     content: '';
@@ -119,7 +115,7 @@
     left: 7px;
 }
 
-#rightDoubleArrow i:last-of-type::before{
+#rightDoubleArrow div:nth-of-type(3){
     width: 0;
     height: 0;
     content: '';
@@ -130,7 +126,7 @@
     left: 4px;
 }
 
-#rightDoubleArrow i:last-of-type::after{
+#rightDoubleArrow div:nth-of-type(4){
     width: 0;
     height: 0;
     content: '';
