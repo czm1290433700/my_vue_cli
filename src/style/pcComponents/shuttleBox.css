@@ -10,12 +10,17 @@
     width: 200px;
 }
 
-#shuttleBox .title{
-    border-bottom: 1px solid #ddd;
+#shuttleBox .list li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: 10px;
 }
 
-#shuttleBox li{
-    padding: 10px 10px;
+#shuttleBox .title{
+    border-bottom: 1px solid #ddd;
 }
 
 #shuttleBox .move{
@@ -32,4 +37,37 @@
 
 #shuttleBox .move-right{
     margin-bottom: 12px;
+}
+
+#shuttleBox .initBox{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#shuttleBox .initBox:hover{
+    border: 1px solid #5FB878;
+}
+
+#shuttleBox .selectedBox{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #5FB878;
+    background-color: #5FB878;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+#shuttleBox .selectedBox div:nth-of-type(1){
+    width: 5px;
+    height: 10px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    position: absolute;
+    left: 4px;
 }
