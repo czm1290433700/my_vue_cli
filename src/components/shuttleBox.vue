@@ -20,10 +20,20 @@
         </div>
         <div class="move">
             <div class="move-right">
-                <rightDoubleArrow v-bind:color="arrowColor"></rightDoubleArrow>
+                <div class="rightDoubleArrow">
+                    <div ref="arrow1"></div>
+                    <div ref="arrow2"></div>
+                    <div ref="arrow3"></div>
+                    <div ref="arrow4"></div>
+                </div>
             </div>
             <div class="move-left">
-                <leftDoubleArrow v-bind:color="arrowColor"></leftDoubleArrow>
+                <div class="leftDoubleArrow">
+                    <div ref="arrow5"></div>
+                    <div ref="arrow6"></div>
+                    <div ref="arrow7"></div>
+                    <div ref="arrow8"></div>
+                </div>
             </div>
         </div>
         <div class="list">
@@ -56,35 +66,69 @@ export default {
     props: ['shuttleBox'],
     data() {
         return {
-            arrowColor: {
-                arrowColor: '#C9CACE',
-                backgroundColor: '#fff'
-            },
             isSelect1: false,
             isSelect2: false,
             isSelectedList1: [],
             isSelectedList2: [],
             isChanged1: false,
-            isChanged2: false
+            isChanged2: false,
+            isNotNull1: false, 
+            isNotNull2: false
         }
     },
     watch: {
-        /** 因为vue中的数组机制动态绑定的机制基于数组地址是否改变，所以这里使用监听事件监听 */
+        /** 因为vue中的数组是没有get和set方法的，所以无法动态绑定，所以这里使用监听事件监听解决 */
         isChanged1: function(){
-            var arr = new Array();
+            var arr = new Array(),
+                flag1 = true,
+                flag2 = false;
             for(let i = 0; i < this.isSelectedList1.length; i++){
                 arr.push(this.isSelectedList1[i]);
+                if(!this.isSelectedList1[i]){
+                    flag1 = false;
+                }else{
+                    flag2 = true;
+                }
             }
+            this.isNotNull1 = flag2;
+            this.isSelect1 = flag1;
             this.isSelectedList1 = arr;
             this.isChanged1 = false;
         },
         isChanged2: function(){
-            var arr = new Array();
+            var arr = new Array(),
+                flag1 = true,
+                flag2 = false;
             for(let i = 0; i < this.isSelectedList2.length; i++){
                 arr.push(this.isSelectedList2[i]);
+                if(!this.isSelectedList2[i]){
+                    flag1 = false;
+                }else{
+                    flag2 = true;
+                }
             }
+            this.isNotNull2 = flag2;
+            this.isSelect2 = flag1;
             this.isSelectedList2 = arr;
             this.isChanged2 = false;
+        },
+        isNotNull1: function(){
+            if(this.isNotNull1){
+                this.arrowColor1 = '#fff';
+                this.backgroundColor1 = '#5FB878';
+            }else{
+                this.arrowColor1 = '#C9CACE';
+                this.backgroundColor1 = '#fff';
+            }
+        },
+        isNotNull2: function(){
+            if(this.isNotNull2){
+                this.arrowColor1 = '#fff';
+                this.backgroundColor1 = '#5FB878';
+            }else{
+                this.arrowColor2 = '#C9CACE';
+                this.backgroundColor2 = '#fff';
+            }
         }
     },
     mounted: function(){

@@ -8,10 +8,10 @@
 <script>
 export default {
     name: 'rightArrow',
-    props: ['color'],
+    props: ['arrowColor', 'backgroundColor'],
     mounted: function(){
-        this.$refs.arrow1.style.borderLeft = '8px solid ' + this.$props.color.arrowColor;
-        this.$refs.arrow2.style.borderLeft = '8px solid ' + this.$props.color.backgroundColor;
+        this.$refs.arrow1.style.borderLeft = '8px solid ' + this.$props.arrowColor;
+        this.$refs.arrow2.style.borderLeft = '8px solid ' + this.$props.backgroundColor;
     }
 }
 </script>
