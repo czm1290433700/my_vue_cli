@@ -19,16 +19,16 @@
             </ul>
         </div>
         <div class="move">
-            <div class="move-right">
-                <div class="rightDoubleArrow">
+            <div class="move-right" ref="rightArea">
+                <div class="rightDoubleArrow" ref="rightArrow">
                     <div ref="arrow1"></div>
                     <div ref="arrow2"></div>
                     <div ref="arrow3"></div>
                     <div ref="arrow4"></div>
                 </div>
             </div>
-            <div class="move-left">
-                <div class="leftDoubleArrow">
+            <div class="move-left" ref="leftArea">
+                <div class="leftDoubleArrow" ref="leftArrow">
                     <div ref="arrow5"></div>
                     <div ref="arrow6"></div>
                     <div ref="arrow7"></div>
@@ -114,20 +114,20 @@ export default {
         },
         isNotNull1: function(){
             if(this.isNotNull1){
-                this.arrowColor1 = '#fff';
-                this.backgroundColor1 = '#5FB878';
+                this.$refs.rightArrow.classList.add('active');
+                this.$refs.rightArea.classList.add('activeArea');
             }else{
-                this.arrowColor1 = '#C9CACE';
-                this.backgroundColor1 = '#fff';
+                this.$refs.rightArrow.classList.remove('active');
+                this.$refs.rightArea.classList.remove('activeArea');
             }
         },
         isNotNull2: function(){
             if(this.isNotNull2){
-                this.arrowColor1 = '#fff';
-                this.backgroundColor1 = '#5FB878';
+                this.$refs.leftArrow.classList.add('active');
+                this.$refs.leftArea.classList.add('activeArea');
             }else{
-                this.arrowColor2 = '#C9CACE';
-                this.backgroundColor2 = '#fff';
+                this.$refs.leftArrow.classList.remove('active');
+                this.$refs.leftArea.classList.remove('activeArea');
             }
         }
     },

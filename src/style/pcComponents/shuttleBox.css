@@ -164,3 +164,320 @@
     top: 0;
     left: 2px;
 }
+
+#shuttleBox .move-right .active div:nth-of-type(1){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 9px;
+}
+
+#shuttleBox .move-right .active div:nth-of-type(2){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #5FB878;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
+#shuttleBox .move-right .active div:nth-of-type(3){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+#shuttleBox .move-right .active div:nth-of-type(4){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #5FB878;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+#shuttleBox .move-right .active div:nth-of-type(1):hover{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 9px;
+}
+
+#shuttleBox .move-right .active div:nth-of-type(2):hover{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #7FC693;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
+#shuttleBox .move-right .active div:nth-of-type(3):hover{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+#shuttleBox .move-right .active div:nth-of-type(4):hover{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #7FC693;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+#shuttleBox .move-left .active div:nth-of-type(1){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#shuttleBox .move-left .active div:nth-of-type(2){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #5FB878;
+    position: absolute;
+    top: 0;
+    left: -3px;
+}
+
+#shuttleBox .move-left .active div:nth-of-type(3){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+}
+
+#shuttleBox .move-left .active div:nth-of-type(4){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #5FB878;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+#shuttleBox .move-left .active div:nth-of-type(1):hover{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#shuttleBox .move-left .active div:nth-of-type(2):hover{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #7FC693;
+    position: absolute;
+    top: 0;
+    left: -3px;
+}
+
+#shuttleBox .move-left .active div:nth-of-type(3):hover{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+}
+
+#shuttleBox .move-left .active div:nth-of-type(4):hover{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #7FC693;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+#shuttleBox .activeArea{
+    border: none;
+    padding: 5px 13px;
+    background-color: #5FB878;
+}
+
+#shuttleBox .activeArea:hover{
+    border: none;
+    padding: 5px 13px;
+    background-color: #7FC693;
+}
+
+#shuttleBox .activeArea .leftDoubleArrow div:nth-of-type(1){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#shuttleBox .activeArea .leftDoubleArrow div:nth-of-type(2){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #5FB878;
+    position: absolute;
+    top: 0;
+    left: -3px;
+}
+
+#shuttleBox .activeArea:hover .leftDoubleArrow div:nth-of-type(2){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #7FC693;
+    position: absolute;
+    top: 0;
+    left: -3px;
+}
+
+#shuttleBox .activeArea .leftDoubleArrow div:nth-of-type(3){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 0;
+}
+
+#shuttleBox .activeArea .leftDoubleArrow div:nth-of-type(4){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #5FB878;
+    position: absolute;
+    top: 0;
+    left: 2px;
+} 
+
+#shuttleBox .activeArea:hover .leftDoubleArrow div:nth-of-type(4){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-right: 8px solid #7FC693;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+#shuttleBox .activeArea .rightDoubleArrow div:nth-of-type(1){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 9px;
+}
+
+#shuttleBox .activeArea .rightDoubleArrow div:nth-of-type(2){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #5FB878;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
+#shuttleBox .activeArea:hover .rightDoubleArrow div:nth-of-type(2){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #7FC693;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
+#shuttleBox .activeArea .rightDoubleArrow div:nth-of-type(3){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+#shuttleBox .activeArea .rightDoubleArrow div:nth-of-type(4){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #5FB878;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+#shuttleBox .activeArea:hover .rightDoubleArrow div:nth-of-type(4){
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left: 8px solid #7FC693;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
