@@ -107,10 +107,10 @@ The mobile terminal has the following parts:
 - **PasswordInput PasswordInput box**
 ### style presentation
 - PC home page <br>
-![PC pictures] (https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/pc.png)
+![PC pictures](https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/pc.png)
 - mobile home page <br>
-![mobile pictures] (https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/mobile.png)
-Run the project
+![mobile pictures](https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/mobile.png)
+### Run the project
 ```
 NPM I // installation dependencies
 NPM start // start the project
