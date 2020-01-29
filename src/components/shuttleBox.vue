@@ -9,7 +9,7 @@
                     </div>
                     {{shuttleBox.listTitle1}}
                 </li>
-                <li v-for="(item,index) in shuttleBox.list1" :key="index">
+                <li v-for="(item,index) in list1" :key="index">
                     <div class="initBox" ref="initBox" v-show="!isSelectedList1[index]" @click="toggleMode(1, index)"></div>
                     <div class="selectedBox" ref="selectedBox" v-show="isSelectedList1[index]" @click="toggleMode(1, index)">
                         <div class="hook" ref="hook"></div>
@@ -19,7 +19,7 @@
             </ul>
         </div>
         <div class="move">
-            <div class="move-right" ref="rightArea">
+            <div class="move-right" ref="rightArea" @click="moveRight()">
                 <div class="rightDoubleArrow" ref="rightArrow">
                     <div ref="arrow1"></div>
                     <div ref="arrow2"></div>
@@ -27,7 +27,7 @@
                     <div ref="arrow4"></div>
                 </div>
             </div>
-            <div class="move-left" ref="leftArea">
+            <div class="move-left" ref="leftArea" @click="moveLeft()">
                 <div class="leftDoubleArrow" ref="leftArrow">
                     <div ref="arrow5"></div>
                     <div ref="arrow6"></div>
@@ -45,7 +45,7 @@
                     </div>
                     {{shuttleBox.listTitle2}}
                 </li>
-                <li v-for="(item,index) in shuttleBox.list2" :key="index">
+                <li v-for="(item,index) in list2" :key="index">
                     <div class="initBox" ref="initBox" v-show="!isSelectedList2[index]" @click="toggleMode(2, index)"></div>
                     <div class="selectedBox" ref="selectedBox" v-show="isSelectedList2[index]" @click="toggleMode(2, index)">
                         <div class="hook" ref="hook"></div>
@@ -66,6 +66,8 @@ export default {
     props: ['shuttleBox'],
     data() {
         return {
+            list1: [],
+            list2: [],
             isSelect1: false,
             isSelect2: false,
             isSelectedList1: [],
@@ -133,9 +135,11 @@ export default {
     },
     mounted: function(){
         for(let i = 0; i < this.$props.shuttleBox.list1.length; i++){
+            this.list1.push(this.$props.shuttleBox.list1[i]);
             this.isSelectedList1.push(false);
         }
         for(let i = 0; i < this.$props.shuttleBox.list2.length; i++){
+            this.list2.push(this.$props.shuttleBox.list2[i]);
             this.isSelectedList2.push(false);
         }
     },
@@ -182,6 +186,52 @@ export default {
                     }
                     this.isChanged2 = true;
                 }
+            }
+        },
+        /**
+         * 向右穿梭
+         */
+        moveRight: function(){
+            var arr = [];
+            for(let i = 0; i < this.isSelectedList1.length; i++){
+                if(this.isSelectedList1[i]){
+                    arr.push(i);
+                }
+            }
+            for(let i = 0; i < arr.length; i++){
+                this.list2.splice(this.list2.length, 0, this.list1[arr[i]]);
+                this.isSelectedList2.splice(this.isSelectedList2.length, 0, false);
+            }
+            for(let i = arr.length - 1; i >= 0; i--){
+                this.list1.splice(arr[i], 1);
+                this.isSelectedList1.splice(arr[i], 1);
+            }
+            this.isNotNull1 = false;
+            if(this.isSelect1){
+                this.isSelect1 = !this.isSelect1;
+            }
+        },
+        /**
+         * 向左穿梭
+         */
+        moveLeft: function(){
+            var arr = [];
+            for(let i = 0; i < this.isSelectedList2.length; i++){
+                if(this.isSelectedList2[i]){
+                    arr.push(i);
+                }
+            }
+            for(let i = 0; i < arr.length; i++){
+                this.list1.splice(this.list1.length, 0, this.list2[arr[i]]);
+                this.isSelectedList1.splice(this.isSelectedList1.length, 0, false);
+            }
+            for(let i = arr.length - 1; i >= 0; i--){
+                this.list2.splice(arr[i], 1);
+                this.isSelectedList2.splice(arr[i], 1);
+            }
+            this.isNotNull2 = false;
+            if(this.isSelect2){
+                this.isSelect2 = !this.isSelect2;
             }
         }
     },
