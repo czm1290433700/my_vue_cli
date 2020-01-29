@@ -14,6 +14,7 @@ import calendarWidgets from '@/page/pcPage/calendarWidgets'
 import shuttleBox from '@/page/pcPage/shuttleBox'
 import icon from '@/page/pcPage/icon'
 import select from '@/page/pcPage/select'
+import table from '@/page/pcPage/table'
 
 Vue.use(Router)
 
@@ -94,6 +95,11 @@ export default new Router({
       path: '/pcPage/select',
       name: 'select',
       component: select
+    },
+    {
+      path: '/pcPage/table',
+      name: 'table',
+      component: table
     }
   ]
 })

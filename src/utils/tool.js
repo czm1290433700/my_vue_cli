@@ -137,7 +137,17 @@ function clearArcFun(x,y,r,cxt){
           clearArc(x,y,radius);  
        }  
      }  
- }
+}
+
+/**
+ * 验证是否是中文
+ * @param {*} str
+ * @returns
+ */
+function isChinese(str){
+    var pattern = new RegExp("[\u4E00-\u9FA5]+");
+    return pattern.test(str)
+}
 
 export default{
     arrToStringByComma,
@@ -149,5 +159,6 @@ export default{
     removeClass,
     throttle,
     debounce,
-    clearArcFun
+    clearArcFun,
+    isChinese
 }

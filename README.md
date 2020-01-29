@@ -19,7 +19,7 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
     4.  **shuttleBox 穿梭框**:  样式参考layui穿梭框，实现过程中遇到数组和嵌套对象不存在get和set的问题导致的无法正常数据绑定，采用了属性监听和调用原生set方法赋值的办法解决，之后修改为用数组splice方法实现数组元素的双向绑定
 - 表单组件
     1.  **input 文本框**：包括样式优化的输入框，密码框，和提供模糊查询的输入框
-    2.  **table 表格**
+    2.  **table 表格**: 这里只给出一种可对数据排序的数据表格，考虑到表格的样式有很多类型，但往往只是几行css代码或者js代码就可以实现的，应该给开发者足够的空间，所以这里只给出一种样式的数据表格，目前该表格支持中文，英文和数字的排序，暂不支持中文数据和英文数据混杂的排序
     3.  **page 分页**
     4.  **fileUpload 文件上传**
     5.  **treeBox 树型框**
@@ -83,7 +83,7 @@ At present, the PC components have the following parts:
 : the style refers to the layui shuttleBox. In the implementation process, we encountered the problem of array and nested objects without get and set, which led to the failure of normal data binding. We adopted the method of property monitoring and called the native set method to solve the problem, and then changed it to the method of array splice to realize the bidirectional binding of array elements
 - form components
 1. **input text box** : including style optimization input box, password box, and provide fuzzy query input box
-2. **table**
+2. **table**: Here give only a data table to sort the data, considering the style of the form has many types, but is often just a few lines of CSS code or the js code can be achieved, should be enough space for developers, so here give only a style of data table, the table currently supported Chinese, English and Numbers of sorting, temporarily does not support the mixed Chinese and English data sorting
 3. **page**
 4. **fileUpload fileUpload**
 5. **treeBox**

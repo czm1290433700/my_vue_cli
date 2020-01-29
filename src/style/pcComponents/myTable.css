@@ -1,0 +1,56 @@
+@charset "UTF-8";
+#myTable{
+    font-size: 14px;
+    border-collapse: collapse;
+    color:#666;
+}
+
+#myTable th{
+    border: 1px solid #ddd;
+    font-weight: normal;
+    background-color:#F2F2F2;
+}
+
+#myTable td{
+    padding: 10px 30px 10px 20px;
+    border: 1px solid #ddd;
+}
+
+#myTable tr:hover{
+    background-color: #F2F2F2;
+}
+
+#myTable .tableHead{
+    padding: 10px 30px 10px 20px;
+    position: relative;
+}
+
+#myTable .tableHead .increaseSort{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 5px solid transparent;
+    border-bottom: 5px solid #B2B2B2;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+}
+
+#myTable .tableHead .decreaseSort{
+    width: 0;
+    height: 0;
+    content: '';
+    border: 5px solid transparent;
+    border-top: 5px solid #B2B2B2;
+    position: absolute;
+    top: 21px;
+    right: 5px;
+}
+
+#myTable .tableHead .increaseSort:hover{
+    border-bottom: 5px solid #000;
+}
+
+#myTable .tableHead .decreaseSort:hover{
+    border-top: 5px solid #000;
+}
