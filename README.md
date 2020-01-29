@@ -33,13 +33,25 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 移动端有以下部分：
 
+1.插件组件
+
 - **mobileCityArea 城市选择**: ui样式参考华住会移动端wifi登录页面城市选择
 
 - **enMobileCityArea 英文城市选择**
 
-- **lazyLoading 图片懒加载**：基于**IntersectionObserver Api**实现
+- **calendar 日历**
+
+2.页面组件
 
 - **loading 加载**: 纯css3动画实现, 目前实现了3种loading效果，一种最常见的遮罩层loading,还有企鹅FM上专题活动的loading以及app中的常用loading
+
+- **lazyLoading 图片懒加载**：基于**IntersectionObserver Api**实现
+
+- **DateTimePicker 时间选择**
+
+- **NumberKeyBorder 数字键盘**
+
+- **PasswordInput 密码输入框**
 
 ### 样式展示
 
@@ -56,3 +68,50 @@ npm start // 启动项目
 ```
 
 github链接：https://github.com/czm1290433700/my_vue_cli
+
+# my VueCli
+### Introduction to the project
+This is a scaffolding project based on vue-cli2, which summarizes some components I learned to write by myself as an intern
+The PC UI style reference layui official document style (https://www.layui.com/demo), the mobile end UI style reference vant mobile end page style (https://youzan.github.io/vant/mobile.html#/zh-CN/), page layout and js interactive animation are with CSS and js independently
+Done PC and mobile terminal initialization judgment, you can launch the project according to the type of device to display different types of pages
+### contains content
+At present, the PC components have the following parts:
+- plug-in components
+1. **slideShow roving diagram** : several roving diagrams have been made, the first three are mainly based on absolute layout, and the last one is based on **css3** **translate3d** attributes
+2. **CityArea city selection** : UI style refer to the wifi login page of HSC PC for city selection
+3. **calendar**: based on win10 calendar rules, if the first day of the month is not a Sunday, the date of the previous month will be added
+: the style refers to the layui shuttleBox. In the implementation process, we encountered the problem of array and nested objects without get and set, which led to the failure of normal data binding. We adopted the method of property monitoring and called the native set method to solve the problem, and then changed it to the method of array splice to realize the bidirectional binding of array elements
+- form components
+1. **input text box** : including style optimization input box, password box, and provide fuzzy query input box
+2. **table**
+3. **page**
+4. **fileUpload fileUpload**
+5. **treeBox**
+6. **select selection box** : only one style selection box has been implemented so far, which will be added later
+- page components
+1. **graph** : **(the coordinates of the origin are designed here to be an array of X-axis coordinates)**
+- bar chart: based on the canvas implementation, the corresponding mouse events are bound, and the anti-shake processing is done to solve the problem that the mouse-out event caused by the mouse moving rapidly under the canvas area cannot be monitored
+-line graph: based on the canvas implementation, in order to avoid too complicated logic of binding events, data was not removed after the mouse moved into the display data, so as to avoid removing part of the bottom line while removing the data, resulting in the need to redraw the bottom line
+2. **codeBox**
+3. **icon** : single arrow and double arrow are encapsulated, supporting the adaptable arrow color
+The mobile terminal has the following parts:
+1. Plug-in components
+- **mobileCityArea city selection**: UI style refer to the wifi login page of HCSDC for city selection
+- **enMobileCityArea**
+- **calendar**
+2. Page components
+- **loading**: pure css3 animation is implemented, which has realized three loading effects, one of the most common mask loading, as well as loading of special activities on penguin FM and loading commonly used in app
+- **lazyLoading image lazyLoading** : implementation based on **IntersectionObserver Api**
+- **DateTimePicker time selection**
+- **NumberKeyBorder numeric keyboard**
+- **PasswordInput PasswordInput box**
+### style presentation
+- PC home page <br>
+![PC pictures] (https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/pc.png)
+- mobile home page <br>
+![mobile pictures] (https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/mobile.png)
+Run the project
+```
+NPM I // installation dependencies
+NPM start // start the project
+```
