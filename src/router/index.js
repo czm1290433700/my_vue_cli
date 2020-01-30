@@ -15,6 +15,7 @@ import shuttleBox from '@/page/pcPage/shuttleBox'
 import icon from '@/page/pcPage/icon'
 import select from '@/page/pcPage/select'
 import table from '@/page/pcPage/table'
+import page from '@/page/pcPage/page'
 
 Vue.use(Router)
 
@@ -100,6 +101,10 @@ export default new Router({
       path: '/pcPage/table',
       name: 'table',
       component: table
+    },{
+      path: '/pcPage/page',
+      name: 'page',
+      component: page
     }
   ]
 })

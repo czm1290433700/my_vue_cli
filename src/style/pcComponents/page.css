@@ -1,0 +1,51 @@
+@charset "UTF-8";
+#page ul{
+    display: flex;
+    font-size: 12px;
+}
+
+#page li{
+    padding: 6px 14px;
+    border: 1px solid #E2E2E2;
+    border-right: none;
+    cursor: pointer;
+}
+
+#page li:hover{
+    color: #009688;
+}
+
+#page li:last-of-type{
+    border-right: 1px solid #E2E2E2;;
+}
+
+#page .unclickable{
+    cursor: not-allowed;
+    color: #E2E2E2;
+}
+
+#page .unclickable:hover{
+    cursor: not-allowed;
+    color: #E2E2E2;
+}
+
+#page .active{
+    background-color: #009688;
+    color: #fff;
+    cursor: text;
+}
+
+#page .active:hover{
+    color: #fff;
+}
+
+#page .ellipsis{
+    color:#999;
+    font-weight: bold;
+    cursor: text;
+}
+
+#page .ellipsis:hover{
+    color:#999;
+    cursor: text;
+}
