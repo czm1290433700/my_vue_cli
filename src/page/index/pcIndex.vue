@@ -74,10 +74,6 @@ export default {
               url: '/pcPage/page'
             },
             {
-              name: 'fileUpload 文件上传',
-              url: '/pcPage/fileUpload'
-            },
-            {
               name: 'treeBox 树型框',
               url: '/pcPage/treeBox'
             },

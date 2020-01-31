@@ -21,9 +21,8 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
     1.  **input 文本框**：包括样式优化的输入框，密码框，和提供模糊查询的输入框
     2.  **table 表格**: 这里只给出一种可对数据排序的数据表格，考虑到表格的样式有很多类型，但往往只是几行css代码或者js代码就可以实现的，应该给开发者足够的空间，所以这里只给出一种样式的数据表格，目前该表格支持中文，英文和数字的排序，暂不支持中文数据和英文数据混杂的排序
     3.  **page 分页**
-    4.  **fileUpload 文件上传**
-    5.  **treeBox 树型框**
-    6.  **select 选择框**： 目前只实现了一种样式的选择框，后面再慢慢补充
+    4.  **treeBox 树型框**
+    5.  **select 选择框**： 目前只实现了一种样式的选择框，后面再慢慢补充
 - 页面组件
     1.  **graph 统计图**： **（原点的坐标这里设计为应给x轴坐标数组）**
         - 柱状图： 基于canvas实现，绑定了对应的鼠标事件，并且做了防抖处理，解决了鼠标快速在canvas区域下移动导致的鼠标移出事件不能监听的问题
@@ -85,8 +84,7 @@ At present, the PC components have the following parts:
 1. **input text box** : including style optimization input box, password box, and provide fuzzy query input box
 2. **table**: Here give only a data table to sort the data, considering the style of the form has many types, but is often just a few lines of CSS code or the js code can be achieved, should be enough space for developers, so here give only a style of data table, the table currently supported Chinese, English and Numbers of sorting, temporarily does not support the mixed Chinese and English data sorting
 3. **page**
-4. **fileUpload fileUpload**
-5. **treeBox**
+4. **treeBox**
 6. **select selection box** : only one style selection box has been implemented so far, which will be added later
 - page components
 1. **graph** : **(the coordinates of the origin are designed here to be an array of X-axis coordinates)**
