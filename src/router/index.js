@@ -17,6 +17,7 @@ import select from '@/page/pcPage/select'
 import table from '@/page/pcPage/table'
 import page from '@/page/pcPage/page'
 import treeBox from '@/page/pcPage/treeBox'
+import codeBox from '@/page/pcPage/codeBox'
 
 Vue.use(Router)
 
@@ -110,6 +111,10 @@ export default new Router({
       path: '/pcPage/treeBox',
       name: 'treeBoxPage',
       component: treeBox
+    },{
+      path: '/pcPage/codeBox',
+      name: 'codeBoxPage',
+      component: codeBox
     }
   ]
 })

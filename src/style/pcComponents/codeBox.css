@@ -1,0 +1,47 @@
+@charset "UTF-8";
+#codeBox1 .title{
+    padding: 10px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+#codeBox1 .body{
+    border: 1px solid #E2E2E2;
+    border-left-width: 6px;
+    font-size: 12px;
+    background-color: #F2F2F2;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #333;
+    font-family: Courier New;
+}
+
+#codeBox1 .body li{
+    list-style-type: decimal-leading-zero;
+    margin-left: 45px;
+    border-left: 1px solid #E2E2E2;
+    background-color: #fff;
+    padding: 2px 8px;
+}
+
+#codeBox2 .title{
+    padding: 10px;
+    border-bottom: 1px solid #0C0C0C;
+}
+
+#codeBox2 .body{
+    border: 1px solid #0C0C0C;
+    font-size: 12px;
+    background-color: #0C0C0C;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #C2BE9E;
+    font-family: Courier New;
+}
+
+#codeBox2 .body li{
+    list-style-type: decimal-leading-zero;
+    margin-left: 45px;
+    border-left: 1px solid #0C0C0C;
+    background-color: #3F3F3F;
+    padding: 2px 8px;
+}
