@@ -9,6 +9,14 @@
     margin-bottom: 1.5rem;
 }
 
+.myVue .github{
+    font-weight: normal;
+    font-size: 0.35rem;
+    color: #A7B7BC;
+    margin-left: 3.3rem;
+    cursor: pointer;
+}
+
 .components .title{
     font-size: 0.4rem;
     color: #8F9CA2;

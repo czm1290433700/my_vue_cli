@@ -20,7 +20,7 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 - 表单组件
     1.  **input 文本框**：包括样式优化的输入框，密码框，和提供模糊查询的输入框
     2.  **table 表格**: 这里只给出一种可对数据排序的数据表格，考虑到表格的样式有很多类型，但往往只是几行css代码或者js代码就可以实现的，应该给开发者足够的空间，所以这里只给出一种样式的数据表格，目前该表格支持中文，英文和数字的排序，暂不支持中文数据和英文数据混杂的排序
-    3.  **page 分页**
+    3.  **page 分页**: 分总页数低于和大于页码总数的情况，大于页码总数的情况实现了三种显示状态的转换
     4.  **treeBox 树型框**
     5.  **select 选择框**： 目前只实现了一种样式的选择框，后面再慢慢补充
 - 页面组件
@@ -83,7 +83,7 @@ At present, the PC components have the following parts:
 - form components
 1. **input text box** : including style optimization input box, password box, and provide fuzzy query input box
 2. **table**: Here give only a data table to sort the data, considering the style of the form has many types, but is often just a few lines of CSS code or the js code can be achieved, should be enough space for developers, so here give only a style of data table, the table currently supported Chinese, English and Numbers of sorting, temporarily does not support the mixed Chinese and English data sorting
-3. **page**
+3. **page**: There are cases where the total number of pages is lower than and greater than the total number of page Numbers.In the case of greater than the total number of page Numbers, three display state transitions are realized
 4. **treeBox**
 6. **select selection box** : only one style selection box has been implemented so far, which will be added later
 - page components

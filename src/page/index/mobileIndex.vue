@@ -1,6 +1,6 @@
 <template>
     <div class="myVue">
-      <h1>My VueCli</h1>
+      <h1>My VueCli<span class="github" @click="goGithub()">github</span></h1>
       <div class="components">
         <span class="title">插件组件</span>
         <ul>
@@ -71,6 +71,12 @@ export default {
       this.$router.replace({
         path: url
       })
+    },
+    /**
+     * 跳转github
+     */
+    goGithub: function(){
+      window.location.href = "https://github.com/czm1290433700/my_vue_cli";
     }
   }
 }
