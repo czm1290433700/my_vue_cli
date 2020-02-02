@@ -1,13 +1,13 @@
 <template>
     <!-- @touchmove.prevent 用于阻止页面滚动 -->
-    <div id="maskLayer" v-show="p_layerShow" @click="setLayerShow()" @touchmove.prevent></div>
+    <div id="maskLayer" v-show="p_layerShow" @click="closable ? setLayerShow() : ''" @touchmove.prevent></div>
 </template>
 
 <script>
 import propsync from '@/utils/propsync.js'
 export default {
     name: 'maskLayer',
-    props: ['layerShow'],
+    props: ['layerShow', 'closable'],
     mixins: [propsync],//声明使用propsync的mixin
     methods: {
         /** 

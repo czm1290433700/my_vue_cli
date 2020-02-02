@@ -2,8 +2,16 @@
     <div>
         <pageHeader v-bind:title="title"></pageHeader>
         <div class="body">
-            <button type="button" class="button" @click="showLayer()" @onPropsChange="change">显示遮罩层</button>
-            <maskLayer v-bind:layerShow="layerShow"></maskLayer>
+            <fieldset>
+                <legend>自带关闭的遮罩层</legend>
+                <button type="button" class="button" @click="showLayer(1)" @onPropsChange="change">显示遮罩层</button>
+                <maskLayer v-bind:layerShow="layerShow1" v-bind:closable="true"></maskLayer>
+            </fieldset>
+            <fieldset>
+                <legend>未自带关闭的遮罩层</legend>
+                <button type="button" class="button" @click="showLayer(2)" @onPropsChange="change">显示遮罩层</button>
+                <maskLayer v-bind:layerShow="layerShow2" v-bind:closable="false"></maskLayer>
+            </fieldset>
         </div>
     </div>
 </template>
@@ -16,7 +24,8 @@ export default {
     data() {
         return {
             title: 'maskLayer 遮罩层',
-            layerShow: false
+            layerShow1: false,
+            layerShow2: false
         }
     },
     components: {
@@ -27,8 +36,12 @@ export default {
         /**
          * 显示遮罩层
          */
-        showLayer: function(){
-            this.layerShow = true;
+        showLayer: function(index){
+            if(index == 1){
+                this.layerShow1 = true;
+            }else{
+                this.layerShow2 = true;
+            }
         },
         /**
          * 绑定监听事件

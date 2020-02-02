@@ -18,7 +18,8 @@ fieldset{
 
 .button{
     border: none;
-    background-color:#07C160;
+    background-color: #07C160;
     padding: 0.35rem;
-    color:white;
+    color: white;
+    margin: 0.2rem;
 }

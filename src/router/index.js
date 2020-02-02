@@ -20,6 +20,7 @@ import treeBox from '@/page/pcPage/treeBox'
 import codeBox from '@/page/pcPage/codeBox'
 import mobileCalendar from '@/page/mobilePage/calendar'
 import maskLayer from '@/page/mobilePage/maskLayer'
+import popWindow from '@/page/mobilePage/popWindow'
 
 Vue.use(Router)
 
@@ -126,6 +127,10 @@ export default new Router({
       path: '/mobilePage/maskLayer',
       name: 'maskLayer',
       component: maskLayer
+    },{
+      path: '/mobilePage/popWindow',
+      name: 'popWindow',
+      component: popWindow
     }
   ]
 })
