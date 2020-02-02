@@ -15,3 +15,10 @@ fieldset{
     color: #7C7C7C;
     font-weight: 500;
 }
+
+.button{
+    border: none;
+    background-color:#07C160;
+    padding: 0.35rem;
+    color:white;
+}

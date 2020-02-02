@@ -46,7 +46,7 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **lazyLoading 图片懒加载**：基于**IntersectionObserver Api**实现
 
-- **maskLayer 遮罩层**
+- **maskLayer 遮罩层**:使用了props双向绑定组件实现props的双向绑定
 
 - **popWindow 弹窗**: 建议弹窗与遮罩层一起使用
 
@@ -69,6 +69,12 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 npm i  // 安装相关依赖
 npm start // 启动项目
 ```
+
+### 感谢
+项目开发过程中，调用了以下组件或者js：
+**博客园 @xxcanghai @小小沧海** ： https://github.com/xxcanghai/cnblogsFiles/blob/master/vue-mixins/propsync.js 
+在此表示感谢
+
 
 github链接：https://github.com/czm1290433700/my_vue_cli
 
@@ -104,7 +110,7 @@ The mobile terminal has the following parts:
 2. Page components
 - **loading**: pure css3 animation is implemented, which has realized three loading effects, one of the most common mask loading, as well as loading of special activities on penguin FM and loading commonly used in app
 - **lazyLoading image lazyLoading** : implementation based on **IntersectionObserver Api**
-- **maskLayer maskLayer**
+- **maskLayer maskLayer**: The props bidirectional binding component is used to implement the props bidirectional binding
 - **popWindow**: it is recommended to use popWindow with mask layer
 - **DateTimePicker time selection**
 - **NumberKeyBorder numeric keyboard**
@@ -119,5 +125,10 @@ The mobile terminal has the following parts:
 NPM I // installation dependencies
 NPM start // start the project
 ```
+
+### Thanks
+During project development, the following components or js are called:
+**博客园 @xxcanghai @小小沧海** ： https://github.com/xxcanghai/cnblogsFiles/blob/master/vue-mixins/propsync.js 
+Thank you very much!
 
 github link: https://github.com/czm1290433700/my_vue_cli

@@ -19,6 +19,7 @@ import page from '@/page/pcPage/page'
 import treeBox from '@/page/pcPage/treeBox'
 import codeBox from '@/page/pcPage/codeBox'
 import mobileCalendar from '@/page/mobilePage/calendar'
+import maskLayer from '@/page/mobilePage/maskLayer'
 
 Vue.use(Router)
 
@@ -120,6 +121,11 @@ export default new Router({
       path: '/mobilePage/calendar',
       name: 'mobileCalendar',
       component: mobileCalendar
+    },
+    {
+      path: '/mobilePage/maskLayer',
+      name: 'maskLayer',
+      component: maskLayer
     }
   ]
 })
