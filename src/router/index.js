@@ -18,6 +18,7 @@ import table from '@/page/pcPage/table'
 import page from '@/page/pcPage/page'
 import treeBox from '@/page/pcPage/treeBox'
 import codeBox from '@/page/pcPage/codeBox'
+import mobileCalendar from '@/page/mobilePage/calendar'
 
 Vue.use(Router)
 
@@ -115,6 +116,10 @@ export default new Router({
       path: '/pcPage/codeBox',
       name: 'codeBoxPage',
       component: codeBox
+    },{
+      path: '/mobilePage/calendar',
+      name: 'mobileCalendar',
+      component: mobileCalendar
     }
   ]
 })

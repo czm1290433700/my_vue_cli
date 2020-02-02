@@ -1,0 +1,148 @@
+@charset "UTF-8";
+#calendar .timeInput{
+    border: 1px solid #E6E6E6;
+    padding: 10px 10px;
+    background: url(../../assets/images/calendar.png) no-repeat;
+    background-size: 20px;
+    background-position: 132px;
+}
+
+#calendar .left, .right{
+    width: 40px;
+}
+
+#calendar i{
+    display: inline-block;
+}
+
+#calendar .left > i{
+    position: relative;
+}
+
+#calendar .left > i::before{
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+    border-right: 7px solid #A4ADBF;
+    top: -12px;
+}
+
+#calendar .left > i::after{
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+    border-right: 7px solid #fff;
+    left: 2px;
+    top: -12px;
+}
+
+#calendar .right > i:first-of-type{
+    z-index: 10;
+}
+
+#calendar .right > i{
+    position: relative;
+}
+
+#calendar .right > i::before{
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+    border-left: 7px solid #A4ADBF;
+    top: -12px;
+}
+
+#calendar .right > i::after{
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+    border-left: 7px solid #fff;
+    left: -2px;
+    top: -12px;
+}
+
+#calendar .calendarWidget{
+    width: 264px;
+    border: 1px solid #D9E1E9;
+    -webkit-box-shadow: 2px 2px 3px #D9E1E9;
+    box-shadow: 2px 2px 3px #D9E1E9;
+    color: #5C6570;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#calendar .calendarWidget .title{
+    padding: 15px 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+#calendar .calendarWidget .date{
+    width: 100px;
+    padding-left: 10px;
+}
+
+#calendar .week ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px;
+    font-weight: 600;
+    color: #A3ADBC;
+    margin: 5px 0;
+}
+
+#calendar .week li{
+    width: 50px;
+    text-align: center;
+}
+
+#calendar .calendarBody ul{
+    display: flex;
+    padding: 0 10px;
+    color: #7F8A97;
+}
+
+#calendar .calendarBody li{
+    width: 50px;
+    text-align: center;
+    padding: 6px 0;
+}
+
+#calendar .calendarBody li:hover{
+    background-color: #EAEAEA;
+    cursor: pointer;
+}
+
+#calendar .calendarBody .notThisMonth{
+    color: #D7D7D7;
+}
+
+#calendar .calendarBody .notThisMonth:hover{
+    color: #7F8A97;
+    background-color: #EAEAEA;
+    cursor: pointer;
+}
+
+#calendar .calendarBody .today{
+    color: #fff;
+    background-color: #009688;
+    cursor: pointer;
+}
+
+#calendar .calendarBody .today:hover{
+    color: #fff;
+    background-color: #009688;
+    cursor: pointer;
+}

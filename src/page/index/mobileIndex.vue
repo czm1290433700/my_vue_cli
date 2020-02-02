@@ -49,6 +49,14 @@ export default {
           url: '/mobilePage/LazyLoading'
         },
         {
+          name: 'maskLayer 遮罩层',
+          url: '/mobilePage/maskLayer'
+        },
+        {
+          name: 'popWindow 弹窗',
+          url: '/mobilePage/popWindow'
+        },
+        {
           name: 'DateTimePicker 时间选择',
           url: '/mobilePage/dataTimePicker'
         },

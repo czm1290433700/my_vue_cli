@@ -46,6 +46,10 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **lazyLoading 图片懒加载**：基于**IntersectionObserver Api**实现
 
+- **maskLayer 遮罩层**
+
+- **popWindow 弹窗**: 建议弹窗与遮罩层一起使用
+
 - **DateTimePicker 时间选择**
 
 - **NumberKeyBorder 数字键盘**
@@ -100,6 +104,8 @@ The mobile terminal has the following parts:
 2. Page components
 - **loading**: pure css3 animation is implemented, which has realized three loading effects, one of the most common mask loading, as well as loading of special activities on penguin FM and loading commonly used in app
 - **lazyLoading image lazyLoading** : implementation based on **IntersectionObserver Api**
+- **maskLayer maskLayer**
+- **popWindow**: it is recommended to use popWindow with mask layer
 - **DateTimePicker time selection**
 - **NumberKeyBorder numeric keyboard**
 - **PasswordInput PasswordInput box**
