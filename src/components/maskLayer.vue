@@ -1,6 +1,6 @@
 <template>
     <!-- @touchmove.prevent 用于阻止页面滚动 -->
-    <div id="maskLayer" v-show="p_layerShow" @click="closable ? setLayerShow() : ''" @touchmove.prevent></div>
+    <div id="maskLayer" v-show="p_layerShow" @click="closable ? setLayerShow() : ''"></div>
 </template>
 
 <script>

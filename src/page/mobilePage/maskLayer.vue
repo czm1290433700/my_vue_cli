@@ -4,12 +4,12 @@
         <div class="body">
             <fieldset>
                 <legend>自带关闭的遮罩层</legend>
-                <button type="button" class="button" @click="showLayer(1)" @onPropsChange="change">显示遮罩层</button>
+                <button type="button" class="button" @click="showLayer(1)" @onPropsChange="change()">显示遮罩层</button>
                 <maskLayer v-bind:layerShow="layerShow1" v-bind:closable="true"></maskLayer>
             </fieldset>
             <fieldset>
                 <legend>未自带关闭的遮罩层</legend>
-                <button type="button" class="button" @click="showLayer(2)" @onPropsChange="change">显示遮罩层</button>
+                <button type="button" class="button" @click="showLayer(2)" @onPropsChange="change()">显示遮罩层</button>
                 <maskLayer v-bind:layerShow="layerShow2" v-bind:closable="false"></maskLayer>
             </fieldset>
         </div>

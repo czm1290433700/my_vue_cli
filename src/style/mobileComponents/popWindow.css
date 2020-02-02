@@ -1,1 +1,76 @@
 @charset "UTF-8";
+#popWindow1 .window{
+    position: absolute;
+    width: 10rem;
+    min-height: 4rem;
+    background-color:#fff;
+    z-index: 2001;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+#popWindow1 .closeBtn{
+    position: absolute;
+    right: 0.4rem;
+    top: 0.2rem;
+    font-size: 0.35rem;
+    color:#5A5A5A;
+}
+
+#popWindow2 .window{
+    position: absolute;
+    width: 10rem;
+    min-height: 4rem;
+    background-color:#fff;
+    z-index: 2001;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 0.2rem 0.2rem;
+}
+
+#popWindow2 .closeBtn{
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.2rem;
+    font-size: 0.35rem;
+    color:#5A5A5A;
+}
+
+#popWindow3 .window{
+    position: absolute;
+    min-width: 3.5rem;
+    height: 17.8rem;
+    background-color:#fff;
+    z-index: 2001;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+
+#popWindow3 .closeBtn{
+    position: absolute;
+    right: 0.4rem;
+    top: 0.2rem;
+    font-size: 0.35rem;
+    color:#5A5A5A;
+}
+
+#popWindow4 .window{
+    position: absolute;
+    min-width: 3.5rem;
+    height: 17.8rem;
+    background-color:#fff;
+    z-index: 2001;
+    bottom: 0;
+    right: 0;
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+#popWindow4 .closeBtn{
+    position: absolute;
+    left: 0.4rem;
+    top: 0.2rem;
+    font-size: 0.35rem;
+    color:#5A5A5A;
+}
