@@ -71,8 +71,8 @@ npm start // 启动项目
 ```
 
 ### 感谢
-项目开发过程中，调用了以下组件或者js：
-**博客园 @xxcanghai @小小沧海** ： https://github.com/xxcanghai/cnblogsFiles/blob/master/vue-mixins/propsync.js 
+项目开发过程中，调用了以下组件或者js：<br>
+**博客园 @xxcanghai @小小沧海** ： https://github.com/xxcanghai/cnblogsFiles/blob/master/vue-mixins/propsync.js <br>
 在此表示感谢
 
 
@@ -127,8 +127,8 @@ NPM start // start the project
 ```
 
 ### Thanks
-During project development, the following components or js are called:
-**博客园 @xxcanghai @小小沧海** ： https://github.com/xxcanghai/cnblogsFiles/blob/master/vue-mixins/propsync.js 
+During project development, the following components or js are called:<br>
+**博客园 @xxcanghai @小小沧海** ： https://github.com/xxcanghai/cnblogsFiles/blob/master/vue-mixins/propsync.js <br>
 Thank you very much!
 
 github link: https://github.com/czm1290433700/my_vue_cli
