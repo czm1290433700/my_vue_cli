@@ -1,6 +1,7 @@
 <template>
     <div id="calendar">
-        <input type="text" class="timeInput" placeholder="请选择时间" @focus="calendarShow = true" ref="timeInput">
+        <input type="text" class="timeInput" placeholder="请选择时间" @focus="inputFocus()" ref="timeInput">
+        <maskLayer v-bind:layerShow="calendarShow" v-bind:closable="false"></maskLayer>
         <div class="calendarWidget" v-show="calendarShow">
             <div class="title">
                 <div class="left" @click="yearBack()">
@@ -55,6 +56,7 @@
 </template>
 
 <script>
+import maskLayer from '@/components/maskLayer'
 export default {
     name: 'calendar',
     data() {
@@ -73,6 +75,9 @@ export default {
             week5: [1, 2, 3, 4, 5, 6, 7],
             week6: [1, 2, 3, 4, 5, 6, 7]
         }
+    },
+    components: {
+        maskLayer  
     },
     mounted: function(){
         this.year = new Date().getFullYear();
@@ -295,11 +300,18 @@ export default {
             }
             this.$refs.timeInput.value = year + '-' + month + '-' + item.currentTarget.childNodes[0].textContent;
             this.calendarShow = false;
+        },
+        /**
+         * 输入框获得焦点
+         */
+        inputFocus: function(){
+            this.$refs.timeInput.blur();
+            this.calendarShow = true;
         }
     }
 }
 </script>
 
 <style scoped>
-    @import "../style/pcComponents/calendar.css";
+    @import "../style/mobileComponents/calendar.css";
 </style>
