@@ -1,5 +1,5 @@
 <template>
-    <div id="loading1">
+    <div id="loading1" ref="loading1">
         <i></i>
         <i></i>
         <i></i>
@@ -17,7 +17,13 @@
 
 <script>
 export default {
-    name: 'Loading1'
+    name: 'Loading1',
+    props: ['color'],
+    mounted () {
+        if(this.$props.color){
+            this.$refs.loading1.style.color = this.$props.color;
+        }
+    }
 }
 </script>
 

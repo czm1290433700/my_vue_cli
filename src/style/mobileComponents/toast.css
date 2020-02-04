@@ -1,1 +1,116 @@
 @charset "UTF-8";
+#toast1{
+    min-width: 3rem;
+    background-color:#000;
+    opacity: 0.7;
+    color:#fff;
+    font-size: 0.35rem;
+    padding: 0.25rem;
+    position: fixed;
+    text-align: center;
+    border-radius: 0.1rem;
+    left: 3.5rem;
+    top: 8rem;
+    max-width: 3.5rem;
+}
+
+#toast2{
+    min-width: 3rem;
+    background-color:#000;
+    opacity: 0.7;
+    color:#fff;
+    font-size: 0.35rem;
+    padding: 0.25rem;
+    position: fixed;
+    text-align: center;
+    border-radius: 0.1rem;
+    left: 3.5rem;
+    top: 8rem;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 3.5rem;
+}
+
+#toast3{
+    background-color:#000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0.7;
+    color:#fff;
+    padding: 0.8rem 1rem;
+    position: fixed;
+    left: 3.2rem;
+    top: 8rem;
+    border-radius: 0.1rem;
+}
+
+#toast3 .content{
+    margin-top: 0.2rem;
+}
+
+#toast4{
+    background-color:#000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0.7;
+    color:#fff;
+    padding: 0.8rem 1rem;
+    position: fixed;
+    left: 3.2rem;
+    top: 8rem;
+    border-radius: 0.1rem;
+}
+
+#toast4 .content{
+    margin-top: 0.2rem;
+}
+
+#toast5{
+    background-color:#000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0.7;
+    color:#fff;
+    padding: 0.8rem 1rem;
+    position: fixed;
+    left: 2.5rem;
+    top: 8rem;
+    border-radius: 0.1rem;
+}
+
+#toast5 .content{
+    margin-top: 0.2rem;
+}
