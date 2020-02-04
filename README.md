@@ -50,6 +50,8 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **popWindow 弹窗**: 建议弹窗与遮罩层一起使用
 
+- **toast 轻提示**: 分为文字提示，长文字提示和加载提示，加载提示提供了三种加载提示的样式
+
 - **DateTimePicker 时间选择**
 
 - **NumberKeyBorder 数字键盘**
@@ -112,6 +114,7 @@ The mobile terminal has the following parts:
 - **lazyLoading image lazyLoading** : implementation based on **IntersectionObserver Api**
 - **maskLayer maskLayer**: The props bidirectional binding component is used to implement the props bidirectional binding
 - **popWindow**: it is recommended to use popWindow with mask layer
+- **toast light prompt**: divided into text prompt, long text prompt and loading prompt, loading prompt provides three styles of loading prompt
 - **DateTimePicker time selection**
 - **NumberKeyBorder numeric keyboard**
 - **PasswordInput PasswordInput box**

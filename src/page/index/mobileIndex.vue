@@ -57,6 +57,10 @@ export default {
           url: '/mobilePage/popWindow'
         },
         {
+          name: 'toast 轻提示',
+          url: '/mobilePage/toast'
+        },
+        {
           name: 'DateTimePicker 时间选择',
           url: '/mobilePage/dataTimePicker'
         },
