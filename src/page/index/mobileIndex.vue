@@ -62,7 +62,7 @@ export default {
         },
         {
           name: 'DateTimePicker 时间选择',
-          url: '/mobilePage/dataTimePicker'
+          url: '/mobilePage/DataTimePicker'
         },
         {
           name: 'NumberKeyBorder 数字键盘',
