@@ -57,6 +57,10 @@ export default {
           url: '/mobilePage/popWindow'
         },
         {
+          name: 'popupBox 弹出层',
+          url: '/mobilePage/popupBox'
+        },
+        {
           name: 'toast 轻提示',
           url: '/mobilePage/toast'
         },

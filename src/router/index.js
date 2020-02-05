@@ -23,6 +23,7 @@ import maskLayer from '@/page/mobilePage/maskLayer'
 import popWindow from '@/page/mobilePage/popWindow'
 import toast from '@/page/mobilePage/toast'
 import DateTimePicker from '@/page/mobilePage/DateTimePicker'
+import popupBox from '@/page/mobilePage/popupBox'
 
 Vue.use(Router)
 
@@ -144,6 +145,11 @@ export default new Router({
       path: '/mobilePage/DataTimePicker',
       name: 'DateTimePicker',
       component: DateTimePicker
+    },
+    {
+      path: '/mobilePage/popupBox',
+      name: 'popupBox',
+      component: popupBox
     }
   ]
 })
