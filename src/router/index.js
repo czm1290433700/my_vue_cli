@@ -24,6 +24,7 @@ import popWindow from '@/page/mobilePage/popWindow'
 import toast from '@/page/mobilePage/toast'
 import DateTimePicker from '@/page/mobilePage/DateTimePicker'
 import popupBox from '@/page/mobilePage/popupBox'
+import passwordInput from '@/page/mobilePage/passwordInput'
 
 Vue.use(Router)
 
@@ -150,6 +151,11 @@ export default new Router({
       path: '/mobilePage/popupBox',
       name: 'popupBox',
       component: popupBox
+    },
+    {
+      path: '/mobilePage/passwordInput',
+      name: 'passwordInput',
+      component: passwordInput
     }
   ]
 })
