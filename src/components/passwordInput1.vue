@@ -1,5 +1,26 @@
 <template>
-    
+    <div id="passwordInput1">
+        <ul class="inputs">
+            <li>
+                <i></i>
+            </li>
+            <li>
+                <i></i>
+            </li>
+            <li>
+                <i></i>
+            </li>
+            <li>
+                <i></i>
+            </li>
+            <li>
+                <i></i>
+            </li>
+            <li>
+                <i></i>
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>

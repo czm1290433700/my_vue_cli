@@ -69,8 +69,8 @@ export default {
           url: '/mobilePage/DataTimePicker'
         },
         {
-          name: 'NumberKeyBorder 数字键盘',
-          url: '/mobilePage/NumberKeyBorder'
+          name: 'NumberkeyBorder 数字键盘',
+          url: '/mobilePage/NumberkeyBorder'
         },
         {
           name: 'PasswordInput 密码输入框',

@@ -25,6 +25,7 @@ import toast from '@/page/mobilePage/toast'
 import DateTimePicker from '@/page/mobilePage/DateTimePicker'
 import popupBox from '@/page/mobilePage/popupBox'
 import passwordInput from '@/page/mobilePage/passwordInput'
+import numberkeyBorder from '@/page/mobilePage/numberkeyBorder'
 
 Vue.use(Router)
 
@@ -110,11 +111,13 @@ export default new Router({
       path: '/pcPage/table',
       name: 'table',
       component: table
-    },{
+    },
+    {
       path: '/pcPage/page',
       name: 'page',
       component: page
-    },{
+    },
+    {
       path: '/pcPage/treeBox',
       name: 'treeBoxPage',
       component: treeBox
@@ -122,7 +125,8 @@ export default new Router({
       path: '/pcPage/codeBox',
       name: 'codeBoxPage',
       component: codeBox
-    },{
+    },
+    {
       path: '/mobilePage/calendar',
       name: 'mobileCalendar',
       component: mobileCalendar
@@ -156,6 +160,11 @@ export default new Router({
       path: '/mobilePage/passwordInput',
       name: 'passwordInput',
       component: passwordInput
+    },
+    {
+      path: '/mobilePage/numberkeyBorder',
+      name: 'numberkeyBorder',
+      component: numberkeyBorder
     }
   ]
 })

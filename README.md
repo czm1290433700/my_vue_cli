@@ -58,7 +58,7 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **NumberKeyBorder 数字键盘**
 
-- **PasswordInput 密码输入框**
+- **PasswordInput 密码输入框**: 实现了基础效果和明文密码输入，这里暂时没有对密码输入框的位数做出配置，直接设置为6位
 
 ### 样式展示
 
@@ -120,7 +120,7 @@ The mobile terminal has the following parts:
 - **toast light prompt**: divided into text prompt, long text prompt and loading prompt, loading prompt provides three styles of loading prompt
 - **DateTimePicker time selection**: implements three time options for all dates, month/year/day dates, and month/day dates
 - **NumberKeyBorder numeric keyboard**
-- **PasswordInput PasswordInput box**
+- **PasswordInput PasswordInput box**：Implemented the basic effect and plaintext password input, there is no password input box to configure the number of bits, directly set to 6
 ### style presentation
 - PC home page <br>
 ![PC pictures](https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/pc.png)
