@@ -1,1 +1,39 @@
 @charset "UTF-8";
+#numberkeyBorder{
+    width: 10rem;
+    background-color:#ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#numberkeyBorder .borderTitle{
+    padding: 0.1rem 0.1rem;
+    text-align: right;
+    color:#1989FA;
+    font-size: 0.35rem;
+    padding-bottom: 0;
+}
+
+#numberkeyBorder .borderTitle span{
+    display: inline-block;
+    padding: 0.15rem 0.3rem;
+    cursor: pointer;
+}
+
+#numberkeyBorder .borderBody>i{
+    display: inline-block;
+    width: 32%;
+    height: 1.5rem;
+    font-size: 0.6rem;
+    font-style: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#numberkeyBorder .specialIcon{
+    background-color: #EBEDF0;
+    font-size: 0.5rem!important;
+}

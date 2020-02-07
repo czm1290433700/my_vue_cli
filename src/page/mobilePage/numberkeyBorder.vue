@@ -2,8 +2,9 @@
     <div>
         <pageHeader v-bind:title="title"></pageHeader>
         <div class="body">
-            <button type="button" class="button">弹出键盘</button>
-            <numberkeyBorder></numberkeyBorder>
+            <div class="mask" @click="hideBorder()"></div>
+            <button type="button" class="button" @click="showBorder()">弹出键盘</button>
+            <numberkeyBorder ref="keyBorder"></numberkeyBorder>
         </div>
     </div>
 </template>
@@ -20,6 +21,20 @@ export default {
     },
     components: {
         pageHeader, numberkeyBorder
+    },
+    methods: {
+        /** 
+         * 显示键盘
+         */
+        showBorder: function(){
+            this.$refs.keyBorder.show();
+        },
+        /**
+         * 隐藏键盘
+         */
+        hideBorder: function(){
+            this.$refs.keyBorder.hide();
+        }
     }
 }
 </script>
