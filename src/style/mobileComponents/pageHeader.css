@@ -10,6 +10,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #fff;
+    z-index: 10;
 }
 
 .header .arrow{
