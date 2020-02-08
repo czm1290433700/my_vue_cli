@@ -56,7 +56,7 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **DateTimePicker 时间选择**:实现了全部日期，年月日日期，和年月日期的三种时间选择
 
-- **NumberKeyBorder 数字键盘**
+- **NumberKeyBorder 数字键盘**: 实现了移动端手机常用数字键盘，支持对输入内容的存储，以及对存储位数的配置
 
 - **PasswordInput 密码输入框**: 实现了基础效果和明文密码输入，这里暂时没有对密码输入框的位数做出配置，直接设置为6位
 
@@ -119,7 +119,7 @@ The mobile terminal has the following parts:
 - **popUpBox popup layer**: implements the popup effect of block area, where the content can be configured by itself
 - **toast light prompt**: divided into text prompt, long text prompt and loading prompt, loading prompt provides three styles of loading prompt
 - **DateTimePicker time selection**: implements three time options for all dates, month/year/day dates, and month/day dates
-- **NumberKeyBorder numeric keyboard**
+- **NumberKeyBorder numeric keyboard**: realize the common number keyboard of mobile phone, support the storage of input content, and the configuration of storage bits
 - **PasswordInput PasswordInput box**：Implemented the basic effect and plaintext password input, there is no password input box to configure the number of bits, directly set to 6
 ### style presentation
 - PC home page <br>
