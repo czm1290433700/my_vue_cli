@@ -76,6 +76,7 @@ export default {
             }else{
                 this.dataArray.splice(this.dataArray.length, 0, item);
             }
+            this.$emit('dataChange');   // 向父组件反馈数据修改
         },
         /**
          * 移除数组元素
@@ -84,6 +85,7 @@ export default {
             if(this.dataArray.length > 0){
                 this.dataArray.splice(this.dataArray.length - 1, 1);
             }
+            this.$emit('dataChange');   // 向父组件反馈数据修改
         }
     }
 }
