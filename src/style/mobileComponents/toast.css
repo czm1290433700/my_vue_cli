@@ -12,6 +12,7 @@
     left: 3.5rem;
     top: 8rem;
     max-width: 3.5rem;
+    z-index: 100;
 }
 
 #toast2{
@@ -29,6 +30,7 @@
     word-wrap: break-word;
     white-space: pre-wrap;
     max-width: 3.5rem;
+    z-index: 100;
 }
 
 #toast3{
@@ -53,6 +55,7 @@
     left: 3.2rem;
     top: 8rem;
     border-radius: 0.1rem;
+    z-index: 100;
 }
 
 #toast3 .content{
@@ -81,6 +84,7 @@
     left: 3.2rem;
     top: 8rem;
     border-radius: 0.1rem;
+    z-index: 100;
 }
 
 #toast4 .content{
@@ -109,6 +113,7 @@
     left: 2.5rem;
     top: 8rem;
     border-radius: 0.1rem;
+    z-index: 100;
 }
 
 #toast5 .content{
