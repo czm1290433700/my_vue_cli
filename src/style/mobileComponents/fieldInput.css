@@ -1,0 +1,28 @@
+@charset "UTF-8";
+input{
+    border: none;
+    background-color: #fff;
+}
+
+#fieldInput1{
+    padding: 0.2rem 0.35rem;
+    background-color:#fff;
+    border: 1px solid #EBEDF0;
+}
+
+#fieldInput2{
+    display: flex;
+    padding: 0.2rem 0.35rem;
+    border: 1px solid #EBEDF0;
+    background-color:#fff;
+}
+
+#fieldInput2 .title{
+    width: 2rem;
+    color:#000;
+    font-size: 0.35rem;
+}
+
+#fieldInput2 .disabled{
+    cursor: not-allowed;
+}
