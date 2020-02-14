@@ -66,6 +66,10 @@ export default {
         {
           name: 'PasswordInput 密码输入框',
           url: '/mobilePage/passwordInput'
+        },
+        {
+          name: 'FieldInput 输入框',
+          url: '/mobilePage/FieldInput'
         }
       ],
       callbackComponents:[
