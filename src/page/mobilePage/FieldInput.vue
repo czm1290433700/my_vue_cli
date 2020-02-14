@@ -22,6 +22,7 @@
             </fieldset>
             <fieldset>
                 <legend>短信验证</legend>
+                <fieldInput4></fieldInput4>
             </fieldset>
             <fieldset>
                 <legend>显示统计字数输入框</legend>
@@ -34,6 +35,7 @@
 import pageHeader from '@/components/pageHeader'
 import fieldInput1 from '@/components/fieldInput1'
 import fieldInput2 from '@/components/fieldInput2'
+import fieldInput4 from '@/components/fieldInput4'
 export default {
     name: 'FieldInput',
     data() {
@@ -42,7 +44,7 @@ export default {
         }
     },
     components: {
-        pageHeader, fieldInput1, fieldInput2
+        pageHeader, fieldInput1, fieldInput2, fieldInput4
     }
 }
 </script>

@@ -26,3 +26,30 @@ input{
 #fieldInput2 .disabled{
     cursor: not-allowed;
 }
+
+#fieldInput4{
+    display: flex;
+    background-color:#fff;
+    border: 1px solid#EBEDF0;
+    padding: 0.2rem 0.35rem;
+}
+
+#fieldInput4 .title{
+    font-size: 0.35rem;
+    color:#000;
+    width: 1.5rem;
+    line-height: 0.6rem;
+}
+
+#fieldInput4 input{
+    width: 2.5rem;
+}
+
+#fieldInput4 button{
+    padding: 0.1rem;
+    border: none;
+    background-color:#07C160;
+    color:#fff;
+    border-radius: 0.05rem;
+    font-size: 0.32rem;
+}
