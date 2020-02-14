@@ -16,6 +16,13 @@
             <span class="arrow"></span>
           </li>
         </ul>
+        <span class="title">反馈组件</span>
+        <ul>
+          <li v-for="item in callbackComponents" :key="item.index" @click="clickConnect(item.url)">
+            <span class="name">{{item.name}}</span>
+            <span class="arrow"></span>
+          </li>
+        </ul>
       </div>
     </div>
 </template>
@@ -33,10 +40,6 @@ export default {
         {
           name: 'enMobileCityArea 英文城市选择',
           url: '/mobilePage/enMobileCityArea'
-        },
-        {
-          name: 'calendar 日历',
-          url: 'mobilePage/calendar'
         }
       ],
       pageComponents:[
@@ -48,6 +51,24 @@ export default {
           name: 'lazyLoading 图片懒加载',
           url: '/mobilePage/LazyLoading'
         },
+        {
+          name: 'calendar 日历',
+          url: 'mobilePage/calendar'
+        },
+        {
+          name: 'DateTimePicker 时间选择',
+          url: '/mobilePage/DataTimePicker'
+        },
+        {
+          name: 'NumberkeyBorder 数字键盘',
+          url: '/mobilePage/NumberkeyBorder'
+        },
+        {
+          name: 'PasswordInput 密码输入框',
+          url: '/mobilePage/passwordInput'
+        }
+      ],
+      callbackComponents:[
         {
           name: 'maskLayer 遮罩层',
           url: '/mobilePage/maskLayer'
@@ -63,18 +84,6 @@ export default {
         {
           name: 'toast 轻提示',
           url: '/mobilePage/toast'
-        },
-        {
-          name: 'DateTimePicker 时间选择',
-          url: '/mobilePage/DataTimePicker'
-        },
-        {
-          name: 'NumberkeyBorder 数字键盘',
-          url: '/mobilePage/NumberkeyBorder'
-        },
-        {
-          name: 'PasswordInput 密码输入框',
-          url: '/mobilePage/passwordInput'
         }
       ]
     }

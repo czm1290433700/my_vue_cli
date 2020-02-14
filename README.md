@@ -38,13 +38,21 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **enMobileCityArea 英文城市选择**
 
-- **calendar 日历**
-
 2.页面组件
 
 - **loading 加载**: 纯css3动画实现, 目前实现了3种loading效果，一种最常见的遮罩层loading,还有企鹅FM上专题活动的loading以及app中的常用loading
 
 - **lazyLoading 图片懒加载**：基于**IntersectionObserver Api**实现
+
+- **calendar 日历**
+
+- **DateTimePicker 时间选择**:实现了全部日期，年月日日期，和年月日期的三种时间选择
+
+- **NumberKeyBorder 数字键盘**: 实现了移动端手机常用数字键盘，支持对输入内容的存储，以及对存储位数的配置
+
+- **PasswordInput 密码输入框**: 实现了基础效果和明文密码输入，这里暂时没有对密码输入框的位数做出配置，直接设置为6位
+
+3. 反馈组件
 
 - **maskLayer 遮罩层**:使用了props双向绑定组件实现props的双向绑定
 
@@ -53,12 +61,6 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 - **popUpBox 弹出层**: 实现了块状区域的弹入弹出效果，其中内容可以自行配置
 
 - **toast 轻提示**: 分为文字提示，长文字提示和加载提示，加载提示提供了三种加载提示的样式
-
-- **DateTimePicker 时间选择**:实现了全部日期，年月日日期，和年月日期的三种时间选择
-
-- **NumberKeyBorder 数字键盘**: 实现了移动端手机常用数字键盘，支持对输入内容的存储，以及对存储位数的配置
-
-- **PasswordInput 密码输入框**: 实现了基础效果和明文密码输入，这里暂时没有对密码输入框的位数做出配置，直接设置为6位
 
 ### 样式展示
 
@@ -110,17 +112,18 @@ The mobile terminal has the following parts:
 1. Plug-in components
 - **mobileCityArea city selection**: UI style refer to the wifi login page of HCSDC for city selection
 - **enMobileCityArea**
-- **calendar**
 2. Page components
 - **loading**: pure css3 animation is implemented, which has realized three loading effects, one of the most common mask loading, as well as loading of special activities on penguin FM and loading commonly used in app
 - **lazyLoading image lazyLoading** : implementation based on **IntersectionObserver Api**
+- **calendar**
+- **DateTimePicker time selection**: implements three time options for all dates, month/year/day dates, and month/day dates
+- **NumberKeyBorder numeric keyboard**: realize the common number keyboard of mobile phone, support the storage of input content, and the configuration of storage bits
+- **PasswordInput PasswordInput box**：Implemented the basic effect and plaintext password input, there is no password input box to configure the number of bits, directly set to 6
+3. Callback components
 - **maskLayer maskLayer**: The props bidirectional binding component is used to implement the props bidirectional binding
 - **popWindow**: it is recommended to use popWindow with mask layer
 - **popUpBox popup layer**: implements the popup effect of block area, where the content can be configured by itself
 - **toast light prompt**: divided into text prompt, long text prompt and loading prompt, loading prompt provides three styles of loading prompt
-- **DateTimePicker time selection**: implements three time options for all dates, month/year/day dates, and month/day dates
-- **NumberKeyBorder numeric keyboard**: realize the common number keyboard of mobile phone, support the storage of input content, and the configuration of storage bits
-- **PasswordInput PasswordInput box**：Implemented the basic effect and plaintext password input, there is no password input box to configure the number of bits, directly set to 6
 ### style presentation
 - PC home page <br>
 ![PC pictures](https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/pc.png)
