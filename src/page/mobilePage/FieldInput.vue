@@ -26,6 +26,7 @@
             </fieldset>
             <fieldset>
                 <legend>显示统计字数输入框</legend>
+                <fieldInput5 v-bind:title="'留言'" v-bind:maxLength="50" v-bind:defaultHint="'请输入留言'"></fieldInput5>
             </fieldset>
         </div>
     </div>
@@ -36,6 +37,7 @@ import pageHeader from '@/components/pageHeader'
 import fieldInput1 from '@/components/fieldInput1'
 import fieldInput2 from '@/components/fieldInput2'
 import fieldInput4 from '@/components/fieldInput4'
+import fieldInput5 from '@/components/fieldInput5'
 export default {
     name: 'FieldInput',
     data() {
@@ -44,7 +46,7 @@ export default {
         }
     },
     components: {
-        pageHeader, fieldInput1, fieldInput2, fieldInput4
+        pageHeader, fieldInput1, fieldInput2, fieldInput4, fieldInput5
     }
 }
 </script>

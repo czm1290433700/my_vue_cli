@@ -53,3 +53,32 @@ input{
     border-radius: 0.05rem;
     font-size: 0.32rem;
 }
+
+#fieldInput5{
+    display: flex;
+    background-color:#fff;
+    border: 1px solid #EBEDF0;
+    padding: 0.2rem 0.35rem;
+}
+
+#fieldInput5 .title{
+    width: 1.5rem;
+    color:#000;
+    font-size: 0.35rem;
+}
+
+#fieldInput5 .content{
+    padding: 0.05rem 0;
+}
+
+#fieldInput5 .content textarea{
+    border: none;
+    font-size: 0.35rem;
+    resize: none;
+    height: 1.5rem;
+}
+
+#fieldInput5 .content .length{
+    text-align: right;
+    font-size: 0.3rem;
+}
