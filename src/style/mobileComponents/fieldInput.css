@@ -32,6 +32,34 @@ input{
     cursor: not-allowed;
 }
 
+#fieldInput3{
+    display: flex;
+    padding: 0.2rem 0.35rem;
+    border: 1px solid #EBEDF0;
+    background-color:#fff;
+    width: 5.9rem;
+}
+
+#fieldInput3 .title{
+    width: 2rem;
+    color:#000;
+    font-size: 0.35rem;
+}
+
+#fieldInput3 .content{
+    display: flex;
+    flex-direction: column;
+}
+
+#fieldInput3 .alert{
+    font-size: 0.35rem;
+    color:red;
+}
+
+#fieldInput3 input{
+    width: 3.9rem;
+}
+
 #fieldInput4{
     display: flex;
     background-color:#fff;

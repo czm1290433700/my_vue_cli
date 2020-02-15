@@ -52,6 +52,8 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **PasswordInput 密码输入框**: 实现了基础效果和明文密码输入，这里暂时没有对密码输入框的位数做出配置，直接设置为6位
 
+- **FieldInput 输入框**: 实现了基本样式，自定义类型，禁用输入框，表单验证输入框，短信验证框和显示统计字数输入框，其中表单验证输入框实现了两种最常用的验证输入框，分别是手机号验证和邮箱验证输入框
+
 3. 反馈组件
 
 - **maskLayer 遮罩层**:使用了props双向绑定组件实现props的双向绑定
@@ -119,6 +121,7 @@ The mobile terminal has the following parts:
 - **DateTimePicker time selection**: implements three time options for all dates, month/year/day dates, and month/day dates
 - **NumberKeyBorder numeric keyboard**: realize the common number keyboard of mobile phone, support the storage of input content, and the configuration of storage bits
 - **PasswordInput PasswordInput box**：Implemented the basic effect and plaintext password input, there is no password input box to configure the number of bits, directly set to 6
+- **FieldInput input box**: implements basic style, custom type, disabled input box, form validation input box, SMS validation box and display statistics input box. The form validation input box implements the two most commonly used validation input boxes, namely mobile phone number validation and mailbox validation input box
 3. Callback components
 - **maskLayer maskLayer**: The props bidirectional binding component is used to implement the props bidirectional binding
 - **popWindow**: it is recommended to use popWindow with mask layer

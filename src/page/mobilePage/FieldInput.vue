@@ -19,6 +19,8 @@
             </fieldset>
             <fieldset>
                 <legend>表单验证输入框</legend>
+                <fieldInput3 type="phone"></fieldInput3>
+                <fieldInput3 type="email"></fieldInput3>
             </fieldset>
             <fieldset>
                 <legend>短信验证</legend>
@@ -36,6 +38,7 @@
 import pageHeader from '@/components/pageHeader'
 import fieldInput1 from '@/components/fieldInput1'
 import fieldInput2 from '@/components/fieldInput2'
+import fieldInput3 from '@/components/fieldInput3'
 import fieldInput4 from '@/components/fieldInput4'
 import fieldInput5 from '@/components/fieldInput5'
 export default {
@@ -46,7 +49,7 @@ export default {
         }
     },
     components: {
-        pageHeader, fieldInput1, fieldInput2, fieldInput4, fieldInput5
+        pageHeader, fieldInput1, fieldInput2, fieldInput3, fieldInput4, fieldInput5
     }
 }
 </script>
