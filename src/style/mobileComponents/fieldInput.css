@@ -15,12 +15,17 @@ input{
     padding: 0.2rem 0.35rem;
     border: 1px solid #EBEDF0;
     background-color:#fff;
+    width: 5.9rem;
 }
 
 #fieldInput2 .title{
     width: 2rem;
     color:#000;
     font-size: 0.35rem;
+}
+
+#fieldInput2 input{
+    width: 3.9rem;
 }
 
 #fieldInput2 .disabled{
