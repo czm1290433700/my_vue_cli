@@ -1,1 +1,26 @@
 @charset "UTF-8";
+#search1{
+    background-color: #fff;
+    padding: 0.2rem;
+}
+
+#search1 .searchArea{
+    background: url(../../assets/images/mirror.png) no-repeat;
+    background-color:#F7F8FA;
+    background-size: 0.5rem;
+    padding: 0.1rem 0.2rem 0.1rem 0.8rem;
+    background-position: 0.2rem;
+    display: flex;
+}
+
+#search1 .searchArea input{
+    border: none;
+    background-color:#F7F8FA;
+    width: 4.6rem;
+}
+
+#search1 .searchArea img{
+    width: 0.4rem;
+    height: 0.4rem;
+    cursor: pointer;
+}
