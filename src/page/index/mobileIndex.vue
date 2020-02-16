@@ -70,6 +70,10 @@ export default {
         {
           name: 'FieldInput 输入框',
           url: '/mobilePage/FieldInput'
+        },
+        {
+          name: 'Search 搜索框',
+          url: '/mobilePage/search'
         }
       ],
       callbackComponents:[

@@ -27,6 +27,7 @@ import popupBox from '@/page/mobilePage/popupBox'
 import passwordInput from '@/page/mobilePage/passwordInput'
 import numberkeyBorder from '@/page/mobilePage/numberkeyBorder'
 import FieldInput from '@/page/mobilePage/FieldInput'
+import search from '@/page/mobilePage/search'
 
 Vue.use(Router)
 
@@ -171,6 +172,11 @@ export default new Router({
       path: '/mobilePage/FieldInput',
       name: 'FieldInput',
       component: FieldInput
+    },
+    {
+      path: '/mobilePage/search',
+      name: 'search',
+      component: search
     }
   ]
 })

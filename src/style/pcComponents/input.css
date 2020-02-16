@@ -18,12 +18,14 @@
 .input .clear{
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 .input .eye{
     width: 17px;
     height: 9px;
     margin-top: 7px;
+    cursor: pointer;
 }
 
 .active{
