@@ -12,7 +12,7 @@
             </fieldset>
             <fieldset>
                 <legend>自定义背景色</legend>
-                <search3></search3>
+                <search3 v-bind:backgroundColor="'#4FC08D'"></search3>
             </fieldset>
         </div>
     </div>

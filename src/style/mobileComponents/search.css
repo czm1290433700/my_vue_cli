@@ -24,3 +24,64 @@
     height: 0.4rem;
     cursor: pointer;
 }
+
+#search2{
+    background-color: #fff;
+    padding: 0.2rem;
+    display: flex;
+}
+
+#search2 .searchArea{
+    background: url(../../assets/images/mirror.png) no-repeat;
+    background-color:#F7F8FA;
+    background-size: 0.5rem;
+    padding: 0.1rem 0.2rem 0.1rem 0.8rem;
+    background-position: 0.2rem;
+    display: flex;
+}
+
+#search2 .searchArea input{
+    border: none;
+    background-color:#F7F8FA;
+    width: 3.8rem;
+}
+
+#search2 .searchArea img{
+    width: 0.4rem;
+    height: 0.4rem;
+    cursor: pointer;
+}
+
+#search2 .searchButton{
+    background-color:#fff;
+    border: none;
+    padding: 0.1rem;
+    margin-left: 0.1rem;
+    cursor: pointer;
+}
+
+#search3{
+    background-color: #fff;
+    padding: 0.2rem;
+}
+
+#search3 .searchArea{
+    background: url(../../assets/images/mirror.png) no-repeat;
+    background-color:#F7F8FA;
+    background-size: 0.5rem;
+    padding: 0.1rem 0.2rem 0.1rem 0.8rem;
+    background-position: 0.2rem;
+    display: flex;
+}
+
+#search3 .searchArea input{
+    border: none;
+    background-color:#F7F8FA;
+    width: 4.6rem;
+}
+
+#search3 .searchArea img{
+    width: 0.4rem;
+    height: 0.4rem;
+    cursor: pointer;
+}
