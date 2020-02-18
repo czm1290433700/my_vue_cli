@@ -1,10 +1,20 @@
 @charset "UTF-8";
 #popupBox{
     width: 10rem;
-    height: 3rem;
-    background-color:#dddddd;
-    position: absolute;
+    min-height: 4.5rem;
+    position: fixed;
     bottom: 0;
     left: 0;
-    transition: 0.3s ease-out;
+    border: 1px solid#ddd;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: #fff;
+}
+
+#popupBox .closeBtn{
+    position: absolute;
+    right: 0.4rem;
+    top: 0.2rem;
+    font-size: 0.35rem;
+    color:#525252;
+    cursor: pointer;
 }
