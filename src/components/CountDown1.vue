@@ -18,23 +18,23 @@ export default {
     mounted () {
         var _this = this,
             timer = setInterval(function(){
-            if(_this.seconds == 0){
-                if(_this.minutes == 0){
-                    if(_this.hours == 0){
-                        clearInterval(timer);
+                if(_this.seconds == 0){
+                    if(_this.minutes == 0){
+                        if(_this.hours == 0){
+                            clearInterval(timer);
+                        }else{
+                            _this.hours--;
+                            _this.minutes = 59;
+                            _this.seconds = 59;
+                        }
                     }else{
-                        _this.hours--;
-                        _this.minutes = 59;
+                        _this.minutes--;
                         _this.seconds = 59;
                     }
                 }else{
-                    _this.minutes--;
-                    _this.seconds = 59;
+                    _this.seconds--;
                 }
-            }else{
-                _this.seconds--;
-            }
-        }, 1000)
+            }, 1000)
     }
 }
 </script>

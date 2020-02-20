@@ -42,7 +42,7 @@ export default {
                 }else{
                     _this.milliSeconds--;
                 }
-        }, 1000/60)
+            }, 1000/60)
     }
 }
 </script>
