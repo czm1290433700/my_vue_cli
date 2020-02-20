@@ -29,6 +29,7 @@ import numberkeyBorder from '@/page/mobilePage/numberkeyBorder'
 import FieldInput from '@/page/mobilePage/FieldInput'
 import search from '@/page/mobilePage/search'
 import CountDown from '@/page/mobilePage/CountDown'
+import Divider from '@/page/mobilePage/Divider'
 
 Vue.use(Router)
 
@@ -184,6 +185,11 @@ export default new Router({
       path: '/mobilePage/CountDown',
       name: 'CountDown',
       component: CountDown
+    },
+    {
+      path: '/mobilePage/Divider',
+      name: 'Divider',
+      component: Divider
     }
   ]
 })

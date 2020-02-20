@@ -1,0 +1,21 @@
+@charset "UTF-8";
+#Divider1{
+    border: 1px solid #ebedf0;
+}
+
+#Divider2{
+    display: flex;
+}
+
+#Divider2 .divider{
+    flex: 1;
+    border-top: 0.05rem solid #ebedf0;
+    height: 1px;
+    margin-top: 0.2rem;
+}
+
+#Divider2 .text{
+    color: #000;
+    font-size: 0.35rem;
+    margin: 0 0.2rem;
+}
