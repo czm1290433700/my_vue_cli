@@ -4,11 +4,11 @@
         <div class="body">
             <fieldset>
                 <legend>基本用法</legend>
-                <CountDown1></CountDown1>
+                <CountDown1 v-bind:time="time1"></CountDown1>
             </fieldset>
             <fieldset>
                 <legend>毫秒级渲染</legend>
-                <CountDown1></CountDown1>
+                <CountDown2 v-bind:time="time2"></CountDown2>
             </fieldset>
         </div>
     </div>
@@ -22,7 +22,18 @@ export default {
     name: 'DateTimePicker',
     data() {
         return {
-            title: 'CountDown 倒计时'
+            title: 'CountDown 倒计时',
+            time1: {
+                hour: 2,
+                minute: 0,
+                second: 0
+            },
+            time2: {
+                hour: 2,
+                minute: 0,
+                second: 0,
+                milliSeconds: 0
+            }
         }
     },
     components: {
