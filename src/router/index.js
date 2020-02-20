@@ -28,6 +28,7 @@ import passwordInput from '@/page/mobilePage/passwordInput'
 import numberkeyBorder from '@/page/mobilePage/numberkeyBorder'
 import FieldInput from '@/page/mobilePage/FieldInput'
 import search from '@/page/mobilePage/search'
+import CountDown from '@/page/mobilePage/CountDown'
 
 Vue.use(Router)
 
@@ -123,7 +124,8 @@ export default new Router({
       path: '/pcPage/treeBox',
       name: 'treeBoxPage',
       component: treeBox
-    },{
+    },
+    {
       path: '/pcPage/codeBox',
       name: 'codeBoxPage',
       component: codeBox
@@ -177,6 +179,11 @@ export default new Router({
       path: '/mobilePage/search',
       name: 'search',
       component: search
+    },
+    {
+      path: '/mobilePage/CountDown',
+      name: 'CountDown',
+      component: CountDown
     }
   ]
 })
