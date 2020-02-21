@@ -8,6 +8,7 @@ input{
     padding: 0.2rem 0.35rem;
     background-color:#fff;
     border: 1px solid #EBEDF0;
+    width: 5.9rem;
 }
 
 #fieldInput2{
@@ -65,6 +66,7 @@ input{
     background-color:#fff;
     border: 1px solid#EBEDF0;
     padding: 0.2rem 0.35rem;
+    width: 5.9rem;
 }
 
 #fieldInput4 .title{
@@ -92,6 +94,7 @@ input{
     background-color:#fff;
     border: 1px solid #EBEDF0;
     padding: 0.2rem 0.35rem;
+    width: 5.9rem;
 }
 
 #fieldInput5 .title{

@@ -2,14 +2,26 @@
     <div>
         <pageHeader v-bind:title="title"></pageHeader>
         <div class="body">
-            <button type="button" class="button" @click="setWindow1()">顶部弹出</button>
-            <button type="button" class="button" @click="setWindow2()">底部弹出</button>
-            <button type="button" class="button" @click="setWindow3()">左部弹出</button>
-            <button type="button" class="button" @click="setWindow4()">右部弹出</button>
-            <popWindow1 v-bind:show="showWindow1" @onPropsChange="change()"></popWindow1>
-            <popWindow2 v-bind:show="showWindow2" @onPropsChange="change()"></popWindow2>
-            <popWindow3 v-bind:show="showWindow3" @onPropsChange="change()"></popWindow3>
-            <popWindow4 v-bind:show="showWindow4" @onPropsChange="change()"></popWindow4>
+            <fieldset>
+                <legend>顶部弹出</legend>
+                <button type="button" class="button" @click="setWindow1()">顶部弹出</button>
+                <popWindow1 v-bind:show="showWindow1" @onPropsChange="change()"></popWindow1>
+            </fieldset>
+            <fieldset>
+                <legend>底部弹出</legend>
+                <button type="button" class="button" @click="setWindow2()">底部弹出</button>
+                <popWindow2 v-bind:show="showWindow2" @onPropsChange="change()"></popWindow2>
+            </fieldset>
+            <fieldset>
+                <legend>左部弹出</legend>
+                <button type="button" class="button" @click="setWindow3()">左部弹出</button>
+                <popWindow3 v-bind:show="showWindow3" @onPropsChange="change()"></popWindow3>
+            </fieldset>
+            <fieldset>
+                <legend>右部弹出</legend>
+                <button type="button" class="button" @click="setWindow4()">右部弹出</button>
+                <popWindow4 v-bind:show="showWindow4" @onPropsChange="change()"></popWindow4>
+            </fieldset>
         </div>
     </div>
 </template>

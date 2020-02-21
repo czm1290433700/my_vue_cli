@@ -9,17 +9,17 @@
 }
 
 fieldset{
-    padding: 0.6rem 0.65rem;
-    border: 0.05rem solid #ddd;
+    padding: 0.6rem 0;
     font-size: 0.4rem;
-    color: #7C7C7C;
+    color:#7C7C7C;
     font-weight: 500;
+    border: none;
 }
 
 .button{
     border: none;
     background-color:#07C160;
-    padding: 0.35rem;
+    padding: 0.28rem;
     color:white;
     margin: 0.2rem;
     z-index: 10;

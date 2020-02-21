@@ -19,7 +19,7 @@ import pageHeader from '@/components/pageHeader'
 import CountDown1 from '@/components/CountDown1'
 import CountDown2 from '@/components/CountDown2'
 export default {
-    name: 'DateTimePicker',
+    name: 'CountDown',
     data() {
         return {
             title: 'CountDown 倒计时',

@@ -2,6 +2,7 @@
 #search1{
     background-color: #fff;
     padding: 0.2rem;
+    width: 6.3rem;
 }
 
 #search1 .searchArea{
@@ -29,6 +30,7 @@
     background-color: #fff;
     padding: 0.2rem;
     display: flex;
+    width: 6.3rem;
 }
 
 #search2 .searchArea{
@@ -63,6 +65,7 @@
 #search3{
     background-color: #fff;
     padding: 0.2rem;
+    width: 6.3rem;
 }
 
 #search3 .searchArea{

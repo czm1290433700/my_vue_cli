@@ -30,6 +30,7 @@ import FieldInput from '@/page/mobilePage/FieldInput'
 import search from '@/page/mobilePage/search'
 import CountDown from '@/page/mobilePage/CountDown'
 import Divider from '@/page/mobilePage/Divider'
+import NoticeBar from '@/page/mobilePage/NoticeBar'
 
 Vue.use(Router)
 
@@ -190,6 +191,11 @@ export default new Router({
       path: '/mobilePage/Divider',
       name: 'Divider',
       component: Divider
+    },
+    {
+      path: '/mobilePage/NoticeBar',
+      name: 'NoticeBar',
+      component: NoticeBar
     }
   ]
 })
