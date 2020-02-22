@@ -1,0 +1,149 @@
+@charset "UTF-8";
+#noticeBar1{
+    width: 8rem;
+    background-color:#FFFBE8;
+    font-size: 0.35rem;
+    color:#EF7F34;
+    padding: 0.1rem;
+    display: flex;
+}
+
+#noticeBar1 img{
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+}
+
+#noticeBar1 .noticeArea{
+    flex: 1;
+    position: relative;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+}
+
+#noticeBar1 .notice{
+    white-space: nowrap;
+    position: absolute;
+    padding-left: 7.2rem;
+}
+
+#noticeBar2{
+    width: 8rem;
+    background-color:#FFFBE8;
+    font-size: 0.35rem;
+    color:#EF7F34;
+    padding: 0.1rem;
+    display: flex;
+}
+
+#noticeBar2 img{
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+}
+
+#noticeBar2 .noticeArea{
+    flex: 1;
+    position: relative;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+}
+
+#noticeBar2 .notice{
+    white-space: nowrap;
+    position: absolute;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+}
+
+#noticeBar3{
+    width: 8rem;
+    background-color:#FFFBE8;
+    font-size: 0.35rem;
+    color:#EF7F34;
+    padding: 0.1rem;
+    display: flex;
+}
+
+#noticeBar3 .noticeArea{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: auto;
+    line-height: 0.6rem;
+    overflow: hidden;
+}
+
+#noticeBar3 .notice{
+    white-space: normal;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+}
+
+#noticeBar4{
+    width: 8rem;
+    background-color:#FFFBE8;
+    font-size: 0.35rem;
+    color:#EF7F34;
+    padding: 0.1rem;
+    display: flex;
+}
+
+#noticeBar4 img{
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+}
+
+#noticeBar4 .noticeArea{
+    flex: 1;
+    position: relative;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+}
+
+#noticeBar4 .notice{
+    white-space: nowrap;
+    position: absolute;
+    padding-left: 7.2rem;
+}
+
+#noticeBar4 .closeBtn{
+    line-height: 0.6rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+
+#noticeBar5{
+    width: 8rem;
+    background-color:#FFFBE8;
+    font-size: 0.35rem;
+    color:#EF7F34;
+    padding: 0.1rem;
+    display: flex;
+}
+
+#noticeBar5 img{
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+}
+
+#noticeBar5 .noticeArea{
+    flex: 1;
+    position: relative;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    overflow: hidden;
+}
+
+#noticeBar5 .notice{
+    white-space: nowrap;
+    position: absolute;
+    padding-left: 7.2rem;
+}
