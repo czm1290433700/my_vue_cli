@@ -5,11 +5,12 @@
             <fieldset>
                 <legend>基本用法</legend>
                 <steps1 ref="steps1" v-bind:list="list"></steps1>
-                <button type="button" class="button" @click="goNextStep()">下一步</button>
+                <button type="button" class="button" @click="goNextStep1()">下一步</button>
             </fieldset>
             <fieldset>
                 <legend>竖向步骤条</legend>
-                <steps2></steps2>
+                <steps2 ref="steps2" v-bind:list="list"></steps2>
+                <button type="button" class="button" @click="goNextStep2()">下一步</button>
             </fieldset>
         </div>
     </div>
@@ -32,10 +33,16 @@ export default {
     },
     methods: {
         /**
-         * 进入下一阶段
+         * steps1进入下一阶段
          */
-        goNextStep: function(){
+        goNextStep1: function(){
             this.$refs.steps1.goNextStep();
+        },
+        /**
+         * steps2进入下一阶段
+         */
+        goNextStep2: function(){
+            this.$refs.steps2.goNextStep();
         }
     }
 }

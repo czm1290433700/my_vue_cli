@@ -64,3 +64,67 @@
     left: -0.95rem;
     bottom: 0.1rem;
 }
+
+#steps2{
+    font-size: 0.3rem;
+    background-color:#fff;
+    padding: 0.2rem 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+#steps2 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#steps2 li{
+    position: relative;
+    display: flex;
+    margin: 0.35rem 0.7rem 0.35rem 0;
+}
+
+#steps2 .line{
+    border-right: 0.04rem #EBEDF0 solid;
+    height: 0.7rem;
+    position: absolute;
+    top: -0.7rem;
+    left: 0.09rem;
+}
+
+#steps2 .circle{
+    width: 0.12rem;
+    height: 0.12rem;
+    background-color:#7C7C7C;
+    border-radius: 50%;
+    margin: 0.15rem 0.38rem 0 0.05rem;
+}
+
+#steps2 .active .circle{
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color:#07C160;
+    border-radius: 50%;
+    position: relative;
+    margin: 0.08rem 0.3rem 0 0;
+}
+
+#steps2 .active .circle::before{
+    position: absolute;
+    content: '';
+    width: 0.05rem;
+    height: 0.1rem;
+    border-right: 0.02rem solid#fff;
+    border-bottom: 0.02rem solid#fff;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    left: 0.08rem;
+    top: 0.045rem;
+}
+
+#steps2 .active .line{
+    border-right: 0.04rem #07C160 solid;
+    height: 0.7rem;
+    position: absolute;
+    top: -0.7rem;
+    left: 0.09rem;
+}
