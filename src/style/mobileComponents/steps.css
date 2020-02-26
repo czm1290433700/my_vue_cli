@@ -49,12 +49,12 @@
     content: '';
     width: 0.05rem;
     height: 0.1rem;
-    border-right: 0.05rem solid#fff;
-    border-bottom: 0.05rem solid#fff;
+    border-right: 0.02rem solid#fff;
+    border-bottom: 0.02rem solid#fff;
     -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
-    left: 0.07rem;
-    top: 0.04rem;
+    left: 0.08rem;
+    top: 0.045rem;
 }
 
 #steps1 .active .line{
