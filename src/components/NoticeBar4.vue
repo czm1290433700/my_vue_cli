@@ -21,11 +21,12 @@ export default {
         var _this = this;
         var noticeWidth =  _this.$refs.notice.offsetWidth,
             areaWidth = _this.$refs.noticeArea.offsetWidth,
+            fontSize = document.documentElement.style.fontSize.split('px')[0],
             timer = setInterval(function(){
                 if(Math.abs(_this.$refs.notice.offsetLeft) > noticeWidth + areaWidth){
                     _this.$refs.notice.style.left = 0;
                 }else{
-                    _this.$refs.notice.style.left = _this.$refs.notice.offsetLeft / 37.5 - 0.02 + 'rem';
+                    _this.$refs.notice.style.left = _this.$refs.notice.offsetLeft / fontSize - 0.02 + 'rem';
                 }
             }, 30)
     },
