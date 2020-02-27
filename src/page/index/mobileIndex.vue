@@ -129,10 +129,6 @@ export default {
         {
           name: 'Swipe 轮播',
           url: '/mobilePage/Swipe'
-        },
-        {
-          name: 'Tag 标记',
-          url: '/mobilePage/Tag'
         }
       ]
     }
