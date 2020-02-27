@@ -64,6 +64,22 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **toast 轻提示**: 分为文字提示，长文字提示和加载提示，加载提示提供了三种加载提示的样式
 
+4. 展示组件
+
+- **Circle 环形进度条**
+
+- **CountDown 倒计时**：分为基本用法和毫秒级渲染
+
+- **Divider 分割线**：分为基本用法和展示文本
+
+- **ImagePreview 图片预览**
+
+- **NoticeBar 通知栏**: 分为基本用法，禁用滚动，多行展示，通知栏模式和自定义样式
+
+- **Steps 步骤条**： 分为基本用法和竖向步骤条
+
+- **Swipe 轮播**
+
 ### 样式展示
 
 - pc端首页页面<br>
@@ -132,6 +148,14 @@ The mobile terminal has the following parts:
 ![PC pictures](https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/pc.png)
 - mobile home page <br>
 ![mobile pictures](https://github.com/czm1290433700/my_vue_cli/blob/master/imgs/mobile.png)
+4. Show components
+- **Circle progress bar**
+- **CountDown** : basic usage and millisecond rendering
+- **Divider** : Divider segmentation are divided into basic usage and display text
+- **ImagePreview**
+- **NoticeBar**: NoticeBar notification bar is divided into basic usage, and disable the scroll, multi-line, notification bar model and the custom style
+- **Steps bar** : divided into basic usage and vertical Steps bar
+- **Swipe series**
 ### Run the project
 ```
 NPM I // installation dependencies
