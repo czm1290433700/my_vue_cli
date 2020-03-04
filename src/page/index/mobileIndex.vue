@@ -30,6 +30,13 @@
             <span class="arrow"></span>
           </li>
         </ul>
+        <span class="title">导航组件</span>
+        <ul>
+          <li v-for="item in navigationComponents" :key="item.index" @click="clickConnect(item.url)">
+            <span class="name">{{item.name}}</span>
+            <span class="arrow"></span>
+          </li>
+        </ul>
       </div>
     </div>
 </template>
@@ -129,6 +136,20 @@ export default {
         {
           name: 'Swipe 轮播',
           url: '/mobilePage/Swipe'
+        }
+      ],
+      navigationComponents:[
+        {
+          name: 'IndexBar 索引栏',
+          url: '/mobilePage/IndexBar'
+        },
+        {
+          name: 'Pagination 分页',
+          url: '/mobilePage/Pagination'
+        },
+        {
+          name: 'TreeSelect 分页选择',
+          url: '/mobilePage/TreeSelect'
         }
       ]
     }
