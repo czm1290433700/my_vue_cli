@@ -32,6 +32,7 @@ import CountDown from '@/page/mobilePage/CountDown'
 import Divider from '@/page/mobilePage/Divider'
 import NoticeBar from '@/page/mobilePage/NoticeBar'
 import steps from '@/page/mobilePage/steps'
+import IndexBar from '@/page/mobilePage/IndexBar'
 
 Vue.use(Router)
 
@@ -202,6 +203,11 @@ export default new Router({
       path: '/mobilePage/Steps',
       name: 'steps',
       component: steps
+    },
+    {
+      path: '/mobilePage/IndexBar',
+      name: 'IndexBar',
+      component: IndexBar
     }
   ]
 })

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+#indexBar{
+    background-color:#fff;
+    z-index: 20000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    color:#000;
+    min-height: 17.8rem;
+    overflow-y: hidden;
+}
+
+#indexBar .indexTitle{
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 0.43rem;
+    background-color: #fff;
+}
+
+#indexBar .closeBtn{
+    color:#666;
+    position: absolute;
+    top: 0.26rem;
+    right: 0.4rem;
+    cursor: pointer;
+}
+
+#indexBar .list{
+    font-size: 0.37rem;
+}
+
+#indexBar .list .title{
+    color: #999999;
+    border-bottom: none;
+}
+
+#indexBar .list li{
+    padding: 0.25rem 0.4rem;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+#indexBar .content{
+    height: 16.8rem;
+    width: 10rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#indexBar .navigation{
+    position: fixed;
+    top: 1.2rem;
+    right: 0;
+}
+
+#indexBar .navigation li{
+    text-align: right;
+    padding: 0.1rem 0.5rem 0.1rem 0;
+}
+
+#indexBar .navigation a, a:hover{
+    color: #666666;
+}
