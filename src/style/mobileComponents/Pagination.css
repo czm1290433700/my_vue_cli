@@ -28,3 +28,11 @@
     background-color: #1989FA;
     color: #fff;
 }
+
+#pagination .pages{
+    padding: 0.25rem 0.7rem;
+    border: 1px solid#EBEDF0;
+    font-size: 0.35rem;
+    color:#64686C;
+    cursor: pointer;
+}
