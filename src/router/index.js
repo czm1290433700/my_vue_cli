@@ -33,6 +33,7 @@ import Divider from '@/page/mobilePage/Divider'
 import NoticeBar from '@/page/mobilePage/NoticeBar'
 import steps from '@/page/mobilePage/steps'
 import IndexBar from '@/page/mobilePage/IndexBar'
+import Pagination from '@/page/mobilePage/Pagination'
 
 Vue.use(Router)
 
@@ -208,6 +209,11 @@ export default new Router({
       path: '/mobilePage/IndexBar',
       name: 'IndexBar',
       component: IndexBar
+    },
+    {
+      path: '/mobilePage/Pagination',
+      name: 'Pagination',
+      component: Pagination
     }
   ]
 })

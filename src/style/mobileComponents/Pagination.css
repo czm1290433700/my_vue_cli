@@ -1,0 +1,30 @@
+@charset "UTF-8";
+#pagination ul{
+    display: flex;
+}
+
+#pagination .pageBtn{
+    padding: 0.2rem;
+    border: 1px solid #EBEDF0;
+    font-size: 0.35rem;
+    color:#1989FA;
+    cursor: pointer;
+}
+
+#pagination .page{
+    padding: 0.25rem 0.3rem;
+    border: 1px solid#EBEDF0;
+    font-size: 0.35rem;
+    color:#1989FA;
+    cursor: pointer;
+}
+
+#pagination .noActiveBtn{
+    color:#ADAFB0;
+    cursor: not-allowed;
+}
+
+#pagination .active{
+    background-color: #1989FA;
+    color: #fff;
+}
