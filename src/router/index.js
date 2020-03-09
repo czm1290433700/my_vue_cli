@@ -34,6 +34,7 @@ import NoticeBar from '@/page/mobilePage/NoticeBar'
 import steps from '@/page/mobilePage/steps'
 import IndexBar from '@/page/mobilePage/IndexBar'
 import Pagination from '@/page/mobilePage/Pagination'
+import treeSelect from '@/page/mobilePage/treeSelect'
 
 Vue.use(Router)
 
@@ -214,6 +215,11 @@ export default new Router({
       path: '/mobilePage/Pagination',
       name: 'Pagination',
       component: Pagination
+    },
+    {
+      path: '/mobilePage/treeSelect',
+      name: 'treeSelect',
+      component: treeSelect
     }
   ]
 })

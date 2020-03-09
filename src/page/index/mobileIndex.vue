@@ -148,8 +148,8 @@ export default {
           url: '/mobilePage/Pagination'
         },
         {
-          name: 'TreeSelect 分页选择',
-          url: '/mobilePage/TreeSelect'
+          name: 'TreeSelect 分类选择',
+          url: '/mobilePage/treeSelect'
         }
       ]
     }

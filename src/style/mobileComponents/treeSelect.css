@@ -1,0 +1,55 @@
+@charset "UTF-8";
+#treeSelect{
+    display: flex;
+    background-color: #fff;
+}
+
+#treeSelect .titleList li{
+    width: 2rem;
+    padding: 0.25rem;
+    color: #000;
+    border-left: 0.08rem solid #fff;
+    cursor: pointer;
+    font-size: 0.38rem;
+}
+
+#treeSelect .titleList .active{
+    border-left: 0.08rem solid #EE0A24;
+}
+
+#treeSelect .arrayList li{
+    padding: 0.3rem;
+    color: #000;
+    font-weight: bold;
+    font-size: 0.38rem;
+    min-width: 4.5rem;
+    cursor: pointer;
+}
+
+#treeSelect .arrayList .active{
+    color: #EE0A24;
+    position: relative;
+}
+
+#treeSelect .arrayList .active::before{
+    content: "";
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 0.35rem;
+    background-color:#EE0A24;
+    position: absolute;
+    top: 0.37rem;
+    right: 0.1rem;
+}
+
+#treeSelect .arrayList .active::after{
+    content: "";
+    width: 0.08rem;
+    height: 0.16rem;
+    border-right: 0.05rem solid #fff;
+    border-bottom: 0.05rem solid #fff;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 0.42rem;
+    right: 0.2rem;
+}
