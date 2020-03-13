@@ -17,6 +17,11 @@
     border-left: 0.08rem solid #EE0A24;
 }
 
+#treeSelect .titleList .disabled{
+    color:#B9B9B9;
+    cursor: not-allowed;
+}
+
 #treeSelect .arrayList li{
     padding: 0.3rem;
     color: #000;
@@ -29,6 +34,11 @@
 #treeSelect .arrayList .active{
     color: #EE0A24;
     position: relative;
+}
+
+#treeSelect .arrayList .disabled{
+    color:#B9B9B9;
+    cursor: not-allowed;
 }
 
 #treeSelect .arrayList .active::before{

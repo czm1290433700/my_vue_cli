@@ -8,7 +8,7 @@
             </fieldset>
             <fieldset>
                 <legend>多选模式</legend>
-                <treeSelect2></treeSelect2>
+                <treeSelect2 v-bind:data="data"></treeSelect2>
             </fieldset>
         </div>
     </div>
