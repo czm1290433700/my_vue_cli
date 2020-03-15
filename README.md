@@ -80,6 +80,14 @@ pc端的ui样式参考layui官方文档样式（https://www.layui.com/demo） �
 
 - **Swipe 轮播**
 
+5. 导航组件
+
+- **indexBar 索引栏**
+
+- **Pagination 分页**: 分为基础用法，简单用法和显示省略号
+
+- **TreeSelect 分页选择**: 分为单选模式和多选模式
+
 ### 样式展示
 
 - pc端首页页面<br>
@@ -156,6 +164,10 @@ The mobile terminal has the following parts:
 - **NoticeBar**: NoticeBar notification bar is divided into basic usage, and disable the scroll, multi-line, notification bar model and the custom style
 - **Steps bar** : divided into basic usage and vertical Steps bar
 - **Swipe series**
+5. Navigation components
+- **indexBar**
+- **Pagination**: divided into basic usage, simple usage and display ellipsis
+- **TreeSelect paging selection**: divided into single and multi - select mode
 ### Run the project
 ```
 NPM I // installation dependencies
