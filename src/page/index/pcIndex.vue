@@ -97,6 +97,18 @@ export default {
             {
               name: 'icon 图标',
               url: '/pcPage/icon'
+            },
+            {
+              name: 'colorPicker 颜色选择器',
+              url: '/pcPage/colorPicker'
+            },
+            {
+              name: 'grade 评分',
+              url: '/pcPage/grade'
+            },
+            {
+              name: 'timeline 时间线',
+              url: '/pcPage/timeline'
             }
           ]
         }
