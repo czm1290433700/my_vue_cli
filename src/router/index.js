@@ -35,6 +35,7 @@ import steps from '@/page/mobilePage/steps'
 import IndexBar from '@/page/mobilePage/IndexBar'
 import Pagination from '@/page/mobilePage/Pagination'
 import treeSelect from '@/page/mobilePage/treeSelect'
+import grade from '@/page/pcPage/grade'
 
 Vue.use(Router)
 
@@ -220,6 +221,11 @@ export default new Router({
       path: '/mobilePage/treeSelect',
       name: 'treeSelect',
       component: treeSelect
+    },
+    {
+      path: '/pcPage/grade',
+      name: 'grade',
+      component: grade
     }
   ]
 })
