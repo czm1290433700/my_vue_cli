@@ -16,14 +16,22 @@
     color: rgb(191, 192, 194);
 }
 
-#pcIndex .nav{
+#pcIndex .navArea{
     width: 200px;
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#pcIndex .nav{
+    width: 217px;
     padding-top: 64px;
     background-color: #393D49;
     height: calc(100vh - 64px);
     position: absolute;
     font-size: 15px;
     font-weight: 300;
+    overflow-y: auto;
 }
 
 #pcIndex .nav .title{
@@ -40,7 +48,7 @@
 
 #pcIndex .nav .title span{
     position: absolute;
-    right: 120px;
+    left: 17px;
 }
 
 #pcIndex .nav li{
@@ -75,7 +83,7 @@
     content: "";
     border: 6px solid transparent;
     border-top: 6px solid #C4C5C9;
-    right: 13px;
+    left: 174px;
     top: 18px;
 }
 

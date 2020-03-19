@@ -7,21 +7,24 @@
           <li @click="goGitHub()">github</li>
         </ul>
       </div>
-      <div class="nav">
-        <ul v-for="item in content" :key="item.id">
-          <li>
-            <div class="title" @click="clickElement($event)" @mouseover="mouseOverTitle($event)" @mouseleave="mouseLeaveTitle($event)">
-              <span>{{item.name}}</span><i></i>
-            </div>
-            <dl>
-              <dd v-for="item in item.construction" :key="item.id" @click="cutBodyContent($event, item.url)" @mouseover="mouseOverDDElement($event)" @mouseleave="mouseLeaveDDElement($event)" ref="ddElement">{{item.name}}</dd>
-            </dl>
-          </li>
-        </ul>
+      <div class="navArea">
+        <div class="nav">
+          <ul v-for="item in content" :key="item.id">
+            <li>
+              <div class="title" @click="clickElement($event)" @mouseover="mouseOverTitle($event)" @mouseleave="mouseLeaveTitle($event)">
+                <span>{{item.name}}</span><i></i>
+              </div>
+              <dl>
+                <dd v-for="item in item.construction" :key="item.id" @click="cutBodyContent($event, item.url)" @mouseover="mouseOverDDElement($event)" @mouseleave="mouseLeaveDDElement($event)" ref="ddElement">{{item.name}}</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="body">
         <ul>
           <li class="active">预览</li>
+          <li>代码示例</li>
         </ul>
         <div class="body-content">
           <iframe src="/pcPage/slideShow" ref="bodyContent"></iframe>

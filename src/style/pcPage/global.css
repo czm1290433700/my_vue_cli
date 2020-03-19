@@ -6,16 +6,20 @@
 fieldset{
     padding: 30px 20px;
     width: 100%;
-    border: 2px solid #E6E6E6;
+    border-top: 1.5px solid #E6E6E6;
     margin-bottom: 25px;
     box-sizing: border-box;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
 }
 
 fieldset legend{
     font-size: 20px;
-    margin-left: 20px;
+    padding-left: 10px;
     color: #464646;
     font-weight: 300;
+    font-size: 18px;
 }
 
 fieldset .componentsArea{

@@ -36,6 +36,7 @@ import IndexBar from '@/page/mobilePage/IndexBar'
 import Pagination from '@/page/mobilePage/Pagination'
 import treeSelect from '@/page/mobilePage/treeSelect'
 import grade from '@/page/pcPage/grade'
+import timeline from '@/page/pcPage/timeline'
 
 Vue.use(Router)
 
@@ -226,6 +227,11 @@ export default new Router({
       path: '/pcPage/grade',
       name: 'grade',
       component: grade
+    },
+    {
+      path: '/pcPage/timeline',
+      name: 'timeline',
+      component: timeline
     }
   ]
 })
