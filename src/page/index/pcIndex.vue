@@ -15,7 +15,7 @@
                 <span>{{item.name}}</span><i></i>
               </div>
               <dl>
-                <dd v-for="item in item.construction" :key="item.id" @click="cutBodyContent($event, item.url)" @mouseover="mouseOverDDElement($event)" @mouseleave="mouseLeaveDDElement($event)" ref="ddElement">{{item.name}}</dd>
+                <dd v-for="item in item.construction" :key="item.id" @click="cutBodyContent($event, item)" @mouseover="mouseOverDDElement($event)" @mouseleave="mouseLeaveDDElement($event)" ref="ddElement">{{item.name}}</dd>
               </dl>
             </li>
           </ul>
@@ -23,11 +23,12 @@
       </div>
       <div class="body">
         <ul>
-          <li class="active">预览</li>
-          <li>代码示例</li>
+          <li class="active" @click="cutMode(1)" ref="bodyList1">预览</li>
+          <li @click="cutMode(2)" ref="bodyList2">代码示例</li>
         </ul>
         <div class="body-content">
           <iframe src="/pcPage/slideShow" ref="bodyContent"></iframe>
+          <iframe src="/introduces/slideShow" ref="bodyIntroduce" style="display:none;"></iframe>
         </div>
       </div>
     </div>
@@ -45,7 +46,8 @@ export default {
           construction:[
             {
               name: 'slideShow 轮播图',
-              url: '/pcPage/slideShow'
+              url: '/pcPage/slideShow',
+              introduce: '/introduces/slideShow'
             },
             {
               name: 'CityArea 城市选择',
@@ -151,8 +153,9 @@ export default {
     /**
      * 切换bodyContent
      */
-    cutBodyContent: function(item, url){
-      this.$refs.bodyContent.src = url;
+    cutBodyContent: function(item, obj){
+      this.$refs.bodyContent.src = obj.url;
+      this.$refs.bodyIntroduce.src = obj.introduce;
       for(let i = 0; i < this.$refs.ddElement.length; i++){
         if(tools.hasClass(this.$refs.ddElement[i], "active")){
           tools.removeClass(this.$refs.ddElement[i], "active");
@@ -189,6 +192,22 @@ export default {
         item.currentTarget.style.color = "#BFC0C2";
       }
       item.currentTarget.parentNode.parentNode.childNodes[0].style.borderLeft = "none";
+    },
+    /**
+     * 切换模式
+     */
+    cutMode: function(index){
+      if(index == 1){
+        this.$refs.bodyList1.classList.add('active');
+        this.$refs.bodyList2.classList.remove('active');
+        this.$refs.bodyContent.style.display = 'block';
+        this.$refs.bodyIntroduce.style.display = 'none';
+      }else{
+        this.$refs.bodyList1.classList.remove('active');
+        this.$refs.bodyList2.classList.add('active');
+        this.$refs.bodyContent.style.display = 'none';
+        this.$refs.bodyIntroduce.style.display = 'block';
+      }
     }
   }
 }

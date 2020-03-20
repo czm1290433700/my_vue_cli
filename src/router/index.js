@@ -37,6 +37,7 @@ import Pagination from '@/page/mobilePage/Pagination'
 import treeSelect from '@/page/mobilePage/treeSelect'
 import grade from '@/page/pcPage/grade'
 import timeline from '@/page/pcPage/timeline'
+import slideShow_introduce from '@/page/introduces/slideShow'
 
 Vue.use(Router)
 
@@ -232,6 +233,11 @@ export default new Router({
       path: '/pcPage/timeline',
       name: 'timeline',
       component: timeline
+    },
+    {
+      path: '/introduces/slideShow',
+      name: 'slideShow_introduce',
+      component: slideShow_introduce
     }
   ]
 })

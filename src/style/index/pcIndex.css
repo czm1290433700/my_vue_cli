@@ -121,6 +121,7 @@
 #pcIndex .body li{
     float: left;
     padding: 15px 30px;
+    cursor: pointer;
 }
 
 #pcIndex .body .active{
