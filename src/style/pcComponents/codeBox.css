@@ -1,4 +1,8 @@
 @charset "UTF-8";
+#codeBox1, #codeBox2, #codeBox3, #codeBox4{
+    margin-bottom: 10px;
+}
+
 #codeBox1 .title{
     padding: 10px;
     border-bottom: 1px solid #E2E2E2;

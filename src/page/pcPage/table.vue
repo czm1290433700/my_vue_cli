@@ -1,18 +1,23 @@
 <template>
     <div class="pageArea">
         <fieldset>
+            <legend>基本用法</legend>
+            <table1 v-bind:myTable="myTable"></table1>
+        </fieldset>
+        <fieldset>
             <legend>数据表格</legend>
-            <myTable v-bind:myTable="myTable"></myTable>
+            <table2 v-bind:myTable="myTable"></table2>
         </fieldset>
     </div>
 </template>
 
 <script>
-import myTable from '@/components/table'
+import table1 from '@/components/table1'
+import table2 from '@/components/table2'
 export default {
     name: 'tablePage',
     components: {
-        myTable
+        table1, table2
     },
     data() {
         return {

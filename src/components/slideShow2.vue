@@ -15,17 +15,10 @@
 <script>
 export default {
     name: 'slideShow2',
+    props: ['imageList'],
     data() {
         return {
-            imageList: [
-                require("@/assets/images/pic1.jpg"),
-                require("@/assets/images/pic2.jpg"),
-                require("@/assets/images/pic3.jpg"),
-                require("@/assets/images/pic4.jpg"),
-                require("@/assets/images/pic5.jpg"),
-                require("@/assets/images/pic6.jpg"),
-                require("@/assets/images/pic7.jpg")
-            ],
+            imageList: this.$props.imageList,
             amounts: 6, 
             timer: new Function(), 
             movePic: 0,

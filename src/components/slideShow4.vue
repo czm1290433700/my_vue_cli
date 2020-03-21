@@ -27,17 +27,10 @@
 import tools from '@/utils/tool.js'
 export default {
     name: 'slideShow4',
+    props: ['imageList'],
     data() {
         return {
-            imageList: [
-                require("@/assets/images/pic1.jpg"),
-                require("@/assets/images/pic2.jpg"),
-                require("@/assets/images/pic3.jpg"),
-                require("@/assets/images/pic4.jpg"),
-                require("@/assets/images/pic5.jpg"),
-                require("@/assets/images/pic6.jpg"),
-                require("@/assets/images/pic7.jpg")
-            ],
+            imageList: this.$props.imageList,
             index: 1, // 当前显示图片序号
             moveWidth: 0, // 移动距离
             timer: new Function() 
