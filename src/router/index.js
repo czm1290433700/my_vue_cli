@@ -38,6 +38,7 @@ import treeSelect from '@/page/mobilePage/treeSelect'
 import grade from '@/page/pcPage/grade'
 import timeline from '@/page/pcPage/timeline'
 import slideShow_introduce from '@/page/introduces/slideShow'
+import cityArea_introduce from '@/page/introduces/cityArea'
 
 Vue.use(Router)
 
@@ -238,6 +239,11 @@ export default new Router({
       path: '/introduces/slideShow',
       name: 'slideShow_introduce',
       component: slideShow_introduce
+    },
+    {
+      path: '/introduces/cityArea',
+      name: 'cityArea_introduce',
+      component: cityArea_introduce
     }
   ]
 })
