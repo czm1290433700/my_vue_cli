@@ -15,20 +15,20 @@
 import codeBox2 from '@/components/codeBox2'
 import table1 from '@/components/table1'
 export default {
-    name: 'cityArea_introduce',
+    name: 'calendar_introduce',
     data () {
         return {
             code: {
-                codeTitle: '城市地区号选择',
+                codeTitle: '日历控件',
                 code: [
                     '<template>',
-                    '    <cityArea></cityArea>',
+                    '    <calendar></calendar>',
                     '</template>',
                     '<script>',
-                    'import cityArea from "@/components/cityArea/"',
+                    'import calendar from "@/components/calendar"',
                     'export default {',
                     '    components: {',
-                    '        cityArea',
+                    '        calendar',
                     '    }',
                     '}',
                     '<script>'

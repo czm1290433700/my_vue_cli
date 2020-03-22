@@ -39,6 +39,7 @@ import grade from '@/page/pcPage/grade'
 import timeline from '@/page/pcPage/timeline'
 import slideShow_introduce from '@/page/introduces/slideShow'
 import cityArea_introduce from '@/page/introduces/cityArea'
+import calendar_introduce from '@/page/introduces/calendar'
 
 Vue.use(Router)
 
@@ -244,6 +245,11 @@ export default new Router({
       path: '/introduces/cityArea',
       name: 'cityArea_introduce',
       component: cityArea_introduce
+    },
+    {
+      path: '/introduces/calendarWidgets',
+      name: 'calendar_introduce',
+      component: calendar_introduce
     }
   ]
 })

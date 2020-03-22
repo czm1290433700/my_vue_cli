@@ -56,7 +56,8 @@ export default {
             },
             {
               name: 'calendar 日历控件',
-              url: '/pcPage/calendarWidgets'
+              url: '/pcPage/calendarWidgets',
+              introduce: '/introduces/calendarWidgets'
             },
             {
               name: 'shuttleBox 穿梭框',
