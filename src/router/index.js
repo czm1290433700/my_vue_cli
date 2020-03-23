@@ -40,6 +40,7 @@ import timeline from '@/page/pcPage/timeline'
 import slideShow_introduce from '@/page/introduces/slideShow'
 import cityArea_introduce from '@/page/introduces/cityArea'
 import calendar_introduce from '@/page/introduces/calendar'
+import shuttleBox_introduce from '@/page/introduces/shuttleBox'
 
 Vue.use(Router)
 
@@ -250,6 +251,11 @@ export default new Router({
       path: '/introduces/calendarWidgets',
       name: 'calendar_introduce',
       component: calendar_introduce
+    },
+    {
+      path: '/introduces/shuttleBox', 
+      name: 'shuttleBox_introduce',
+      component: shuttleBox_introduce
     }
   ]
 })

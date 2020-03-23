@@ -61,7 +61,8 @@ export default {
             },
             {
               name: 'shuttleBox 穿梭框',
-              url: '/pcPage/shuttleBox'
+              url: '/pcPage/shuttleBox',
+              introduce: '/introduces/shuttleBox'
             }
           ]
         },
