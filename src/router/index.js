@@ -42,6 +42,7 @@ import cityArea_introduce from '@/page/introduces/cityArea'
 import calendar_introduce from '@/page/introduces/calendar'
 import shuttleBox_introduce from '@/page/introduces/shuttleBox'
 import input_introduce from '@/page/introduces/input'
+import table_introduce from '@/page/introduces/table'
 
 Vue.use(Router)
 
@@ -262,6 +263,11 @@ export default new Router({
       path: '/introduces/input',
       name: 'input_introduce',
       component: input_introduce
+    },
+    {
+      path: '/introduces/table',
+      name: 'table_introduce',
+      component: table_introduce
     }
   ]
 })

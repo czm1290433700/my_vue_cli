@@ -76,7 +76,8 @@ export default {
             },
             {
               name: 'table 表格',
-              url: '/pcPage/table'
+              url: '/pcPage/table',
+              introduce: '/introduces/table'
             },
             {
               name: 'page 分页',
