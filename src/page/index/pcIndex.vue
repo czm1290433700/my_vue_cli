@@ -71,7 +71,8 @@ export default {
           construction:[
             {
               name: 'input 文本框',
-              url: '/pcPage/input'
+              url: '/pcPage/input',
+              introduce: '/introduces/input'
             },
             {
               name: 'table 表格',

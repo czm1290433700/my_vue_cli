@@ -41,6 +41,7 @@ import slideShow_introduce from '@/page/introduces/slideShow'
 import cityArea_introduce from '@/page/introduces/cityArea'
 import calendar_introduce from '@/page/introduces/calendar'
 import shuttleBox_introduce from '@/page/introduces/shuttleBox'
+import input_introduce from '@/page/introduces/input'
 
 Vue.use(Router)
 
@@ -256,6 +257,11 @@ export default new Router({
       path: '/introduces/shuttleBox', 
       name: 'shuttleBox_introduce',
       component: shuttleBox_introduce
+    },
+    {
+      path: '/introduces/input',
+      name: 'input_introduce',
+      component: input_introduce
     }
   ]
 })
