@@ -90,7 +90,8 @@ export default {
             },
             {
               name: 'select 选择框',
-              url: '/pcPage/select'
+              url: '/pcPage/select',
+              introduce: 'introduces/select'
             }
           ]
         },

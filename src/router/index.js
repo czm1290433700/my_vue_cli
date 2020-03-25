@@ -44,6 +44,7 @@ import shuttleBox_introduce from '@/page/introduces/shuttleBox'
 import input_introduce from '@/page/introduces/input'
 import table_introduce from '@/page/introduces/table'
 import page_introduce from '@/page/introduces/page'
+import select_introduce from '@/page/introduces/select'
 
 Vue.use(Router)
 
@@ -274,6 +275,11 @@ export default new Router({
       path: '/introduces/page',
       name: 'page_introduce',
       component: page_introduce
+    },
+    {
+      path: '/introduces/select',
+      name: 'select_introduce',
+      component: select_introduce
     }
   ]
 })
