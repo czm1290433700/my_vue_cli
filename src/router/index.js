@@ -43,6 +43,7 @@ import calendar_introduce from '@/page/introduces/calendar'
 import shuttleBox_introduce from '@/page/introduces/shuttleBox'
 import input_introduce from '@/page/introduces/input'
 import table_introduce from '@/page/introduces/table'
+import page_introduce from '@/page/introduces/page'
 
 Vue.use(Router)
 
@@ -268,6 +269,11 @@ export default new Router({
       path: '/introduces/table',
       name: 'table_introduce',
       component: table_introduce
+    },
+    {
+      path: '/introduces/page',
+      name: 'page_introduce',
+      component: page_introduce
     }
   ]
 })

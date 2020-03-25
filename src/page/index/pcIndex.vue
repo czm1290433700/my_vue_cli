@@ -81,7 +81,8 @@ export default {
             },
             {
               name: 'page 分页',
-              url: '/pcPage/page'
+              url: '/pcPage/page',
+              introduce: '/introduces/page'
             },
             {
               name: 'treeBox 树型框',

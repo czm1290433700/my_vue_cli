@@ -16,7 +16,7 @@
 import codeBox2 from '@/components/codeBox2'
 import table1 from '@/components/table1'
 export default {
-    name: 'input_introduce',
+    name: 'table_introduce',
     data () {
         return {
             code1: {
