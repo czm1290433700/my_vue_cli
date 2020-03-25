@@ -100,7 +100,8 @@ export default {
           construction:[
             {
               name: 'graph 统计图',
-              url: '/pcPage/graph'
+              url: '/pcPage/graph',
+              introduce: '/introduces/graph'
             },
             {
               name: 'codeBox 代码框',

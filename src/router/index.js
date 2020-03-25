@@ -45,6 +45,7 @@ import input_introduce from '@/page/introduces/input'
 import table_introduce from '@/page/introduces/table'
 import page_introduce from '@/page/introduces/page'
 import select_introduce from '@/page/introduces/select'
+import graph_introduce from '@/page/introduces/graph'
 
 Vue.use(Router)
 
@@ -280,6 +281,11 @@ export default new Router({
       path: '/introduces/select',
       name: 'select_introduce',
       component: select_introduce
+    },
+    {
+      path: '/introduces/graph',
+      name: 'graph_introduce',
+      component: graph_introduce
     }
   ]
 })
