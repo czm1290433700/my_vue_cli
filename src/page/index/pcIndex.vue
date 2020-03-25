@@ -105,7 +105,8 @@ export default {
             },
             {
               name: 'codeBox 代码框',
-              url: '/pcPage/codeBox'
+              url: '/pcPage/codeBox',
+              introduce: 'introduces/codeBox'
             },
             {
               name: 'icon 图标',
