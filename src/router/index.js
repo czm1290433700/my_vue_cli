@@ -47,6 +47,7 @@ import page_introduce from '@/page/introduces/page'
 import select_introduce from '@/page/introduces/select'
 import graph_introduce from '@/page/introduces/graph'
 import codeBox_introduce from '@/page/introduces/codeBox'
+import icon_introduce from '@/page/introduces/icon'
 
 Vue.use(Router)
 
@@ -292,6 +293,11 @@ export default new Router({
       path: '/introduces/codeBox',
       name: 'codeBox_introduce',
       component: codeBox_introduce
+    },
+    {
+      path: '/introduces/icon',
+      name: 'icon_introduce',
+      component: icon_introduce
     }
   ]
 })

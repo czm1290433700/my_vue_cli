@@ -110,7 +110,8 @@ export default {
             },
             {
               name: 'icon 图标',
-              url: '/pcPage/icon'
+              url: '/pcPage/icon',
+              introduce: 'introduces/icon'
             },
             {
               name: 'colorPicker 颜色选择器',
