@@ -2,19 +2,28 @@
     <div class="pageArea">
         <fieldset>
             <legend>基础用法</legend>
+            <grade></grade>
         </fieldset>
         <fieldset>
             <legend>显示文字</legend>
+            <grade v-bind:isShowWord="true"></grade>
         </fieldset>
         <fieldset>
             <legend>自定义颜色</legend>
+            <grade></grade>
+            <grade></grade>
+            <grade></grade>
         </fieldset>
     </div>
 </template>
 
 <script>
+import grade from '@/components/grade'
 export default {
-    name: 'grade'
+    name: 'gradeComponent',
+    components: {
+        grade
+    }
 }
 </script>
 

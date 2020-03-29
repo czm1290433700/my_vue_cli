@@ -48,6 +48,7 @@ import select_introduce from '@/page/introduces/select'
 import graph_introduce from '@/page/introduces/graph'
 import codeBox_introduce from '@/page/introduces/codeBox'
 import icon_introduce from '@/page/introduces/icon'
+import grade_introduce from '@/page/introduces/grade'
 
 Vue.use(Router)
 
@@ -298,6 +299,11 @@ export default new Router({
       path: '/introduces/icon',
       name: 'icon_introduce',
       component: icon_introduce
+    },
+    {
+      path: '/introduces/grade',
+      name: 'grade_introduce',
+      component: grade_introduce
     }
   ]
 })

@@ -1,1 +1,113 @@
 @charset "UTF-8";
+#grade {
+    display: flex;
+}
+
+#grade ul{
+    display: flex;
+    margin: 10px;
+}
+
+#grade .star{
+    margin: 5px 2px;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid #FFB800;
+    border-left: 10px solid transparent;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    cursor: pointer;
+}
+
+#grade .star::before {
+    border-bottom: 8px solid #FFB800;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -5.5px;
+    left: -6.5px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    cursor: pointer;
+}
+
+#grade .star::after {
+    position: absolute;
+    display: block;
+    top: 0.3px;
+    left: -10.5px;
+    width: 0px;
+    height: 0px;
+    border-right: 10px solid transparent;
+    border-bottom: 7px solid #FFB800;
+    border-left: 10px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-70deg);
+    content: '';
+    cursor: pointer;
+}
+
+#grade .star .white-star{
+    margin: 5px 2px;
+    position: relative;
+    display: block;
+    color: #fff;
+    width: 0px;
+    height: 0px;
+    border-right: 8px solid transparent;
+    border-bottom: 5px solid #fff;
+    border-left: 8px solid transparent;
+    z-index: 10;
+    left: -10px;
+    top: -4px;
+    cursor: pointer;
+}
+
+#grade .star .white-star::before {
+    border-bottom: 6px solid #fff;
+    border-left: 1.5px solid transparent;
+    border-right: 1.5px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -4px;
+    left: -5px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    cursor: pointer;
+}
+
+#grade .star .white-star::after {
+    position: absolute;
+    display: block;
+    color: #fff;
+    top: 0.3px;
+    left: -9px;
+    width: 0px;
+    height: 0px;
+    border-right: 8px solid transparent;
+    border-bottom: 5px solid #fff;
+    border-left: 8px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-70deg);
+    content: '';
+}
+
+#grade .hollow-star .white-star{
+    display: none;
+}
+
+#grade .word{
+    font-size: 14px;
+    line-height: 37px;
+}
+ 

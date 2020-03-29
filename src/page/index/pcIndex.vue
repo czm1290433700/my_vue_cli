@@ -119,7 +119,8 @@ export default {
             },
             {
               name: 'grade 评分',
-              url: '/pcPage/grade'
+              url: '/pcPage/grade',
+              introduce: 'introduces/grade'
             },
             {
               name: 'timeline 时间线',
