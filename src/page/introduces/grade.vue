@@ -54,8 +54,7 @@ export default {
             tableData: {
                 tableHead: ['参数', '说明', '类型', '默认值'],
                 tableData: [
-                    ['isShowWord', '是否显示文字', 'boolean', 'false'],
-                    ['starColor', '星星颜色', 'string', '#FFB800']
+                    ['isShowWord', '是否显示文字', 'boolean', 'false']
                 ]
             }
         }

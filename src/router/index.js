@@ -49,6 +49,7 @@ import graph_introduce from '@/page/introduces/graph'
 import codeBox_introduce from '@/page/introduces/codeBox'
 import icon_introduce from '@/page/introduces/icon'
 import grade_introduce from '@/page/introduces/grade'
+import timeline_introduce from '@/page/introduces/timeline'
 
 Vue.use(Router)
 
@@ -304,6 +305,11 @@ export default new Router({
       path: '/introduces/grade',
       name: 'grade_introduce',
       component: grade_introduce
+    },
+    {
+      path: '/introduces/timeline',
+      name: 'timeline_introduce',
+      component: timeline_introduce
     }
   ]
 })

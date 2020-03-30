@@ -124,7 +124,8 @@ export default {
             },
             {
               name: 'timeline 时间线',
-              url: '/pcPage/timeline'
+              url: '/pcPage/timeline',
+              introduce: 'introduces/timeline'
             }
           ]
         }

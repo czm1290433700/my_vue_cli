@@ -1,1 +1,64 @@
 @charset "UTF-8";
+#timeline1 .time{
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#timeline1 .time::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1.5px solid #70BD85;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+
+#timeline1 .events{
+    border-left: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-left: 5px;
+    font-size: 13px;
+    color: #666;
+}
+
+#timeline1 li{
+    max-width: 500px;
+    line-height: 20px;
+}
+
+#timeline2 li{
+    position: relative;
+    color: #666;
+    font-size: 13px;
+    padding-left: 22px;
+    margin-bottom: 30px;
+}
+
+#timeline2 li::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1.5px solid #70BD85;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 3.5px;
+}
+
+#timeline2 li::after{
+    content: '';
+    height: 30px;
+    border-left: 1px solid #ddd;
+    display: inherit;
+    position: absolute;
+    left: 6px;
+}
+
+#timeline2 li:last-of-type::after{
+    display: none;
+}
