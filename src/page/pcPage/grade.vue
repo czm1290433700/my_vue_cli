@@ -8,12 +8,6 @@
             <legend>显示文字</legend>
             <grade v-bind:isShowWord="true"></grade>
         </fieldset>
-        <fieldset>
-            <legend>自定义颜色</legend>
-            <grade></grade>
-            <grade></grade>
-            <grade></grade>
-        </fieldset>
     </div>
 </template>
 

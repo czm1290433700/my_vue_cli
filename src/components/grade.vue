@@ -35,12 +35,8 @@ export default {
             // 如果显示文字有值将显示
             this.isWord = this.$props.isShowWord;
         }
-        // 修改星星颜色
-        document.styleSheets[0].addRule('#grade .star','border-bottom: 7px solid green');
-        document.styleSheets[0].addRule('#grade .star::before','border-bottom: 7px solid green');
-        document.styleSheets[0].addRule('#grade .star::after','border-bottom: 7px solid green');
     },
-    props: ['isShowWord', 'starColor'],
+    props: ['isShowWord'],
     methods: {
         /**
          * 鼠标移入星星
