@@ -110,10 +110,6 @@ export default {
       ],
       showComponents:[
         {
-          name: 'Circle 环形进度条',
-          url: '/mobilePage/Circle'
-        },
-        {
           name: 'CountDown 倒计时',
           url: '/mobilePage/CountDown'
         },
@@ -122,20 +118,12 @@ export default {
           url: '/mobilePage/Divider'
         },
         {
-          name: 'ImagePreview 图片预览',
-          url: '/mobilePage/ImagePreview'
-        },
-        {
           name: 'NoticeBar 通知栏',
           url: '/mobilePage/NoticeBar'
         },
         {
           name: 'Steps 步骤条',
           url: '/mobilePage/Steps'
-        },
-        {
-          name: 'Swipe 轮播',
-          url: '/mobilePage/Swipe'
         }
       ],
       navigationComponents:[

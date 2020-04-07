@@ -85,10 +85,6 @@ export default {
               introduce: '/introduces/page'
             },
             {
-              name: 'treeBox 树型框',
-              url: '/pcPage/treeBox'
-            },
-            {
               name: 'select 选择框',
               url: '/pcPage/select',
               introduce: 'introduces/select'
@@ -112,10 +108,6 @@ export default {
               name: 'icon 图标',
               url: '/pcPage/icon',
               introduce: 'introduces/icon'
-            },
-            {
-              name: 'colorPicker 颜色选择器',
-              url: '/pcPage/colorPicker'
             },
             {
               name: 'grade 评分',
