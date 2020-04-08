@@ -22,7 +22,6 @@ import mobileCalendar from '@/page/mobilePage/calendar'
 import maskLayer from '@/page/mobilePage/maskLayer'
 import popWindow from '@/page/mobilePage/popWindow'
 import toast from '@/page/mobilePage/toast'
-import DateTimePicker from '@/page/mobilePage/DateTimePicker'
 import popupBox from '@/page/mobilePage/popupBox'
 import passwordInput from '@/page/mobilePage/passwordInput'
 import numberkeyBorder from '@/page/mobilePage/numberkeyBorder'
@@ -170,11 +169,6 @@ export default new Router({
       path: '/mobilePage/toast',
       name: 'toast',
       component: toast
-    },
-    {
-      path: '/mobilePage/DataTimePicker',
-      name: 'DateTimePicker',
-      component: DateTimePicker
     },
     {
       path: '/mobilePage/popupBox',

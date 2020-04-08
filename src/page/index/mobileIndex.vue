@@ -70,10 +70,6 @@ export default {
           url: 'mobilePage/calendar'
         },
         {
-          name: 'DateTimePicker 时间选择',
-          url: '/mobilePage/DataTimePicker'
-        },
-        {
           name: 'NumberkeyBorder 数字键盘',
           url: '/mobilePage/NumberkeyBorder'
         },
