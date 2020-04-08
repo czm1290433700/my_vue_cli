@@ -76,7 +76,7 @@ export default {
                 tableData: [
                     ['color', '包含arrowColor和backgroundColor属性, 具体描述于下', 'object', '-'],
                     ['arrowColor', '箭头颜色', 'string', '-'],
-                    ['backgroundColor', '背景颜色', 'array', '-']
+                    ['backgroundColor', '背景颜色', 'string', '-']
                 ]
             }
         }
