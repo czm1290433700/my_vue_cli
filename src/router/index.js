@@ -49,6 +49,7 @@ import codeBox_introduce from '@/page/introduces/codeBox'
 import icon_introduce from '@/page/introduces/icon'
 import grade_introduce from '@/page/introduces/grade'
 import timeline_introduce from '@/page/introduces/timeline'
+import testComponent from '@/page/pcPage/testComponent'
 
 Vue.use(Router)
 
@@ -304,6 +305,11 @@ export default new Router({
       path: '/introduces/timeline',
       name: 'timeline_introduce',
       component: timeline_introduce
+    },
+    {
+      path: '/pcPage/testComponent',
+      name: 'testComponent',
+      component: testComponent
     }
   ]
 })

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+#testComponent{
+    width: 1200px;
+    margin: auto;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#testComponent .title{
+    overflow: hidden;
+    padding: 10px 15px;
+    background-color: #F1F1F1;
+}
+
+#testComponent .title span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#testComponent .title i{
+    float: right;
+    font-size: 14px;
+}
+
+#testComponent .el-form{
+    padding: 20px 50px;
+}
+
+#testComponent .upload_tip{
+    float: right;
+    color: #9EA1A9;
+}

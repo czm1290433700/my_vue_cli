@@ -120,6 +120,16 @@ export default {
               introduce: 'introduces/timeline'
             }
           ]
+        },
+        {
+          name: '老大组件',
+          construction:[
+            {
+              name: '测试组件',
+              url: '/pcPage/testComponent',
+              introduce: ''
+            }
+          ]
         }
       ]
     }
